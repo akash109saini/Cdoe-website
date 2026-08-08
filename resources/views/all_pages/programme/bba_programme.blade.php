@@ -67,10 +67,33 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <h3 class="mt-5">Specialisations Offered</h3>
+                            <div class="row pt-4">
+                                <div class="col-sm-6">
+                                    <ul class="single-list-wrap">
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BBA International Business & Entrepreneurship
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BBA Digital Marketing
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 mt-3 mt-sm-0">
+                                    <ul class="single-list-wrap">
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BBA Healthcare Services & Administration
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BBA Banking, Fintech & AI
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- ========== Fee Structure & Scholarship Section Start ========== -->
                     <section class="compact-fee-section px-1 px-lg-5 mt-5">
                         <div class="container-fluid compact-fee-container px-3 px-lg-5">
                             
