@@ -489,7 +489,9 @@
                                 </div>
                                 <div class="course-card-fc-body">
                                     <h3 class="course-card-fc-title">MBA in Data Analytics</h3>
-                                    <p class="course-card-fc-text">Transform data into strategic business decisions with TMU’s Online MBA in Data Analytics. Gain expertise in analytics, business intelligence, and data-driven management.</p>
+                                    <p class="course-card-fc-text">Transform data into strategic business decisions with
+                                        TMU’s Online MBA in Data Analytics. Gain expertise in analytics, business
+                                        intelligence, and data-driven management.</p>
                                     <div class="course-card-fc-meta">
                                         <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
                                     </div>
@@ -502,11 +504,14 @@
                             <div class="course-card-fc">
                                 <div class="course-card-fc-img-container">
                                     <img src="{{ asset('/assets/img/programmes/m6.png') }}"
-                                        alt="Online MBA in Logistics & Supply Chain Management Specialisation" class="course-card-fc-img" />
+                                        alt="Online MBA in Logistics & Supply Chain Management Specialisation"
+                                        class="course-card-fc-img" />
                                 </div>
                                 <div class="course-card-fc-body">
                                     <h3 class="course-card-fc-title">MBA in Logistics & Supply Chain Management</h3>
-                                    <p class="course-card-fc-text">Advance your career in operations, logistics, and global supply networks. Develop strategic, managerial, and analytical capabilities designed for modern business environments.</p>
+                                    <p class="course-card-fc-text">Advance your career in operations, logistics, and global
+                                        supply networks. Develop strategic, managerial, and analytical capabilities designed
+                                        for modern business environments.</p>
                                     <div class="course-card-fc-meta">
                                         <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
                                     </div>
@@ -523,7 +528,9 @@
                                 </div>
                                 <div class="course-card-fc-body">
                                     <h3 class="course-card-fc-title">MBA in Digital Marketing</h3>
-                                    <p class="course-card-fc-text">Develop expertise in modern marketing strategies, online branding, performance marketing, and customer engagement. Learn from an industry-focused curriculum.</p>
+                                    <p class="course-card-fc-text">Develop expertise in modern marketing strategies, online
+                                        branding, performance marketing, and customer engagement. Learn from an
+                                        industry-focused curriculum.</p>
                                     <div class="course-card-fc-meta">
                                         <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
                                     </div>
@@ -540,7 +547,9 @@
                                 </div>
                                 <div class="course-card-fc-body">
                                     <h3 class="course-card-fc-title">MBA in Agri Business</h3>
-                                    <p class="course-card-fc-text">Build leadership and management expertise for the agricultural sector. Develop strategic, analytical, and business management skills designed for the agribusiness landscape.</p>
+                                    <p class="course-card-fc-text">Build leadership and management expertise for the
+                                        agricultural sector. Develop strategic, analytical, and business management skills
+                                        designed for the agribusiness landscape.</p>
                                     <div class="course-card-fc-meta">
                                         <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
                                     </div>
@@ -634,7 +643,8 @@
                     </div>
                     <div class="course-list-item-content">
                         <h3 class="course-list-item-title">MBA in Data Analytics</h3>
-                        <p class="course-list-item-desc">Transform data into strategic business decisions. Gain expertise in analytics, business intelligence, and data-driven management.</p>
+                        <p class="course-list-item-desc">Transform data into strategic business decisions. Gain expertise in
+                            analytics, business intelligence, and data-driven management.</p>
                     </div>
                 </a>
 
@@ -648,7 +658,8 @@
                     </div>
                     <div class="course-list-item-content">
                         <h3 class="course-list-item-title">MBA in Logistics & Supply Chain Management</h3>
-                        <p class="course-list-item-desc">Advance your career in operations, logistics, and global supply networks. Develop strategic, managerial, and analytical capabilities.</p>
+                        <p class="course-list-item-desc">Advance your career in operations, logistics, and global supply
+                            networks. Develop strategic, managerial, and analytical capabilities.</p>
                     </div>
                 </a>
 
@@ -662,7 +673,8 @@
                     </div>
                     <div class="course-list-item-content">
                         <h3 class="course-list-item-title">MBA in Digital Marketing</h3>
-                        <p class="course-list-item-desc">Develop expertise in modern marketing strategies, online branding, performance marketing, and customer engagement.</p>
+                        <p class="course-list-item-desc">Develop expertise in modern marketing strategies, online branding,
+                            performance marketing, and customer engagement.</p>
                     </div>
                 </a>
 
@@ -676,7 +688,8 @@
                     </div>
                     <div class="course-list-item-content">
                         <h3 class="course-list-item-title">MBA in Agri Business</h3>
-                        <p class="course-list-item-desc">Build leadership and management expertise for the agricultural sector. Develop strategic, analytical, and business management skills.</p>
+                        <p class="course-list-item-desc">Build leadership and management expertise for the agricultural
+                            sector. Develop strategic, analytical, and business management skills.</p>
                     </div>
                 </a>
 
@@ -688,6 +701,328 @@
         </div>
     </section>
     <!-- course area End -->
+
+    <!-- Suggested Specialisations Section Start -->
+    <style>
+        .suggested-specialisations {
+            background-color: #f8fafd;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .suggested-specialisations .section-title .pre-title {
+            color: #f28b25;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .suggested-specialisations .section-title .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #0d2352;
+            line-height: 1.2;
+        }
+
+        .specialisation-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px 35px;
+            box-shadow: 0 10px 30px rgba(0, 33, 71, 0.05);
+            border: 1px solid rgba(0, 33, 71, 0.05);
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .specialisation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #f28b25, #0d2352);
+            opacity: 0.8;
+        }
+
+        .specialisation-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 33, 71, 0.1);
+            border-color: rgba(242, 139, 37, 0.2);
+        }
+
+        .specialisation-card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .specialisation-card-header h3 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: #0d2352;
+            margin: 0;
+        }
+
+        .icon-box-bba,
+        .icon-box-bca {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        .icon-box-bba {
+            background: linear-gradient(135deg, #f28b25, #ff9f43);
+            box-shadow: 0 4px 12px rgba(242, 139, 37, 0.25);
+        }
+
+        .icon-box-bca {
+            background: linear-gradient(135deg, #0d2352, #1b4f93);
+            box-shadow: 0 4px 12px rgba(13, 35, 82, 0.25);
+        }
+
+        .specialisation-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .specialisation-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            background-color: #fdfefe;
+            border: 1px solid #f0f4f8;
+            transition: all 0.3s ease;
+        }
+
+        .specialisation-list li:hover {
+            background-color: #ffffff;
+            border-color: rgba(242, 139, 37, 0.15);
+            transform: translateX(6px);
+            box-shadow: 0 4px 12px rgba(0, 33, 71, 0.04);
+        }
+
+        .bullet-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgba(242, 139, 37, 0.1);
+            color: #f28b25;
+            flex-shrink: 0;
+            margin-top: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .specialisation-list li:hover .bullet-icon {
+            background-color: #f28b25;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        .list-text {
+            font-size: 1rem;
+            font-weight: 550;
+            color: #334155;
+            line-height: 1.4;
+        }
+
+        .specialisation-list li:hover .list-text {
+            color: #0d2352;
+        }
+
+        @media (max-width: 768px) {
+            .suggested-specialisations {
+                padding: 60px 0;
+            }
+
+            .suggested-specialisations .section-title .title {
+                font-size: 2.2rem;
+            }
+
+            .suggested-specialisations .section-title .pre-title {
+                font-size: 0.9rem;
+            }
+
+            .specialisation-card {
+                padding: 30px 20px;
+            }
+
+            .specialisation-card-header h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+
+    <section class="suggested-specialisations">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-title text-center mb-5">
+                <span class="pre-title">Explore Our Specialisations</span>
+                <h1 class="title">Undergraduate Programmes</h1>
+            </div>
+            <div class="row">
+                <!-- BBA Column -->
+                <div class="col-md-6 mb-4">
+                    <div class="specialisation-card">
+                        <div class="specialisation-card-header">
+                            <div class="icon-box-bba">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <h3>BBA Suggested Specialisations</h3>
+                        </div>
+                        <ul class="specialisation-list">
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BBA International Business & Entrepreneurship</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BBA Digital Marketing</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BBA Healthcare Services & Administration</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BBA Banking, Fintech & AI</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BCA Column -->
+                <div class="col-md-6 mb-4">
+                    <div class="specialisation-card">
+                        <div class="specialisation-card-header">
+                            <div class="icon-box-bca">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3>BCA Suggested Specialisations</h3>
+                        </div>
+                        <ul class="specialisation-list">
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BCA AI & Data Science</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BCA Cyber Security & Ethical Hacking</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BCA Cloud Computing & Devops</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BCA Healthcare IT & Bioinformatics</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BCA Game Design & AR/VR</span>
+                            </li>
+                            <li>
+                                <span class="bullet-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="list-text">BCA Fintech & Blockchain</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Suggested Specialisations Section End -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -1394,29 +1729,29 @@
                     }
 
                     /* @media (max-width: 768px) {
-                                                            .fresh-faqs {
-                                                                flex-direction: column;
-                                                                gap: 16px;
-                                                            }
+                                                                .fresh-faqs {
+                                                                    flex-direction: column;
+                                                                    gap: 16px;
+                                                                }
 
-                                                            .fresh-faqs-tabs {
-                                                                flex-direction: row !important;
-                                                                flex-wrap: wrap;
-                                                                justify-content: center;
-                                                                width: 100% !important;
-                                                            }
+                                                                .fresh-faqs-tabs {
+                                                                    flex-direction: row !important;
+                                                                    flex-wrap: wrap;
+                                                                    justify-content: center;
+                                                                    width: 100% !important;
+                                                                }
 
-                                                            .fresh-faqs-tab-btn {
-                                                                flex: 1 1 auto;
-                                                                margin: 5px;
-                                                                white-space: nowrap;
-                                                            }
+                                                                .fresh-faqs-tab-btn {
+                                                                    flex: 1 1 auto;
+                                                                    margin: 5px;
+                                                                    white-space: nowrap;
+                                                                }
 
-                                                            .fresh-faqs-content {
-                                                                max-width: 100% !important;
-                                                                padding-left: 0 !important;
-                                                            }
-                                                        } */
+                                                                .fresh-faqs-content {
+                                                                    max-width: 100% !important;
+                                                                    padding-left: 0 !important;
+                                                                }
+                                                            } */
                     <style>
 
                     /* FAQ container */
