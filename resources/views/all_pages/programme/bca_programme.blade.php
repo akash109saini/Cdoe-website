@@ -71,6 +71,36 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <h3 style="padding-top: 30px;">Specialisations Offered</h3>
+                            <div class="row pt-4">
+                                <div class="col-sm-6">
+                                    <ul class="single-list-wrap">
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BCA AI & Data Science
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BCA Cyber Security & Ethical Hacking
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BCA Cloud Computing & Devops
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 mt-3 mt-sm-0">
+                                    <ul class="single-list-wrap">
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BCA Healthcare IT & Bioinformatics
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BCA Game Design & AR/VR
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> BCA Fintech & Blockchain
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

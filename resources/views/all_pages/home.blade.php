@@ -893,7 +893,7 @@
                                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                 </svg>
                             </div>
-                            <h3>BBA Suggested Specialisations</h3>
+                            <h3>BBA Specialisations</h3>
                         </div>
                         <ul class="specialisation-list">
                             <li>
@@ -953,7 +953,7 @@
                                     <line x1="12" y1="17" x2="12" y2="21"></line>
                                 </svg>
                             </div>
-                            <h3>BCA Suggested Specialisations</h3>
+                            <h3>BCA Specialisations</h3>
                         </div>
                         <ul class="specialisation-list">
                             <li>
