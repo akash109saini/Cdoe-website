@@ -318,7 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Dropdown Menu Styles -->
     <style>
-        /* base */
+        /* ===== DESKTOP THEME DROPDOWN ===== */
         .cus-nav .dropdown {
             position: relative;
         }
@@ -327,107 +327,165 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             position: absolute;
             top: 100%;
             left: 0;
-            min-width: 220px;
-            background: #fff;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
-            border-radius: 12px;
-            padding: 8px 0;
+            min-width: 210px;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            border-top: 3px solid #ff6600;
+            padding: 6px 0;
             opacity: 0;
             visibility: hidden;
             transform: translateY(8px);
-            transition: all .18s ease;
+            transition: all 0.2s ease;
             pointer-events: none;
-            z-index: 1000;
+            z-index: 10000;
         }
 
-        /* show first level on hover */
-        .cus-nav .dropdown:hover>.submenu {
+        .cus-nav .dropdown:hover > .submenu {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
             pointer-events: auto;
         }
 
-        /* nested dropdown anchors layout */
-        .cus-nav .submenu>li>a {
-            display: block;
-            padding: 10px 14px;
-            white-space: nowrap;
+        .cus-nav .submenu > li {
+            list-style: none;
         }
 
-        /* position the second level to the right of the first */
+        .cus-nav .submenu > li > a,
+        .cus-nav .submenu > li > .submenu-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 18px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #333333;
+            text-decoration: none;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .cus-nav .submenu > li > a:hover,
+        .cus-nav .submenu > li.dropdown:hover > .submenu-label {
+            background-color: #fff7f0;
+            color: #ff6600;
+        }
+
+        /* ===== LEVEL-2 FLYOUT (Right Side) ===== */
         .cus-nav .submenu .dropdown {
             position: relative;
         }
 
         .cus-nav .submenu .submenu {
-            top: 0;
-            left: 72%;
-            margin-left: 6px;
-            /* tiny gap between levels */
-            transform: translateY(0);
-            /* no slide for side menus */
+            top: -6px;
+            left: 100%;
+            margin-left: 2px;
+            transform: translateX(6px);
+            border-top: 3px solid #ff6600;
+            min-width: 240px;
         }
 
-        /* show second level when hovering its parent li */
-        .cus-nav .submenu .dropdown:hover>.submenu {
+        .cus-nav .submenu .dropdown:hover > .submenu {
             opacity: 1;
             visibility: visible;
+            transform: translateX(0);
             pointer-events: auto;
         }
 
-        /* IMPORTANT: prevent clipping */
-        .cus-nav,
-        .nav-options {
-            overflow: visible;
+        .cus-nav .submenu li.nav-divider {
+            height: 1px;
+            background: #f0f0f0;
+            margin: 6px 0;
         }
 
+        /* ===== MOBILE SPECIALISATIONS & PROGRAMME UNIQUENESS ===== */
+        .text-orange { color: #ff6600 !important; }
+        .text-navy { color: #0c1e4b !important; }
+
+        .mobile-programme-head {
+            background: #fff8f2 !important;
+            border-left: 3px solid #ff6600 !important;
+            border-radius: 6px !important;
+            margin-bottom: 6px !important;
+            padding: 10px 12px !important;
+        }
+
+        .mobile-spec-list {
+            padding-left: 4px !important;
+            margin-top: 4px !important;
+        }
+
+        .mobile-spec-item {
+            display: flex !important;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px !important;
+            font-size: 0.9rem !important;
+            color: #444 !important;
+            background: #fafafa !important;
+            border-left: 2px solid #ff6600 !important;
+            border-radius: 0 6px 6px 0 !important;
+            margin-bottom: 6px !important;
+            transition: all 0.2s ease !important;
+            text-decoration: none !important;
+        }
+
+        .mobile-spec-item:hover, .mobile-spec-item:active {
+            background: #fff2e8 !important;
+            color: #ff6600 !important;
+            padding-left: 15px !important;
+        }
+
+        .mobile-spec-icon {
+            font-size: 0.75rem;
+            color: #ff6600;
+            transition: transform 0.2s ease;
+        }
+
+        .mobile-spec-item:hover .mobile-spec-icon {
+            transform: translateX(3px);
+        }
+
+        .mobile-degree-item {
+            display: flex !important;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px !important;
+            font-weight: 600 !important;
+            color: #0c1e4b !important;
+            background: #f4f6fa !important;
+            border-radius: 6px !important;
+            margin-bottom: 6px !important;
+            text-decoration: none !important;
+        }
+
+        .mobile-degree-badge {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: #0c1e4b;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* IMPORTANT: prevent clipping */
+        .cus-nav, .nav-options { overflow: visible; }
+
         @media (min-width: 983px) and (max-width: 1261px) {
-            .cus-nav .nav-options {
-                gap: 10px;
-                /* adjust horizontal spacing */
-            }
-
+            .cus-nav .nav-options { gap: 10px; }
             .cus-nav .nav-options a,
-            .cus-nav .dropdown>a {
-                font-size: 14px;
-                /* reduce font size for this range */
-                padding: 8px 12px;
-                /* optional: tighten padding */
-            }
-
-            .cus-nav .submenu {
-                min-width: 190px;
-                /* optional: narrower submenu */
-            }
+            .cus-nav .dropdown > a { font-size: 14px; padding: 8px 12px; }
+            .cus-nav .submenu { min-width: 190px; }
         }
 
         @media (min-width: 993px) and (max-width: 1143px) {
-            .cus-nav .nav-options {
-                gap: 6px;
-                /* tighter spacing */
-                flex-wrap: nowrap;
-                /* keep in one line */
-                margin-left: -40px;
-            }
-
+            .cus-nav .nav-options { gap: 6px; flex-wrap: nowrap; margin-left: -40px; }
             .cus-nav .nav-options a,
-            .cus-nav .dropdown>a {
-                font-size: 13px;
-                /* shrink font */
-                padding: 6px 10px;
-                /* reduce padding */
-            }
-
-            .cus-nav .submenu {
-                min-width: 170px;
-                /* adjust dropdown width if needed */
-            }
-
-            .cus-nav .logo img {
-                max-width: 130px;
-                /* shrink logo a little */
-            }
+            .cus-nav .dropdown > a { font-size: 13px; padding: 6px 10px; }
+            .cus-nav .submenu { min-width: 170px; }
+            .cus-nav .logo img { max-width: 130px; }
         }
     </style>
 </head>
@@ -490,18 +548,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="/">Home</a>
 
             <div class="dropdown">
-                <a>Programmes</a>
+                <a href="{{ route('programme') }}">Programmes</a>
                 <ul class="submenu">
-                    <li><a href="{{ route('bba.programme') }}">BBA</a></li>
-                    <li><a href="{{ route('bca.programme') }}">BCA</a></li>
-                    <li><a href="{{ route('finance.programme') }}">MBA Finance</a></li>
-                    <li><a href="{{ route('hr.programme') }}">MBA HR Management</a></li>
-                    <li><a href="{{ route('marketing.programme') }}">MBA Marketing</a></li>
-                    <li><a href="{{ route('digital_marketing.programme') }}">MBA Digital Marketing</a></li>
-                    <li><a href="{{ route('ib.programme') }}">MBA International Business</a></li>
-                    <li><a href="{{ route('lscm.programme') }}">MBA Logistics & Supply Chain Management</a></li>
-                    <li><a href="{{ route('data_analytics.programme') }}">MBA Data Analytics</a></li>
-                    <li><a href="{{ route('agri_business.programme') }}">MBA Agri Business</a></li>
+                    {{-- MBA with theme flyout specializations --}}
+                    <li class="dropdown">
+                        <span class="submenu-label">
+                            <span>MBA Specialisations</span>
+                            <i class="bi bi-chevron-right" style="font-size: 11px; color: #ff6600;"></i>
+                        </span>
+                        <ul class="submenu">
+                            <li><a href="{{ route('finance.programme') }}">Finance</a></li>
+                            <li><a href="{{ route('hr.programme') }}">Human Resource Management</a></li>
+                            <li><a href="{{ route('marketing.programme') }}">Marketing</a></li>
+                            <li><a href="{{ route('digital_marketing.programme') }}">Digital Marketing</a></li>
+                            <li><a href="{{ route('ib.programme') }}">International Business</a></li>
+                            <li><a href="{{ route('lscm.programme') }}">Logistics & Supply Chain</a></li>
+                            <li><a href="{{ route('data_analytics.programme') }}">Data Analytics</a></li>
+                            <li><a href="{{ route('agri_business.programme') }}">Agri Business</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-divider"></li>
+
+                    {{-- BBA direct link --}}
+                    <li><a href="{{ route('bba.programme') }}">BBA Programme</a></li>
+
+                    {{-- BCA direct link --}}
+                    <li><a href="{{ route('bca.programme') }}">BCA Programme</a></li>
                 </ul>
             </div>
 
@@ -589,15 +662,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Programmes <span class="submenu-arrow">▸</span>
                     </button>
                     <ul class="flourish-submenu">
-                        <li><a href="{{ route('finance.programme') }}">MBA Finance</a></li>
-                        <li><a href="{{ route('hr.programme') }}">MBA HR Management</a></li>
-                        <li><a href="{{ route('marketing.programme') }}">MBA Marketing</a></li>
-                        <li><a href="{{ route('digital_marketing.programme') }}">MBA Digital Marketing</a></li>
-                        <li><a href="{{ route('ib.programme') }}">MBA International Business</a></li>
-                        <li><a href="{{ route('lscm.programme') }}">MBA Logistics & Supply Chain Management</a></li>
-                        <li><a href="{{ route('data_analytics.programme') }}">MBA Data Analytics</a></li>
-                        <li><a href="{{ route('bba.programme') }}">BBA</a></li>
-                        <li><a href="{{ route('bca.programme') }}">BCA</a></li>
+
+                        {{-- MBA group with distinct specialization styling --}}
+                        <li class="flourish-nav-item-has-submenu">
+                            <button type="button" class="flourish-submenu-toggle mobile-programme-head">
+                                <span><strong>MBA Specialisations</strong></span>
+                                <span class="submenu-arrow">▸</span>
+                            </button>
+                            <ul class="flourish-submenu mobile-spec-list">
+                                <li><a href="{{ route('finance.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Finance</a></li>
+                                <li><a href="{{ route('hr.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Human Resource Management</a></li>
+                                <li><a href="{{ route('marketing.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Marketing</a></li>
+                                <li><a href="{{ route('digital_marketing.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Digital Marketing</a></li>
+                                <li><a href="{{ route('ib.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> International Business</a></li>
+                                <li><a href="{{ route('lscm.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Logistics & Supply Chain</a></li>
+                                <li><a href="{{ route('data_analytics.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Data Analytics</a></li>
+                                <li><a href="{{ route('agri_business.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Agri Business</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="mt-2"><a href="{{ route('bba.programme') }}" class="mobile-degree-item"><span>BBA Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
+                        <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item"><span>BCA Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
+
                     </ul>
                 </li>
 

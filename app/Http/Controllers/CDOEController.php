@@ -191,6 +191,11 @@ class CDOEController extends Controller
         return view('all_pages.home', compact('activeBlogs'));
     }
 
+    public function programme()
+    {
+        return view('all_pages.programme');
+    }
+
 
     public function blog()
     {
