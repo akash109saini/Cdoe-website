@@ -2753,8 +2753,7 @@
                                             <div class="card-body">
                                                 Eligibility depends on the program level:<br>
                                                 <b>Undergraduate Programs:</b><br>
-                                                BBA: Completion of 10+2 with a Minimum of 50% Marks.<br>
-                                                BA: Completion of 10+2 from a Recognized Board.<br><br>
+                                                 Completion of 10+2 with a Minimum of 50% Marks.<br>
                                                 <b>Postgraduate Programs:</b><br>
                                                 MBA: A Bachelor’s Degree from a Recognized University is required.<br><br>
                                                 All Applicants must submit Academic Certificates and a Valid
