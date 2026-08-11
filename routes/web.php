@@ -34,3 +34,5 @@ Route::prefix('api/otp')->group(function () {
     Route::post('/verify', [OtpController::class, 'verifyOtp'])->name('otp.verify');
     Route::get('/test-sms', [OtpController::class, 'testConnectivity']); // Diagnostic route
 });
+
+
