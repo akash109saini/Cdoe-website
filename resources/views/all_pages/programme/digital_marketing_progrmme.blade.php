@@ -21,7 +21,7 @@
     <!-- course-single area start -->
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Become a Digital Leader with India's Best <br><span class="highlight" style="color:#ff7900">Online MBA in Digital Marketing</span></h1>
+            <h1 style="font-size:2.5rem;">Online MBA <br><span class="highlight" style="color:#ff7900">Digital Marketing Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
