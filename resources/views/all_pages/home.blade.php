@@ -1031,6 +1031,14 @@
                 slidesPerView: 1,
                 spaceBetween: 30,
                 loop: true,
+
+                // Auto-scroll: cycles through all cards, restarts automatically
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false, // Resumes after user swipes
+                    pauseOnMouseEnter: true,     // Pauses when hovered
+                },
+
                 breakpoints: {
                     768: {
                         slidesPerView: 2,
@@ -1584,8 +1592,365 @@
     </section> --}}
     <!-- ============================ Reel Showcase Section End ============================ -->
 
+    <!-- ========== Blogs Section Start ========== -->
+    <section class="tmu-blogs-section py-5">
+        <style>
+            /* --- Blog Section Styles --- */
+            .tmu-blogs-section {
+                padding: 60px 0 80px 0;
+                background-color: #F8FAFC;
+                /* sleek, very light blue-gray background to separate it from the white sections */
+                position: relative;
+                overflow: hidden;
+            }
 
+            .tmu-blogs-section .tmu-blogs-title-container {
+                text-align: center;
+                margin-bottom: 45px;
+            }
 
+            .tmu-blogs-section .tmu-blogs-title {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: #002D62;
+                /* Navy blue */
+                margin-bottom: 15px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+            .tmu-blogs-section .tmu-blogs-title span.text-orange {
+                color: #FF6B00;
+                /* Vibrant Orange */
+            }
+
+            .tmu-blogs-section .title-underline {
+                display: block;
+                width: 80px;
+                height: 4px;
+                background-color: #FF6B00;
+                margin: 0 auto;
+                border-radius: 2px;
+            }
+
+            /* Swiper Container */
+            .tmu-blogs-swiper-container {
+                position: relative;
+                padding: 0 50px;
+                /* Space for the absolute positioned navigation buttons */
+            }
+
+            .tmu-blogs-swiper {
+                padding: 15px 0 35px 0;
+                /* Add bottom padding for slide shadows and pagination */
+            }
+
+            /* Card Styling */
+            .tmu-blog-card {
+                background: #FFFFFF;
+                border: 1px solid #E4E7EC;
+                border-radius: 12px;
+                padding: 16px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+                transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none !important;
+                /* Make sure links inside don't have underlines */
+            }
+
+            .tmu-blog-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+                border-color: #D0D5DD;
+            }
+
+            /* Image Wrapper */
+            .tmu-blog-card .thumb-wrapper {
+                width: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-bottom: 16px;
+            }
+
+            .tmu-blog-card .thumb-wrapper img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.5s ease;
+            }
+
+            .tmu-blog-card:hover .thumb-wrapper img {
+                transform: scale(1.05);
+            }
+
+            /* Meta list */
+            .tmu-blog-card .meta-list {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 12px;
+                list-style: none;
+                padding: 0;
+            }
+
+            .tmu-blog-card .meta-item {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 13px;
+                color: #475467;
+                font-weight: 500;
+            }
+
+            .tmu-blog-card .meta-item i {
+                font-size: 15px;
+                color: #344054;
+            }
+
+            /* Title */
+            .tmu-blog-card .blog-title {
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 1.4;
+                color: #002D62;
+                /* Navy blue */
+                margin-bottom: 10px;
+                transition: color 0.2s ease;
+                /* CSS line clamp for exactly 2 lines */
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                min-height: 53px;
+                /* Ensure vertical alignment */
+            }
+
+            .tmu-blog-card:hover .blog-title {
+                color: #FF6B00;
+                /* Turns Orange on hover */
+            }
+
+            /* Description */
+            .tmu-blog-card .blog-description {
+                font-size: 14px;
+                line-height: 1.5;
+                color: #475467;
+                margin-bottom: 0;
+                /* CSS line clamp for exactly 2 lines */
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            /* Navigation Buttons */
+            .tmu-blogs-nav-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 48px;
+                height: 48px;
+                background-color: #FFFFFF;
+                border: 1px solid #E4E7EC;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                z-index: 10;
+                transition: all 0.2s ease;
+                color: #344054;
+            }
+
+            .tmu-blogs-nav-btn:hover {
+                background-color: #FF6B00;
+                border-color: #FF6B00;
+                color: #FFFFFF;
+                transform: translateY(-50%) scale(1.05);
+                box-shadow: 0 6px 16px rgba(255, 107, 0, 0.25);
+            }
+
+            .tmu-blogs-nav-btn i {
+                font-size: 18px;
+            }
+
+            .tmu-blogs-prev {
+                left: -10px;
+            }
+
+            .tmu-blogs-next {
+                right: -10px;
+            }
+
+            /* Swiper Pagination */
+            .tmu-blogs-swiper-container .swiper-pagination {
+                bottom: 0;
+            }
+
+            .tmu-blogs-swiper-container .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                background: #98A2B3;
+                opacity: 0.5;
+                transition: all 0.3s ease;
+            }
+
+            .tmu-blogs-swiper-container .swiper-pagination-bullet-active {
+                background: #FF6B00;
+                opacity: 1;
+                width: 24px;
+                border-radius: 4px;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .tmu-blogs-swiper-container {
+                    padding: 0 20px;
+                }
+
+                .tmu-blogs-prev {
+                    left: -5px;
+                }
+
+                .tmu-blogs-next {
+                    right: -5px;
+                }
+
+                .tmu-blogs-section .tmu-blogs-title {
+                    font-size: 1.8rem;
+                }
+
+                .tmu-blogs-nav-btn {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .tmu-blogs-nav-btn i {
+                    font-size: 15px;
+                }
+            }
+        </style>
+
+        <div class="container">
+            <div class="tmu-blogs-title-container">
+                <h2 class="tmu-blogs-title">OUR LATEST <span class="text-orange">BLOGS</span></h2>
+                <span class="title-underline"></span>
+            </div>
+
+            @if(isset($activeBlogs) && $activeBlogs->count() > 0)
+                <div class="tmu-blogs-swiper-container">
+                    <div class="swiper tmu-blogs-swiper">
+                        <div class="swiper-wrapper">
+                            @foreach($activeBlogs as $blog)
+                                <div class="swiper-slide">
+                                    <div class="tmu-blog-card-wrapper">
+                                        <a href="{{ url('blog/' . $blog->n_slug) }}" class="tmu-blog-card">
+                                            <div class="thumb-wrapper">
+                                                <img src="{{ 'https://www.tmu.ac.in/' . ($blog->monaco_image_path ?? 'assets/img/default.jpg') }}"
+                                                    alt="{{ $blog->alt_tag_main_image ?? 'Blog image' }}" loading="lazy">
+                                            </div>
+
+                                            <ul class="meta-list">
+                                                <li class="meta-item">
+                                                    <i class="bi bi-person"></i>
+                                                    <span>{{ $blog->category ?? 'General' }}</span>
+                                                </li>
+                                                <li class="meta-item">
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>{{ \Carbon\Carbon::parse($blog->posted_at)->format('d F. Y') }}</span>
+                                                </li>
+                                            </ul>
+
+                                            <h3 class="blog-title">{{ $blog->post_title }}</h3>
+
+                                            <p class="blog-description">
+                                                {{ strip_tags($blog->post_description) }}
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <div class="tmu-blogs-nav-btn tmu-blogs-prev">
+                        <i class="bi bi-chevron-left"></i>
+                    </div>
+                    <div class="tmu-blogs-nav-btn tmu-blogs-next">
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                </div>
+            @else
+                <div class="text-center py-5">
+                    <p class="text-muted">No latest blogs found at the moment.</p>
+                </div>
+            @endif
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blogsSwiper = new Swiper('.tmu-blogs-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                grabCursor: true,
+                watchSlidesProgress: true,
+
+                // Auto-scroll: advances one card at a time, restarts after all slides
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                // Pagination
+                pagination: {
+                    el: '.tmu-blogs-swiper-container .swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+
+                // Navigation
+                navigation: {
+                    nextEl: '.tmu-blogs-swiper-container .tmu-blogs-next',
+                    prevEl: '.tmu-blogs-swiper-container .tmu-blogs-prev',
+                },
+
+                // Keyboard navigation
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: true,
+                },
+
+                // Responsive Breakpoints
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 24
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- ========== Blogs Section End ========== -->
 
 
     <!-- faq area start -->
@@ -1729,29 +2094,29 @@
                     }
 
                     /* @media (max-width: 768px) {
-                                                                .fresh-faqs {
-                                                                    flex-direction: column;
-                                                                    gap: 16px;
-                                                                }
+                                                                    .fresh-faqs {
+                                                                        flex-direction: column;
+                                                                        gap: 16px;
+                                                                    }
 
-                                                                .fresh-faqs-tabs {
-                                                                    flex-direction: row !important;
-                                                                    flex-wrap: wrap;
-                                                                    justify-content: center;
-                                                                    width: 100% !important;
-                                                                }
+                                                                    .fresh-faqs-tabs {
+                                                                        flex-direction: row !important;
+                                                                        flex-wrap: wrap;
+                                                                        justify-content: center;
+                                                                        width: 100% !important;
+                                                                    }
 
-                                                                .fresh-faqs-tab-btn {
-                                                                    flex: 1 1 auto;
-                                                                    margin: 5px;
-                                                                    white-space: nowrap;
-                                                                }
+                                                                    .fresh-faqs-tab-btn {
+                                                                        flex: 1 1 auto;
+                                                                        margin: 5px;
+                                                                        white-space: nowrap;
+                                                                    }
 
-                                                                .fresh-faqs-content {
-                                                                    max-width: 100% !important;
-                                                                    padding-left: 0 !important;
-                                                                }
-                                                            } */
+                                                                    .fresh-faqs-content {
+                                                                        max-width: 100% !important;
+                                                                        padding-left: 0 !important;
+                                                                    }
+                                                                } */
                     <style>
 
                     /* FAQ container */

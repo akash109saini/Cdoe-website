@@ -30,28 +30,25 @@
                                     </ul> --}}
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6 col-6">
-                        <div class="widget widget_nav_menu">
-                            <h4 class="widget-title">Course</h4>
-                            <ul>
-                                <li><a href="/online-mba-finance">MBA in Finance</a></li>
-                                <li><a href="/online-mba-hr">MBA in HR Management </a></li>
-                                <li><a href="/online-mba-marketing">MBA in Marketing</a></li>
-                                <li><a href="/online-bba">BBA</a></li>
-                                <li><a href="/online-bca">BCA</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-6">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="widget widget_nav_menu">
                             <h4 class="widget-title">Quick Links</h4>
-                            <ul>
-                                <li><a href="/how-to-apply">How to Apply</a></li>
-                                <li><a href="/admissions-rules">Admission Rules</a></li>
-                                <li><a href="/facilities">Facilities</a></li>
-                                <li><a href="{{ route('blog') }}">Blogs</a></li>
-                                <li><a href="{{ asset('/assets/pdf/UGC-Precaution-notice.pdf') }}" target="blank">Mandatory Disclosure</a></li>
-                            </ul>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul>
+                                        <li><a href="/how-to-apply">How to Apply</a></li>
+                                        <li><a href="/admissions-rules">Admission Rules</a></li>
+                                        <li><a href="/facilities">Facilities</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li><a href="{{ route('blog') }}">Blogs</a></li>
+                                        <li><a href="{{ asset('/assets/pdf/UGC-Precaution-notice.pdf') }}" target="_blank">Mandatory Disclosure</a></li>
+                                        <li><a href="{{ route('programme') }}">Programmes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     

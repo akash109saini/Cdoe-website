@@ -40,22 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (parentLi) {
                     const currentlyOpen = parentLi.classList.contains('submenu-is-open');
-                    // Close all others *before* opening the new one
-                    closeOtherSubmenus(parentLi);
-                    // Toggle the current one (if it wasn't the one already open, it will open)
-                    if (!currentlyOpen) {
+
+                    if (currentlyOpen) {
+                        parentLi.classList.remove('submenu-is-open');
+                        // Close nested submenus inside it
+                        parentLi.querySelectorAll('.flourish-nav-item-has-submenu').forEach(child => {
+                            child.classList.remove('submenu-is-open');
+                        });
+                    } else {
+                        // Close unrelated submenus (does not close ancestors)
+                        closeUnrelatedSubmenus(parentLi);
                         parentLi.classList.add('submenu-is-open');
                     }
                 }
             });
         });
 
-        // Helper function to close other submenus
-        function closeOtherSubmenus(currentOpenLi) {
+        // Helper function to close submenus that are not ancestors of the clicked item
+        function closeUnrelatedSubmenus(currentOpenLi) {
             submenuToggles.forEach(toggle => {
                 const li = toggle.closest('.flourish-nav-item-has-submenu');
-                // Close if it's not the current one OR if the current one is being clicked to close
-                if (li !== currentOpenLi || li.classList.contains('submenu-is-open')) {
+                if (li && li !== currentOpenLi && !li.contains(currentOpenLi)) {
                     li.classList.remove('submenu-is-open');
                 }
             });
