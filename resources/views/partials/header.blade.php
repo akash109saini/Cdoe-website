@@ -630,6 +630,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {{-- <a href="{{ route('facilities') }}">Facilities</a> --}}
 
             <a href="{{ route('blog') }}">Blogs</a>
+            <a href="{{ route('contact') }}">Contact Us</a>
             <a href="https://admissions.tmuonline.ac.in/" class="apply-btn">Apply Now</a>
         </div>
     </nav>
@@ -698,6 +699,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </li>
 
                 <li><a href="{{ route('blog') }}">Blogs</a></li>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li>
                 <li class="flourish-nav-item-has-submenu">
                     <button type="button" class="flourish-submenu-toggle">
                         Academics <span class="submenu-arrow">▸</span>

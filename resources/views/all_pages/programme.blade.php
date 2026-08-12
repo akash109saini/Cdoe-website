@@ -512,7 +512,7 @@
         <!-- Meta Results Header -->
         <div class="programmes-meta-header">
             <h2 class="meta-title">
-                Showing <span id="activeCountDisplay">10</span> Online Programmes
+                Showing <span id="activeCountDisplay">10</span> <span id="activeLabelDisplay">Online</span> Programmes
             </h2>
         </div>
 
@@ -809,6 +809,7 @@
         const tabBtns = document.querySelectorAll('.tab-btn');
         const cardCols = document.querySelectorAll('.card-column');
         const countDisplay = document.getElementById('activeCountDisplay');
+        const labelDisplay = document.getElementById('activeLabelDisplay');
         const emptyState = document.getElementById('noResultsStateBox');
         const resetBtn = document.getElementById('resetFiltersBtn');
 
@@ -830,6 +831,16 @@
             });
 
             countDisplay.textContent = matchesCount;
+
+            if (labelDisplay) {
+                if (activeFilter === 'pg') {
+                    labelDisplay.textContent = 'Postgraduate';
+                } else if (activeFilter === 'ug') {
+                    labelDisplay.textContent = 'Undergraduate';
+                } else {
+                    labelDisplay.textContent = 'Online';
+                }
+            }
 
             if (matchesCount === 0) {
                 emptyState.style.display = 'block';

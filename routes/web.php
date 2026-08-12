@@ -26,6 +26,8 @@ Route::get('/mandatory-disclosure', [CDOEController::class, 'mandatory_disclosur
 Route::get('/admissions-rules', [CDOEController::class, 'admissions_rules'])->name('admissions.rules');
 Route::get('/how-to-apply', [CDOEController::class, 'how_to_apply'])->name('how.to.apply');
 Route::get('/facilities', [CDOEController::class, 'facilities'])->name('facilities');
+Route::get('/contact-us', [CDOEController::class, 'contact'])->name('contact');
+Route::post('/contact-us', [CDOEController::class, 'storeContact'])->name('contact.store');
 Route::get('/blog/{slug}', [CDOEController::class, 'showBlog'])->name('show.blog');
 
 // OTP API Routes
