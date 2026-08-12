@@ -567,9 +567,7 @@
                         <i class="bi bi-telephone-fill"></i>
                     </div>
                     <h4>Admission Helplines</h4>
-                    <p class="mb-1">Toll Free: <a href="tel:18002701490" class="fw-bold text-dark">1800 270 1490</a></p>
                     <p class="mb-1">Direct Call: <a href="tel:+918679007289">+91 8679007289</a></p>
-                    <p class="mb-0">Counselor Support: <a href="tel:+919520942111">+91 9520942111</a></p>
                 </div>
             </div>
 
@@ -581,9 +579,7 @@
                     </div>
                     <h4>Official Mail Desk</h4>
                     <p class="mb-1">General Inquiries:</p>
-                    <p class="mb-2"><a href="mailto:director.cdoe@tmu.ac.in" class="fw-bold">director.cdoe@tmu.ac.in</a></p>
-                    <p class="mb-1">Admissions Desk:</p>
-                    <p class="mb-0"><a href="mailto:admissions@tmuonline.ac.in">admissions@tmuonline.ac.in</a></p>
+                    <p class="mb-2"><a href="mailto: enquiry@tmuonline.ac.in" class="fw-bold"> enquiry@tmuonline.ac.in</a></p>
                 </div>
             </div>
 
@@ -611,12 +607,11 @@
         <div class="row g-4 align-items-stretch">
             
             <!-- Left Column: Enquiry Form -->
-            <div class="col-lg-7">
+            <!-- <div class="col-lg-7">
                 <div class="contact-form-box">
                     <h3 class="form-heading-title">Send Us An Enquiry</h3>
                     <p class="form-heading-desc">Submit your details below. An expert academic advisor will connect with you to guide you through programme details, fees, and admission procedures.</p>
 
-                    <!-- Dynamic Alert Container -->
                     <div id="alertContainer">
                         @if(session('success'))
                             <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #10B981 !important; background: #ECFDF5; color: #065F46; border-radius: 12px;">
@@ -643,7 +638,6 @@
                         @csrf
                         
                         <div class="row">
-                            <!-- Full Name -->
                             <div class="col-md-6 form-group-custom">
                                 <label for="name">Full Name <span class="text-danger">*</span></label>
                                 <div class="form-input-container">
@@ -653,7 +647,6 @@
                                 <small class="text-danger mt-1 d-block js-error" id="error-name">@error('name') {{ $message }} @enderror</small>
                             </div>
 
-                            <!-- Mobile Number -->
                             <div class="col-md-6 form-group-custom">
                                 <label for="mobile">Mobile Number <span class="text-danger">*</span></label>
                                 <div class="form-input-container">
@@ -665,7 +658,6 @@
                         </div>
 
                         <div class="row">
-                            <!-- Email Address -->
                             <div class="col-md-6 form-group-custom">
                                 <label for="email">Email Address <span class="text-danger">*</span></label>
                                 <div class="form-input-container">
@@ -675,7 +667,6 @@
                                 <small class="text-danger mt-1 d-block js-error" id="error-email">@error('email') {{ $message }} @enderror</small>
                             </div>
 
-                            <!-- Interested Programme -->
                             <div class="col-md-6 form-group-custom">
                                 <label for="programme">Interested Programme</label>
                                 <div class="form-input-container">
@@ -695,7 +686,6 @@
                             </div>
                         </div>
 
-                        <!-- Message -->
                         <div class="form-group-custom">
                             <label for="message">Message / Specific Questions <span class="text-danger">*</span></label>
                             <div class="form-input-container textarea-container">
@@ -705,31 +695,19 @@
                             <small class="text-danger mt-1 d-block js-error" id="error-message">@error('message') {{ $message }} @enderror</small>
                         </div>
 
-                        <!-- Submit Button -->
                         <button type="submit" class="btn-submit-custom mt-2" id="btnSubmit">
                             <span>Submit Enquiry</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Right Column: Interactive Map & Direct Helpline Pill -->
-            <div class="col-lg-5">
+            <div class="col-lg-12">
                 <div class="map-box-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.5674178737963!2d78.65602607518603!3d28.821962275453853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afdf565c6bc21%3A0xefb0ce367e3f2602!2sTeerthanker%20Mahaveer%20University!5e0!3m2!1sen!2sjp!4v1786448447994!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
                     <div class="map-content-footer">
-                        <!-- Direct Hotline Highlight Box -->
-                        <div class="hotline-highlight-box">
-                            <div class="hotline-icon">
-                                <i class="bi bi-telephone-outbound-fill"></i>
-                            </div>
-                            <div class="hotline-details">
-                                <span>Toll-Free Helpline</span>
-                                <a href="tel:18002701490">1800 270 1490</a>
-                            </div>
-                        </div>
-
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 pt-2">
                             <div>
                                 <h6 class="fw-bold text-dark mb-0" style="font-size: 0.95rem;">TMU Campus Moradabad</h6>
