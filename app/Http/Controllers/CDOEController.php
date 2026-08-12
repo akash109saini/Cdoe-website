@@ -11,7 +11,7 @@ class CDOEController extends Controller
     private function getMockBlogs()
     {
         $blogs = [];
-        
+
         $mockData = [
             [
                 'id' => 1,
@@ -179,7 +179,7 @@ class CDOEController extends Controller
                 ->orderBy('id', 'DESC')
                 ->limit(5)
                 ->get();
-            
+
             if ($activeBlogs->isEmpty()) {
                 $activeBlogs = $this->getMockBlogs()->take(5);
             }
@@ -205,7 +205,7 @@ class CDOEController extends Controller
                 ->orderBy('posted_at', 'DESC')
                 ->orderBy('id', 'DESC')
                 ->get();
-                
+
             if ($activeBlogs->isEmpty()) {
                 $activeBlogs = $this->getMockBlogs();
             }
@@ -241,7 +241,7 @@ class CDOEController extends Controller
                 abort(404);
             }
             $blog->posted_at = Carbon::parse($blog->posted_at)->format('d F, Y');
-            
+
             $recentBlogs = $mockBlogs->filter(function ($item) use ($slug) {
                 return $item->n_slug !== $slug;
             })->take(3)->map(function ($item) {
@@ -327,5 +327,83 @@ class CDOEController extends Controller
     public function facilities()
     {
         return view('all_pages.facilities');
+    }
+
+    public static function getProgrammes()
+    {
+        $defaultProgrammes = [
+            'MBA in Finance',
+            'MBA in HR Management',
+            'MBA in Marketing',
+            'MBA in Digital Marketing',
+            'MBA in International Business',
+            'MBA in Logistics & Supply Chain',
+            'MBA in Data Analytics',
+            'MBA in Agri Business',
+            'Online BBA',
+            'Online BCA',
+        ];
+
+        try {
+            if (\Illuminate\Support\Facades\Schema::hasTable('programmes')) {
+                $dbProgrammes = \Illuminate\Support\Facades\DB::table('programmes')
+                    ->pluck('title')
+                    ->filter()
+                    ->toArray();
+
+                if (!empty($dbProgrammes)) {
+                    $defaultProgrammes = array_unique(array_merge($defaultProgrammes, $dbProgrammes));
+                }
+            }
+        } catch (\Exception $e) {
+            // Fallback gracefully to default list if DB query fails
+        }
+
+        return array_values($defaultProgrammes);
+    }
+
+    public function contact()
+    {
+        $programmes = self::getProgrammes();
+        return view('all_pages.contact', compact('programmes'));
+    }
+
+    public function storeContact(\Illuminate\Http\Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'mobile' => 'required|string|max:20',
+            'programme' => 'nullable|string|max:255',
+            'message' => 'required|string|max:2000',
+        ]);
+
+        try {
+            if (!\Illuminate\Support\Facades\Schema::hasTable('contact_enquiries')) {
+                \Illuminate\Support\Facades\Schema::create('contact_enquiries', function (\Illuminate\Database\Schema\Blueprint $table) {
+                    $table->id();
+                    $table->string('name');
+                    $table->string('email');
+                    $table->string('mobile', 20);
+                    $table->string('programme')->nullable();
+                    $table->text('message');
+                    $table->string('ip_address', 45)->nullable();
+                    $table->timestamps();
+                });
+            }
+
+            \App\Models\ContactEnquiry::create([
+                'name' => $validated['name'],
+                'email' => $validated['email'],
+                'mobile' => $validated['mobile'],
+                'programme' => $validated['programme'] ?? null,
+                'message' => $validated['message'],
+                'ip_address' => $request->ip(),
+            ]);
+
+            return redirect()->back()->with('success', 'Thank you for reaching out! Your enquiry has been submitted successfully. Our admissions team will contact you shortly.');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Something went wrong while submitting your enquiry. Please try again or call our helpline directly.');
+        }
     }
 }
