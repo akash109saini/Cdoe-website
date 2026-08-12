@@ -616,29 +616,30 @@
                     <h3 class="form-heading-title">Send Us An Enquiry</h3>
                     <p class="form-heading-desc">Submit your details below. An expert academic advisor will connect with you to guide you through programme details, fees, and admission procedures.</p>
 
-                    <!-- Flash Success Alert -->
-                    @if(session('success'))
-                        <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #10B981 !important; background: #ECFDF5; color: #065F46; border-radius: 12px;">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="bi bi-check-circle-fill fs-5"></i>
-                                <div><strong>Success!</strong> {{ session('success') }}</div>
+                    <!-- Dynamic Alert Container -->
+                    <div id="alertContainer">
+                        @if(session('success'))
+                            <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #10B981 !important; background: #ECFDF5; color: #065F46; border-radius: 12px;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-check-circle-fill fs-5"></i>
+                                    <div><strong>Success!</strong> {{ session('success') }}</div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
+                        @endif
 
-                    <!-- Flash Error Alert -->
-                    @if(session('error'))
-                        <div class="alert alert-danger alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #EF4444 !important; background: #FEF2F2; color: #991B1B; border-radius: 12px;">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="bi bi-exclamation-triangle-fill fs-5"></i>
-                                <div><strong>Error!</strong> {{ session('error') }}</div>
+                        @if(session('error'))
+                            <div class="alert alert-danger alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #EF4444 !important; background: #FEF2F2; color: #991B1B; border-radius: 12px;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                                    <div><strong>Error!</strong> {{ session('error') }}</div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
+                        @endif
+                    </div>
 
-                    <form action="{{ route('contact.store') }}" method="POST">
+                    <form id="contactForm" action="{{ route('contact.store') }}" method="POST">
                         @csrf
                         
                         <div class="row">
@@ -649,7 +650,7 @@
                                     <i class="bi bi-person-fill input-icon"></i>
                                     <input type="text" name="name" id="name" class="corporate-input" placeholder="e.g. Rahul Sharma" value="{{ old('name') }}" required>
                                 </div>
-                                @error('name') <small class="text-danger mt-1 d-block">{{ $message }}</small> @enderror
+                                <small class="text-danger mt-1 d-block js-error" id="error-name">@error('name') {{ $message }} @enderror</small>
                             </div>
 
                             <!-- Mobile Number -->
@@ -659,7 +660,7 @@
                                     <i class="bi bi-telephone-fill input-icon"></i>
                                     <input type="tel" name="mobile" id="mobile" class="corporate-input" placeholder="e.g. 9876543210" value="{{ old('mobile') }}" required>
                                 </div>
-                                @error('mobile') <small class="text-danger mt-1 d-block">{{ $message }}</small> @enderror
+                                <small class="text-danger mt-1 d-block js-error" id="error-mobile">@error('mobile') {{ $message }} @enderror</small>
                             </div>
                         </div>
 
@@ -671,7 +672,7 @@
                                     <i class="bi bi-envelope-fill input-icon"></i>
                                     <input type="email" name="email" id="email" class="corporate-input" placeholder="e.g. rahul@example.com" value="{{ old('email') }}" required>
                                 </div>
-                                @error('email') <small class="text-danger mt-1 d-block">{{ $message }}</small> @enderror
+                                <small class="text-danger mt-1 d-block js-error" id="error-email">@error('email') {{ $message }} @enderror</small>
                             </div>
 
                             <!-- Interested Programme -->
@@ -690,7 +691,7 @@
                                     </select>
                                     <i class="bi bi-chevron-down select-chevron"></i>
                                 </div>
-                                @error('programme') <small class="text-danger mt-1 d-block">{{ $message }}</small> @enderror
+                                <small class="text-danger mt-1 d-block js-error" id="error-programme">@error('programme') {{ $message }} @enderror</small>
                             </div>
                         </div>
 
@@ -701,11 +702,11 @@
                                 <i class="bi bi-chat-left-text-fill input-icon"></i>
                                 <textarea name="message" id="message" class="corporate-input" placeholder="Type your questions or queries here..." required>{{ old('message') }}</textarea>
                             </div>
-                            @error('message') <small class="text-danger mt-1 d-block">{{ $message }}</small> @enderror
+                            <small class="text-danger mt-1 d-block js-error" id="error-message">@error('message') {{ $message }} @enderror</small>
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" class="btn-submit-custom mt-2">
+                        <button type="submit" class="btn-submit-custom mt-2" id="btnSubmit">
                             <span>Submit Enquiry</span>
                             <i class="bi bi-arrow-right"></i>
                         </button>
@@ -786,6 +787,95 @@
             input.addEventListener('change', checkValue);
             input.addEventListener('blur', checkValue);
         });
+
+        // AJAX Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const alertContainer = document.getElementById('alertContainer');
+        const btnSubmit = document.getElementById('btnSubmit');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Clear previous error messages & alerts
+                if (alertContainer) alertContainer.innerHTML = '';
+                document.querySelectorAll('.js-error').forEach(el => el.textContent = '');
+
+                // Disable submit button & show spinner state
+                const originalBtnHtml = btnSubmit.innerHTML;
+                btnSubmit.disabled = true;
+                btnSubmit.innerHTML = '<span>Submitting...</span> <span class="spinner-border spinner-border-sm ms-1" role="status" aria-hidden="true"></span>';
+
+                const formData = new FormData(contactForm);
+                const csrfTokenInput = contactForm.querySelector('input[name="_token"]');
+
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'Accept': 'application/json',
+                        'X-CSRF-TOKEN': csrfTokenInput ? csrfTokenInput.value : ''
+                    }
+                })
+                .then(async response => {
+                    const data = await response.json().catch(() => ({}));
+
+                    if (response.ok && data.success) {
+                        if (alertContainer) {
+                            alertContainer.innerHTML = `
+                                <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #10B981 !important; background: #ECFDF5; color: #065F46; border-radius: 12px;">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="bi bi-check-circle-fill fs-5"></i>
+                                        <div><strong>Success!</strong> ${data.message}</div>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            `;
+                        }
+                        contactForm.reset();
+                        if (alertContainer) alertContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    } else if (response.status === 422 && data.errors) {
+                        Object.keys(data.errors).forEach(field => {
+                            const errorEl = document.getElementById('error-' + field);
+                            if (errorEl) {
+                                errorEl.textContent = data.errors[field][0];
+                            }
+                        });
+                    } else {
+                        const errorMsg = data.message || 'Something went wrong while submitting your enquiry. Please try again.';
+                        if (alertContainer) {
+                            alertContainer.innerHTML = `
+                                <div class="alert alert-danger alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #EF4444 !important; background: #FEF2F2; color: #991B1B; border-radius: 12px;">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                                        <div><strong>Error!</strong> ${errorMsg}</div>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            `;
+                        }
+                    }
+                })
+                .catch(error => {
+                    if (alertContainer) {
+                        alertContainer.innerHTML = `
+                            <div class="alert alert-danger alert-dismissible fade show border-0 shadow-sm mb-4" role="alert" style="border-left: 4px solid #EF4444 !important; background: #FEF2F2; color: #991B1B; border-radius: 12px;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                                    <div><strong>Error!</strong> Connection error. Please try again.</div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        `;
+                    }
+                })
+                .finally(() => {
+                    btnSubmit.disabled = false;
+                    btnSubmit.innerHTML = originalBtnHtml;
+                });
+            });
+        }
     });
 </script>
 
