@@ -401,9 +401,27 @@ class CDOEController extends Controller
                 'ip_address' => $request->ip(),
             ]);
 
-            return redirect()->back()->with('success', 'Thank you for reaching out! Your enquiry has been submitted successfully. Our admissions team will contact you shortly.');
+            $successMsg = 'Thank you for reaching out! Your enquiry has been submitted successfully. Our admissions team will contact you shortly.';
+
+            if ($request->ajax() || $request->wantsJson()) {
+                return response()->json([
+                    'success' => true,
+                    'message' => $successMsg,
+                ]);
+            }
+
+            return redirect()->back()->with('success', $successMsg);
         } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'Something went wrong while submitting your enquiry. Please try again or call our helpline directly.');
+            $errorMsg = 'Something went wrong while submitting your enquiry. Please try again or call our helpline directly.';
+
+            if ($request->ajax() || $request->wantsJson()) {
+                return response()->json([
+                    'success' => false,
+                    'message' => $errorMsg,
+                ], 500);
+            }
+
+            return redirect()->back()->with('error', $errorMsg);
         }
     }
 }
