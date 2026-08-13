@@ -712,9 +712,9 @@
                             <div>
                                 <h6 class="fw-bold text-dark mb-0" style="font-size: 0.95rem;">TMU Campus Moradabad</h6>
                                 <small class="text-muted d-block mb-1">Delhi Road, NH-9, Uttar Pradesh 244001</small>
-                                <a href="https://maps.app.goo.gl/bFZpPcBhheLFtWMx6" target="_blank" rel="noopener noreferrer" class="btn-get-directions">
+                                <!-- <a href="https://maps.app.goo.gl/bFZpPcBhheLFtWMx6" target="_blank" rel="noopener noreferrer" class="btn-get-directions">
                                     <i class="bi bi-box-arrow-up-right"></i> Get Directions
-                                </a>
+                                </a> -->
                             </div>
 
                             <!-- Vector Social Cards -->
