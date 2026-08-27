@@ -37,7 +37,7 @@
                     {{-- Section 1: Description --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <p>The Online MBA in Agri Business Programme at TMU is designed for learners who want to
+                            <p>The <a href="https://www.tmuonline.ac.in/blog/online-mba-in-agri-business" target="_blank" style="color: #ff7900; font-weight: 600;">Online MBA in Agri Business</a> Programme at TMU is designed for learners who want to
                                 strengthen their understanding of agricultural markets, business management, and modern
                                 agribusiness practices while benefiting from the flexibility of online education. The
                                 programme focuses on preparing professionals to address opportunities and challenges across
