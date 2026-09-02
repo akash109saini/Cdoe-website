@@ -531,7 +531,16 @@ nav.shrink {
   justify-content: space-between;
   align-items: center;
   min-height: 45px;
+  gap: 10px;
   /* Adjusted min-height */
+}
+
+/* Mobile Apply Button custom adjustments */
+.mobile-apply-btn {
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .flourish-navbar-logo {
