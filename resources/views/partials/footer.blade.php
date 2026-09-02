@@ -81,6 +81,7 @@
                                     <li><a href="/how-to-apply">How to Apply</a></li>
                                     <li><a href="/admissions-rules">Admission Rules</a></li>
                                     <li><a href="/facilities">Facilities</a></li>
+                                    <li><a href="/programme">Programmes</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
@@ -89,7 +90,7 @@
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                     <li><a href="{{ route('mandatory.disclosure') }}"
                                             target="_blank">Mandatory Disclosure</a></li>
-                                    <li><a href="{{ route('programme') }}">Programmes</a></li>
+                                    <!-- <li><a href="{{ route('programme') }}">Programmes</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -120,7 +121,7 @@
                             <li><i class="fa fa-map-marker"></i> Delhi Road, NH9, Moradabad, Uttar Pradesh 244001
                             </li>
                             <li><i class="fa fa-envelope"></i>director.cdoe@tmu.ac.in</li>
-                            <li><i class="fa fa-phone"></i> +91 8679007289</li>
+                            <li><i class="fa fa-phone"></i> +91 9520932111, +91 9520942111</li>
                             <!-- <li><i class="fa fa-phone"></i> +91 9520942111</li> -->
                         </ul>
 

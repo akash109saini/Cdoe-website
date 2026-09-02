@@ -644,6 +644,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="{{ asset('/assets/img/logos/logo.webp') }}" alt="TMU Logo" class="logo">
             </a>
 
+            <!-- Add Mobile Apply Button Here -->
+            <a href="https://admissions.tmuonline.ac.in/" class="apply-btn mobile-apply-btn">Apply Now</a>
+
             <!-- Toggle Button -->
             <button class="flourish-navbar-toggle-btn" id="flourishNavbarToggle" aria-label="Toggle Menu"
                 aria-expanded="false" aria-controls="flourishNavbarMenu">
