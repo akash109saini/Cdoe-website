@@ -72,7 +72,7 @@
 }
 
 /* --- Individual Reel Slide & Item --- */
-.swiper-slide {
+.tmu-reel-showcase .swiper-slide {
     /* Remove opacity/scale effects for a bolder look */
     /* opacity: 1; */
     /* transform: scale(1); */
@@ -83,14 +83,14 @@
      box-sizing: border-box; /* Important for layout calculations */
 }
 
-.swiper-slide-active {
+.tmu-reel-showcase .swiper-slide-active {
     opacity: 1;
     transform: scale(1);
     z-index: 2; /* Ensure active slide is slightly above neighbours if overlapping */
 }
 /* Optional: slightly enhance visible neighbours */
-.swiper-slide-next,
-.swiper-slide-prev {
+.tmu-reel-showcase .swiper-slide-next,
+.tmu-reel-showcase .swiper-slide-prev {
      opacity: 0.8;
      transform: scale(0.95);
 }
@@ -219,16 +219,16 @@
      .tmu-reel-bg-el-1 { left: -20vw; bottom: -20vw; }
      .tmu-reel-bg-el-2 { display: none; } /* Hide one on smaller screens */
 
-    .swiper-slide { /* Less aggressive scaling on mobile */
+    .tmu-reel-showcase .swiper-slide { /* Less aggressive scaling on mobile */
         transform: scale(0.95);
         opacity: 0.8;
     }
-    .swiper-slide-active {
+    .tmu-reel-showcase .swiper-slide-active {
         transform: scale(1);
         opacity: 1;
     }
-     .swiper-slide-next,
-     .swiper-slide-prev {
+     .tmu-reel-showcase .swiper-slide-next,
+     .tmu-reel-showcase .swiper-slide-prev {
         transform: scale(0.95);
          opacity: 0.85;
     }

@@ -406,18 +406,26 @@
 
                         <!-- Slide 1: Finance -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m1.webp') }}"
-                                        alt="Online MBA in Finance Specialisation" class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m1.webp') }}" alt="MBA in Finance" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in Finance</h3>
-                                    <p class="course-card-fc-text">Gain advanced knowledge in financial management,
-                                        investment strategies, and corporate finance to excel in the dynamic
-                                        world of finance.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in Finance</h3>
+                                        <p class="tmu-card-desc">Gain advanced knowledge in financial management, investment strategies, and corporate finance to excel in the dynamic world of finance.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('finance.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -425,19 +433,26 @@
 
                         <!-- Slide 2: Human Resource Management -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m2.webp') }}"
-                                        alt="Online MBA in Human Resource Management Specialisation"
-                                        class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m2.webp') }}" alt="MBA in HR Management" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in HR Management</h3>
-                                    <p class="course-card-fc-text">Equip yourself with essential skills in talent
-                                        acquisition, employee relations, performance management, and strategic
-                                        HR planning.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in HR Management</h3>
+                                        <p class="tmu-card-desc">Equip yourself with essential skills in talent acquisition, employee relations, performance management, and strategic HR planning.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('hr.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -445,18 +460,26 @@
 
                         <!-- Slide 3: Marketing -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m3.webp') }}"
-                                        alt="Online MBA in Marketing Specialisation" class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m3.webp') }}" alt="MBA in Marketing" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in Marketing</h3>
-                                    <p class="course-card-fc-text">Master modern marketing strategies, digital
-                                        marketing, consumer behavior, and brand management to lead in a
-                                        competitive global market.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in Marketing</h3>
+                                        <p class="tmu-card-desc">Master modern marketing strategies, digital marketing, consumer behavior, and brand management to lead in a competitive global market.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('marketing.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -464,17 +487,26 @@
 
                         <!-- Slide 4: International Business -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m4.jpg') }}"
-                                        alt="MBA in International Business" class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m4.jpg') }}" alt="MBA in International Business" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in International Business</h3>
-                                    <p class="course-card-fc-text">Gain global leadership skills, master international
-                                        trade, and advance your career in multinational companies.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in International Business</h3>
+                                        <p class="tmu-card-desc">Gain global leadership skills, master international trade, and advance your career in multinational companies.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('ib.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -482,18 +514,26 @@
 
                         <!-- Slide 5: Data Analytics -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m5.png') }}"
-                                        alt="Online MBA in Data Analytics Specialisation" class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m5.png') }}" alt="MBA in Data Analytics" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in Data Analytics</h3>
-                                    <p class="course-card-fc-text">Transform data into strategic business decisions with
-                                        TMU’s Online MBA in Data Analytics. Gain expertise in analytics, business
-                                        intelligence, and data-driven management.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in Data Analytics</h3>
+                                        <p class="tmu-card-desc">Transform data into strategic business decisions with TMU’s Online MBA in Data Analytics. Gain expertise in analytics, business intelligence, and data-driven management.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('data_analytics.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -501,19 +541,26 @@
 
                         <!-- Slide 6: Logistics & Supply Chain Management -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m6.png') }}"
-                                        alt="Online MBA in Logistics & Supply Chain Management Specialisation"
-                                        class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m6.png') }}" alt="MBA in Logistics & Supply Chain Management" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in Logistics & Supply Chain Management</h3>
-                                    <p class="course-card-fc-text">Advance your career in operations, logistics, and global
-                                        supply networks. Develop strategic, managerial, and analytical capabilities designed
-                                        for modern business environments.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in Logistics & Supply Chain Management</h3>
+                                        <p class="tmu-card-desc">Advance your career in operations, logistics, and global supply networks. Develop strategic, managerial, and analytical capabilities designed for modern business environments.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('lscm.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -521,18 +568,26 @@
 
                         <!-- Slide 7: Digital Marketing -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m7.png') }}"
-                                        alt="Online MBA in Digital Marketing Specialisation" class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m7.png') }}" alt="MBA in Digital Marketing" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in Digital Marketing</h3>
-                                    <p class="course-card-fc-text">Develop expertise in modern marketing strategies, online
-                                        branding, performance marketing, and customer engagement. Learn from an
-                                        industry-focused curriculum.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in Digital Marketing</h3>
+                                        <p class="tmu-card-desc">Develop expertise in modern marketing strategies, online branding, performance marketing, and customer engagement. Learn from an industry-focused curriculum.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('digital_marketing.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -540,18 +595,26 @@
 
                         <!-- Slide 8: Agri Business -->
                         <div class="swiper-slide d-flex align-items-stretch">
-                            <div class="course-card-fc">
-                                <div class="course-card-fc-img-container">
-                                    <img src="{{ asset('/assets/img/programmes/m8.png') }}"
-                                        alt="Online MBA in Agri Business Specialisation" class="course-card-fc-img" />
+                            <div class="tmu-prog-card">
+                                <div class="tmu-card-media">
+                                    <span class="tmu-badge pg">Postgraduate</span>
+                                    <img src="{{ asset('/assets/img/programmes/m8.png') }}" alt="MBA in Agri Business" loading="lazy">
+                                    <div class="media-overlay"></div>
                                 </div>
-                                <div class="course-card-fc-body">
-                                    <h3 class="course-card-fc-title">MBA in Agri Business</h3>
-                                    <p class="course-card-fc-text">Build leadership and management expertise for the
-                                        agricultural sector. Develop strategic, analytical, and business management skills
-                                        designed for the agribusiness landscape.</p>
-                                    <div class="course-card-fc-meta">
-                                        <span class="duration-tag-fc">Duration: <strong>2 Years</strong></span>
+                                <div class="tmu-card-body">
+                                    <div>
+                                        <div class="tmu-card-meta">
+                                            <span class="meta-item"><i class="bi bi-clock"></i> 2 Years</span>
+                                            <span class="meta-item"><i class="bi bi-mortarboard"></i> Master's Degree</span>
+                                        </div>
+                                        <h3 class="tmu-card-title">MBA in Agri Business</h3>
+                                        <p class="tmu-card-desc">Build leadership and management expertise for the agricultural sector. Develop strategic, analytical, and business management skills designed for the agribusiness landscape.</p>
+                                    </div>
+                                    <div class="tmu-card-footer">
+                                        <a href="{{ route('agri_business.programme') }}" class="tmu-btn-explore">
+                                            <span>Explore Programme</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
