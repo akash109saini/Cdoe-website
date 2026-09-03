@@ -1087,8 +1087,78 @@
     </section>
     <!-- Suggested Specialisations Section End -->
 
+    <!-- Video Testimonials Section Start -->
+    <section class="video-testimonials-section">
+        <div class="container">
+            <div class="video-testimonials-header text-center mb-4">
+                <h2 class="video-testimonials-title">
+                    <span class="orange-text">VIDEO</span>
+                    <span class="navy-text">TESTIMONIAL</span>
+                </h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="single-video-testimonial-card" id="singleVideoCard">
+                        <!-- Initial Poster View (Clean Thumbnail + Info Overlay, Invisible Tap to Start) -->
+                        <div class="svt-poster-view" id="svtPosterView">
+                            <img src="https://img.youtube.com/vi/7qcnym58Tq8/maxresdefault.jpg" alt="Rakhi Jain Testimonial" class="svt-poster-img" loading="lazy">
+                            <div class="svt-overlay"></div>
+
+                            <div class="svt-info-badge">
+                                <span class="svt-badge-tag">Student Story</span>
+                                <h3 class="svt-student-name">Rakhi Jain</h3>
+                                <p class="svt-student-course"><i class="bi bi-mortarboard-fill me-1"></i> Online BBA</p>
+                            </div>
+                        </div>
+
+                        <!-- Inline Embedded Video Container (YouTube API Integration) -->
+                        <div class="svt-video-container" id="svtVideoContainer">
+                            <div id="svtPlayerElement"></div>
+                            <!-- Invisible Touch Controller to Play/Pause on Mobile & Desktop -->
+                            <div class="svt-touch-controller" id="svtTouchController" aria-label="Toggle Play/Pause Video"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Testimonials Section End -->
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
+        let svtPlayer = null;
+        let isSvtPlayerReady = false;
+        let shouldPlayWhenReady = false;
+
+        function onYouTubeIframeAPIReady() {
+            svtPlayer = new YT.Player('svtPlayerElement', {
+                height: '100%',
+                width: '100%',
+                videoId: '7qcnym58Tq8',
+                playerVars: {
+                    'autoplay': 0,
+                    'controls': 1,
+                    'rel': 0,
+                    'fs': 0,
+                    'modestbranding': 1,
+                    'playsinline': 1,
+                    'enablejsapi': 1,
+                    'vq': 'hd720'
+                },
+                events: {
+                    'onReady': function () {
+                        isSvtPlayerReady = true;
+                        if (shouldPlayWhenReady && svtPlayer) {
+                            svtPlayer.playVideo();
+                        }
+                    }
+                }
+            });
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
             const swiper = new Swiper('.specializedCoursesSwiper', {
                 slidesPerView: 1,
@@ -1103,20 +1173,64 @@
                 },
 
                 breakpoints: {
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    992: {
-                        slidesPerView: 3,
-                        spaceBetween: 30
-                    }
+                    576: { slidesPerView: 2, spaceBetween: 20 },
+                    992: { slidesPerView: 3, spaceBetween: 24 },
+                    1200: { slidesPerView: 4, spaceBetween: 24 }
                 },
+
                 navigation: {
                     nextEl: '.swiper-button-next-custom',
                     prevEl: '.swiper-button-prev-custom',
                 },
             });
+
+            // Video elements & interactive touch controls
+            const svtPosterView = document.getElementById('svtPosterView');
+            const svtTouchController = document.getElementById('svtTouchController');
+
+            const startVideo = function (e) {
+                if (e) e.stopPropagation();
+                if (svtPosterView) svtPosterView.style.display = 'none';
+                if (svtTouchController) svtTouchController.style.display = 'flex';
+
+                if (svtPlayer && isSvtPlayerReady) {
+                    svtPlayer.playVideo();
+                } else {
+                    shouldPlayWhenReady = true;
+                }
+            };
+
+            if (svtPosterView) {
+                svtPosterView.addEventListener('click', startVideo);
+            }
+
+            // Interactive Play / Pause toggle on touch/click
+            const togglePlayPause = function () {
+                if (!svtPlayer || typeof svtPlayer.getPlayerState !== 'function') return;
+                const state = svtPlayer.getPlayerState();
+                if (state === YT.PlayerState.PLAYING) {
+                    svtPlayer.pauseVideo();
+                } else {
+                    svtPlayer.playVideo();
+                }
+            };
+
+            if (svtTouchController) {
+                let lastTouch = 0;
+                svtTouchController.addEventListener('click', function (e) {
+                    const now = Date.now();
+                    if (now - lastTouch < 400) return;
+                    togglePlayPause();
+                });
+                svtTouchController.addEventListener('touchend', function (e) {
+                    lastTouch = Date.now();
+                    if (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                    togglePlayPause();
+                });
+            }
         });
     </script>
 
