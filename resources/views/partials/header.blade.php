@@ -26,36 +26,41 @@
     <!-- End Google Tag Manager -->
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PTD3S2DJ');</script>
-<!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PTD3S2DJ');</script>
+    <!-- End Google Tag Manager -->
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1570932207772363');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1570932207772363&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1570932207772363');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1570932207772363&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTD3S2DJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTD3S2DJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- No index meta tag for test environment -->
 
@@ -341,19 +346,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             z-index: 10000;
         }
 
-        .cus-nav .dropdown:hover > .submenu {
+        .cus-nav .dropdown:hover>.submenu {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
             pointer-events: auto;
         }
 
-        .cus-nav .submenu > li {
+        .cus-nav .submenu>li {
             list-style: none;
         }
 
-        .cus-nav .submenu > li > a,
-        .cus-nav .submenu > li > .submenu-label {
+        .cus-nav .submenu>li>a,
+        .cus-nav .submenu>li>.submenu-label {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -367,8 +372,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             transition: all 0.2s ease;
         }
 
-        .cus-nav .submenu > li > a:hover,
-        .cus-nav .submenu > li.dropdown:hover > .submenu-label {
+        .cus-nav .submenu>li>a:hover,
+        .cus-nav .submenu>li.dropdown:hover>.submenu-label {
             background-color: #fff7f0;
             color: #ff6600;
         }
@@ -387,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             min-width: 240px;
         }
 
-        .cus-nav .submenu .dropdown:hover > .submenu {
+        .cus-nav .submenu .dropdown:hover>.submenu {
             opacity: 1;
             visibility: visible;
             transform: translateX(0);
@@ -401,8 +406,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         /* ===== MOBILE SPECIALISATIONS & PROGRAMME UNIQUENESS ===== */
-        .text-orange { color: #ff6600 !important; }
-        .text-navy { color: #0c1e4b !important; }
+        .text-orange {
+            color: #ff6600 !important;
+        }
+
+        .text-navy {
+            color: #0c1e4b !important;
+        }
 
         .mobile-programme-head {
             background: #fff8f2 !important;
@@ -432,7 +442,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             text-decoration: none !important;
         }
 
-        .mobile-spec-item:hover, .mobile-spec-item:active {
+        .mobile-spec-item:hover,
+        .mobile-spec-item:active {
             background: #fff2e8 !important;
             color: #ff6600 !important;
             padding-left: 15px !important;
@@ -471,21 +482,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         /* IMPORTANT: prevent clipping */
-        .cus-nav, .nav-options { overflow: visible; }
+        .cus-nav,
+        .nav-options {
+            overflow: visible;
+        }
 
         @media (min-width: 983px) and (max-width: 1261px) {
-            .cus-nav .nav-options { gap: 10px; }
+            .cus-nav .nav-options {
+                gap: 10px;
+            }
+
             .cus-nav .nav-options a,
-            .cus-nav .dropdown > a { font-size: 14px; padding: 8px 12px; }
-            .cus-nav .submenu { min-width: 190px; }
+            .cus-nav .dropdown>a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .cus-nav .submenu {
+                min-width: 190px;
+            }
         }
 
         @media (min-width: 993px) and (max-width: 1143px) {
-            .cus-nav .nav-options { gap: 6px; flex-wrap: nowrap; margin-left: -40px; }
+            .cus-nav .nav-options {
+                gap: 6px;
+                flex-wrap: nowrap;
+                margin-left: -40px;
+            }
+
             .cus-nav .nav-options a,
-            .cus-nav .dropdown > a { font-size: 13px; padding: 6px 10px; }
-            .cus-nav .submenu { min-width: 170px; }
-            .cus-nav .logo img { max-width: 130px; }
+            .cus-nav .dropdown>a {
+                font-size: 13px;
+                padding: 6px 10px;
+            }
+
+            .cus-nav .submenu {
+                min-width: 170px;
+            }
+
+            .cus-nav .logo img {
+                max-width: 130px;
+            }
         }
     </style>
 </head>
@@ -674,19 +711,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <span class="submenu-arrow">▸</span>
                             </button>
                             <ul class="flourish-submenu mobile-spec-list">
-                                <li><a href="{{ route('finance.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Finance</a></li>
-                                <li><a href="{{ route('hr.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Human Resource Management</a></li>
-                                <li><a href="{{ route('marketing.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Marketing</a></li>
-                                <li><a href="{{ route('digital_marketing.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Digital Marketing</a></li>
-                                <li><a href="{{ route('ib.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> International Business</a></li>
-                                <li><a href="{{ route('lscm.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Logistics & Supply Chain</a></li>
-                                <li><a href="{{ route('data_analytics.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Data Analytics</a></li>
-                                <li><a href="{{ route('agri_business.programme') }}" class="mobile-spec-item"><i class="bi bi-chevron-right mobile-spec-icon"></i> Agri Business</a></li>
+                                <li><a href="{{ route('finance.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Finance</a></li>
+                                <li><a href="{{ route('hr.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Human Resource
+                                        Management</a></li>
+                                <li><a href="{{ route('marketing.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Marketing</a></li>
+                                <li><a href="{{ route('digital_marketing.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Digital Marketing</a></li>
+                                <li><a href="{{ route('ib.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> International Business</a>
+                                </li>
+                                <li><a href="{{ route('lscm.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Logistics & Supply
+                                        Chain</a></li>
+                                <li><a href="{{ route('data_analytics.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Data Analytics</a></li>
+                                <li><a href="{{ route('agri_business.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Agri Business</a></li>
                             </ul>
                         </li>
 
-                        <li class="mt-2"><a href="{{ route('bba.programme') }}" class="mobile-degree-item"><span>BBA Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
-                        <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item"><span>BCA Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
+                        <li class="mt-2"><a href="{{ route('bba.programme') }}" class="mobile-degree-item"><span>BBA
+                                    Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
+                        <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item"><span>BCA Programme</span>
+                                <span class="mobile-degree-badge">UG</span></a></li>
 
                     </ul>
                 </li>
