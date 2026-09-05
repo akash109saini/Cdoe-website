@@ -176,6 +176,20 @@
 </footer>
 <!-- footer area end -->
 
+<!-- floating whatsapp inquiry button start -->
+<a href="https://wa.me/917300849446?text=Hi%2C%20I%20have%20an%20inquiry%20regarding%20TMU%20Online%20programmes." 
+   class="floating-whatsapp-btn" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   title="Chat on WhatsApp"
+   aria-label="Chat with us on WhatsApp">
+    <span class="whatsapp-icon-circle">
+        <i class="fa-brands fa-whatsapp"></i>
+    </span>
+    <span class="whatsapp-btn-text">Whats App</span>
+</a>
+<!-- floating whatsapp inquiry button end -->
+
 <!-- back to top area start -->
 <div class="back-to-top">
     <span class="back-top"><i class="fa fa-angle-up"></i></span>
