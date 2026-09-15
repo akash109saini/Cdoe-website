@@ -753,7 +753,7 @@
                             <p class="tmu-card-desc">Healthcare administration, hospital operations, patient care systems, and health informatics.</p>
                         </div>
                         <div class="tmu-card-footer">
-                            <a href="#" class="tmu-btn-explore">
+                            <a href="{{ route('hospital_healthcare.programme') }}" class="tmu-btn-explore">
                                 <span>Explore Programme</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>

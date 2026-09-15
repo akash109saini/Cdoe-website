@@ -612,6 +612,7 @@
                             <li><a href="{{ route('lscm.programme') }}">Logistics & Supply Chain</a></li>
                             <li><a href="{{ route('data_analytics.programme') }}">Data Analytics</a></li>
                             <li><a href="{{ route('agri_business.programme') }}">Agri Business</a></li>
+                            <li><a href="{{ route('hospital_healthcare.programme') }}">Hospital & Healthcare Management</a></li>
                         </ul>
                     </li>
 
@@ -740,6 +741,8 @@
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Data Analytics</a></li>
                                 <li><a href="{{ route('agri_business.programme') }}" class="mobile-spec-item"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Agri Business</a></li>
+                                <li><a href="{{ route('hospital_healthcare.programme') }}" class="mobile-spec-item"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Hospital & Healthcare Management</a></li>
                             </ul>
                         </li>
 
