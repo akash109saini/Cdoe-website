@@ -1,10 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
 
-# Redirect all requests to the public folder
-RewriteCond %{REQUEST_URI} !^/public/
-RewriteRule ^(.*)$ /public/$1 [L]
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^tmuonline\.ac\.in\.tmu\.ac\.in$ [NC]
-RewriteRule ^(.*)$ https://tmuonline.ac.in/$1 [L,R=301]
+    # 1. 301 Permanent Redirect any request containing /public/ in the browser request to the clean URL
+    RewriteCond %{THE_REQUEST} \s/public(?:/([^\s?]*))? [NC]
+    RewriteRule ^ /%1 [L,R=301,NE]
+
+    # 2. Redirect non-canonical hosts to canonical https://www.tmuonline.ac.in
+    RewriteCond %{HTTP_HOST} ^tmuonline\.ac\.in\.tmu\.ac\.in$ [NC,OR]
+    RewriteCond %{HTTP_HOST} ^tmuonline\.ac\.in$ [NC]
+    RewriteRule ^(.*)$ https://www.tmuonline.ac.in/$1 [L,R=301]
+
+    # 3. Internally forward all clean requests to the public directory
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php82” package as the default “PHP” programming language.

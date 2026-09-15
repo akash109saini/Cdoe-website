@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /*.pdf$
+Disallow: /public/
 
 Sitemap: https://www.tmuonline.ac.in/sitemap.xml

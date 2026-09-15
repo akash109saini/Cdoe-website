@@ -110,12 +110,23 @@
     <meta name="description" content="{{ $meta->meta_description ?? 'CDOE website' }}">
     <meta name="keywords" content="{{ $meta->meta_keywords ?? '' }}">
     <meta name="google-site-verification" content="CFrZUzA2qgbjobzI08wjz2oeMroTswGtiT3jJo0vPzw" />
-    <link rel="canonical" href="{{ url('/') . $meta->canonical_tag ?? url()->current() }}">
-    <meta property="og:title" content="{{ $meta->meta_title }}" />
-    <meta property="og:description" content="{{ $meta->meta_description }}" />
+    @php
+        $cleanCurrentUrl = preg_replace('#/public(?=/|$)#i', '', url()->current());
+        if (!empty($meta->canonical_tag)) {
+            $canonicalUrl = str_starts_with($meta->canonical_tag, 'http')
+                ? $meta->canonical_tag
+                : url('/' . ltrim($meta->canonical_tag, '/'));
+        } else {
+            $canonicalUrl = $cleanCurrentUrl;
+        }
+        $canonicalUrl = preg_replace('#/public(?=/|$)#i', '', $canonicalUrl);
+    @endphp
+    <link rel="canonical" href="{{ $canonicalUrl }}">
+    <meta property="og:title" content="{{ $meta->meta_title ?? 'TMU Online' }}" />
+    <meta property="og:description" content="{{ $meta->meta_description ?? '' }}" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="TMU-Online" />
-    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:url" content="{{ $canonicalUrl }}" />
 
     @if (isset($meta))
         @if ($meta->no_index_status === 'Y')
@@ -494,6 +505,79 @@
             overflow: visible;
         }
 
+        /* ===== ACTIVE NAV LINK VISUAL INDICATOR ===== */
+        .cus-nav .nav-options > a:not(.apply-btn),
+        .cus-nav .nav-options .dropdown > a {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 2px;
+            color: #333333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.25s ease;
+        }
+
+        .cus-nav .nav-options > a:not(.apply-btn):hover,
+        .cus-nav .nav-options .dropdown > a:hover {
+            color: #ff6600;
+        }
+
+        .cus-nav .nav-options > a:not(.apply-btn).active,
+        .cus-nav .nav-options .dropdown > a.active {
+            color: #ff6600 !important;
+            font-weight: 700;
+        }
+
+        .cus-nav .nav-options > a:not(.apply-btn).active::after,
+        .cus-nav .nav-options .dropdown > a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #ff6600;
+            border-radius: 3px;
+        }
+
+        /* Submenu active item */
+        .cus-nav .submenu li a.active {
+            color: #ff6600 !important;
+            font-weight: 600;
+            background-color: #fff7f0;
+            border-left: 3px solid #ff6600;
+            padding-left: 14px;
+        }
+
+        /* Mobile nav active state */
+        .flourish-main-nav-list > li > a.active {
+            color: #ff6600 !important;
+            font-weight: 700;
+            border-left: 4px solid #ff6600;
+            padding-left: 12px;
+            background-color: #fff8f2;
+        }
+
+        .flourish-main-nav-list .flourish-submenu-toggle.active {
+            color: #ff6600 !important;
+            font-weight: 700;
+        }
+
+        .mobile-spec-item.active {
+            background: #fff2e8 !important;
+            color: #ff6600 !important;
+            font-weight: 600 !important;
+            border-left: 4px solid #ff6600 !important;
+            padding-left: 15px !important;
+        }
+
+        .mobile-degree-item.active {
+            background: #fff2e8 !important;
+            color: #ff6600 !important;
+            border-left: 4px solid #ff6600 !important;
+        }
+
         @media (min-width: 983px) and (max-width: 1261px) {
             .cus-nav .nav-options {
                 gap: 10px;
@@ -592,10 +676,10 @@
         </div>
         <div class="logo-space"></div>
         <div class="nav-options">
-            <a href="/">Home</a>
+            <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
 
             <div class="dropdown">
-                <a href="{{ route('programme') }}">Programmes</a>
+                <a href="{{ route('programme') }}" class="{{ request()->routeIs('programme') || request()->is('online-*') ? 'active' : '' }}">Programmes</a>
                 <ul class="submenu">
                     {{-- MBA with theme flyout specializations --}}
                     <li class="dropdown">
@@ -604,33 +688,33 @@
                             <i class="bi bi-chevron-right" style="font-size: 11px; color: #ff6600;"></i>
                         </span>
                         <ul class="submenu">
-                            <li><a href="{{ route('finance.programme') }}">Finance</a></li>
-                            <li><a href="{{ route('hr.programme') }}">Human Resource Management</a></li>
-                            <li><a href="{{ route('marketing.programme') }}">Marketing</a></li>
-                            <li><a href="{{ route('digital_marketing.programme') }}">Digital Marketing</a></li>
-                            <li><a href="{{ route('ib.programme') }}">International Business</a></li>
-                            <li><a href="{{ route('lscm.programme') }}">Logistics & Supply Chain</a></li>
-                            <li><a href="{{ route('data_analytics.programme') }}">Data Analytics</a></li>
-                            <li><a href="{{ route('agri_business.programme') }}">Agri Business</a></li>
-                            <li><a href="{{ route('hospital_healthcare.programme') }}">Hospital & Healthcare Management</a></li>
+                            <li><a href="{{ route('finance.programme') }}" class="{{ request()->routeIs('finance.programme') ? 'active' : '' }}">Finance</a></li>
+                            <li><a href="{{ route('hr.programme') }}" class="{{ request()->routeIs('hr.programme') ? 'active' : '' }}">Human Resource Management</a></li>
+                            <li><a href="{{ route('marketing.programme') }}" class="{{ request()->routeIs('marketing.programme') ? 'active' : '' }}">Marketing</a></li>
+                            <li><a href="{{ route('digital_marketing.programme') }}" class="{{ request()->routeIs('digital_marketing.programme') ? 'active' : '' }}">Digital Marketing</a></li>
+                            <li><a href="{{ route('ib.programme') }}" class="{{ request()->routeIs('ib.programme') ? 'active' : '' }}">International Business</a></li>
+                            <li><a href="{{ route('lscm.programme') }}" class="{{ request()->routeIs('lscm.programme') ? 'active' : '' }}">Logistics & Supply Chain</a></li>
+                            <li><a href="{{ route('data_analytics.programme') }}" class="{{ request()->routeIs('data_analytics.programme') ? 'active' : '' }}">Data Analytics</a></li>
+                            <li><a href="{{ route('agri_business.programme') }}" class="{{ request()->routeIs('agri_business.programme') ? 'active' : '' }}">Agri Business</a></li>
+                            <li><a href="{{ route('hospital_healthcare.programme') }}" class="{{ request()->routeIs('hospital_healthcare.programme') ? 'active' : '' }}">Hospital & Healthcare Management</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-divider"></li>
 
                     {{-- BBA direct link --}}
-                    <li><a href="{{ route('bba.programme') }}">BBA Programme</a></li>
+                    <li><a href="{{ route('bba.programme') }}" class="{{ request()->routeIs('bba.programme') ? 'active' : '' }}">BBA Programme</a></li>
 
                     {{-- BCA direct link --}}
-                    <li><a href="{{ route('bca.programme') }}">BCA Programme</a></li>
+                    <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA Programme</a></li>
                 </ul>
             </div>
 
             <div class="dropdown">
-                <a href="#">Admissions</a>
+                <a href="#" class="{{ request()->routeIs('admissions.rules') || request()->routeIs('how.to.apply') ? 'active' : '' }}">Admissions</a>
                 <ul class="submenu">
-                    <li><a href="{{ route('admissions.rules') }}">Admission Rules</a></li>
-                    <li><a href="{{ route('how.to.apply') }}">How to Apply</a></li>
+                    <li><a href="{{ route('admissions.rules') }}" class="{{ request()->routeIs('admissions.rules') ? 'active' : '' }}">Admission Rules</a></li>
+                    <li><a href="{{ route('how.to.apply') }}" class="{{ request()->routeIs('how.to.apply') ? 'active' : '' }}">How to Apply</a></li>
                 </ul>
             </div>
 
@@ -677,8 +761,8 @@
 
             {{-- <a href="{{ route('facilities') }}">Facilities</a> --}}
 
-            <a href="{{ route('blog') }}">Blogs</a>
-            <a href="{{ route('contact') }}">Contact Us</a>
+            <a href="{{ route('blog') }}" class="{{ request()->routeIs('blog*') ? 'active' : '' }}">Blogs</a>
+            <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'active' : '' }}">Contact Us</a>
             <a href="https://admissions.tmuonline.ac.in/" class="apply-btn">Apply Now</a>
         </div>
     </nav>
@@ -707,10 +791,10 @@
         <!-- Expandable Menu Content -->
         <div class="flourish-navbar-menu-content" id="flourishNavbarMenu">
             <ul class="flourish-main-nav-list">
-                <li><a href="/">Home</a></li>
+                <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
 
                 <li class="flourish-nav-item-has-submenu">
-                    <button type="button" class="flourish-submenu-toggle">
+                    <button type="button" class="flourish-submenu-toggle {{ request()->routeIs('programme') || request()->is('online-*') ? 'active' : '' }}">
                         Programmes <span class="submenu-arrow">▸</span>
                     </button>
                     <ul class="flourish-submenu">
@@ -722,50 +806,50 @@
                                 <span class="submenu-arrow">▸</span>
                             </button>
                             <ul class="flourish-submenu mobile-spec-list">
-                                <li><a href="{{ route('finance.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('finance.programme') }}" class="mobile-spec-item {{ request()->routeIs('finance.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Finance</a></li>
-                                <li><a href="{{ route('hr.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('hr.programme') }}" class="mobile-spec-item {{ request()->routeIs('hr.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Human Resource
                                         Management</a></li>
-                                <li><a href="{{ route('marketing.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('marketing.programme') }}" class="mobile-spec-item {{ request()->routeIs('marketing.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Marketing</a></li>
-                                <li><a href="{{ route('digital_marketing.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('digital_marketing.programme') }}" class="mobile-spec-item {{ request()->routeIs('digital_marketing.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Digital Marketing</a></li>
-                                <li><a href="{{ route('ib.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('ib.programme') }}" class="mobile-spec-item {{ request()->routeIs('ib.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> International Business</a>
                                 </li>
-                                <li><a href="{{ route('lscm.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('lscm.programme') }}" class="mobile-spec-item {{ request()->routeIs('lscm.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Logistics & Supply
                                         Chain</a></li>
-                                <li><a href="{{ route('data_analytics.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('data_analytics.programme') }}" class="mobile-spec-item {{ request()->routeIs('data_analytics.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Data Analytics</a></li>
-                                <li><a href="{{ route('agri_business.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('agri_business.programme') }}" class="mobile-spec-item {{ request()->routeIs('agri_business.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Agri Business</a></li>
-                                <li><a href="{{ route('hospital_healthcare.programme') }}" class="mobile-spec-item"><i
+                                <li><a href="{{ route('hospital_healthcare.programme') }}" class="mobile-spec-item {{ request()->routeIs('hospital_healthcare.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Hospital & Healthcare Management</a></li>
                             </ul>
                         </li>
 
-                        <li class="mt-2"><a href="{{ route('bba.programme') }}" class="mobile-degree-item"><span>BBA
+                        <li class="mt-2"><a href="{{ route('bba.programme') }}" class="mobile-degree-item {{ request()->routeIs('bba.programme') ? 'active' : '' }}"><span>BBA
                                     Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
-                        <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item"><span>BCA Programme</span>
+                        <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item {{ request()->routeIs('bca.programme') ? 'active' : '' }}"><span>BCA Programme</span>
                                 <span class="mobile-degree-badge">UG</span></a></li>
 
                     </ul>
                 </li>
 
                 <li class="flourish-nav-item-has-submenu">
-                    <button type="button" class="flourish-submenu-toggle">
+                    <button type="button" class="flourish-submenu-toggle {{ request()->routeIs('admissions.rules') || request()->routeIs('how.to.apply') ? 'active' : '' }}">
                         Admissions <span class="submenu-arrow">▸</span>
                     </button>
                     <ul class="flourish-submenu">
-                        <li><a href="{{ route('admissions.rules') }}">Admission Rules</a></li>
-                        <li><a href="{{ route('how.to.apply') }}">How to Apply</a></li>
+                        <li><a href="{{ route('admissions.rules') }}" class="{{ request()->routeIs('admissions.rules') ? 'active' : '' }}">Admission Rules</a></li>
+                        <li><a href="{{ route('how.to.apply') }}" class="{{ request()->routeIs('how.to.apply') ? 'active' : '' }}">How to Apply</a></li>
                     </ul>
                 </li>
 
-                <li><a href="{{ route('blog') }}">Blogs</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                <li><a href="{{ route('blog') }}" class="{{ request()->routeIs('blog*') ? 'active' : '' }}">Blogs</a></li>
+                <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'active' : '' }}">Contact Us</a></li>
                 <li class="flourish-nav-item-has-submenu">
                     <button type="button" class="flourish-submenu-toggle">
                         Academics <span class="submenu-arrow">▸</span>

@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    # 1. 301 Permanent Redirect any request containing /public/ in the browser request to clean URL
+    RewriteCond %{THE_REQUEST} \s/public(?:/([^\s?]*))? [NC]
+    RewriteRule ^ /%1 [L,R=301,NE]
+
     # Force one canonical domain: https://www.tmuonline.ac.in
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} !^www\.tmuonline\.ac\.in$ [NC]
