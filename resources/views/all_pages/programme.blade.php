@@ -767,7 +767,7 @@
                 <div class="tmu-prog-card">
                     <div class="tmu-card-media">
                         <span class="tmu-badge pg">Postgraduate</span>
-                        <img src="{{ asset('assets/img/programmes/online_mba_operations.jpg') }}" alt="MBA Operations Strategy & Project Management" loading="lazy">
+                        <img src="{{ asset('assets/img/programmes/online_mba_operations.webp') }}" alt="MBA Operations Strategy & Project Management" loading="lazy">
                         <div class="media-overlay"></div>
                     </div>
                     <div class="tmu-card-body">
@@ -780,7 +780,7 @@
                             <p class="tmu-card-desc">Process optimization, agile project execution, strategic operations, and risk management.</p>
                         </div>
                         <div class="tmu-card-footer">
-                            <a href="#" class="tmu-btn-explore">
+                            <a href="{{ route('operations_strategy.programme') }}" class="tmu-btn-explore">
                                 <span>Explore Programme</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -794,7 +794,7 @@
                 <div class="tmu-prog-card">
                     <div class="tmu-card-media">
                         <span class="tmu-badge pg">Postgraduate</span>
-                        <img src="{{ asset('assets/img/programmes/online_mba_fintech.jpg') }}" alt="MBA in Banking, Fintech & AI" loading="lazy">
+                        <img src="{{ asset('assets/img/programmes/online_mba_fintech.webp') }}" alt="MBA in Banking, Fintech & AI" loading="lazy">
                         <div class="media-overlay"></div>
                     </div>
                     <div class="tmu-card-body">
@@ -807,7 +807,7 @@
                             <p class="tmu-card-desc">Digital banking ecosystems, AI in algorithmic finance, blockchain, and automated risk analytics.</p>
                         </div>
                         <div class="tmu-card-footer">
-                            <a href="#" class="tmu-btn-explore">
+                            <a href="{{ route('banking_fintech_ai.programme') }}" class="tmu-btn-explore">
                                 <span>Explore Programme</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>

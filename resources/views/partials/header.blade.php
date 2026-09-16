@@ -697,6 +697,8 @@
                             <li><a href="{{ route('data_analytics.programme') }}" class="{{ request()->routeIs('data_analytics.programme') ? 'active' : '' }}">Data Analytics</a></li>
                             <li><a href="{{ route('agri_business.programme') }}" class="{{ request()->routeIs('agri_business.programme') ? 'active' : '' }}">Agri Business</a></li>
                             <li><a href="{{ route('hospital_healthcare.programme') }}" class="{{ request()->routeIs('hospital_healthcare.programme') ? 'active' : '' }}">Hospital & Healthcare Management</a></li>
+                            <li><a href="{{ route('operations_strategy.programme') }}" class="{{ request()->routeIs('operations_strategy.programme') ? 'active' : '' }}">Operations Strategy & Project Management</a></li>
+                            <li><a href="{{ route('banking_fintech_ai.programme') }}" class="{{ request()->routeIs('banking_fintech_ai.programme') ? 'active' : '' }}">Banking, Fintech & AI</a></li>
                         </ul>
                     </li>
 
@@ -836,6 +838,10 @@
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Agri Business</a></li>
                                 <li><a href="{{ route('hospital_healthcare.programme') }}" class="mobile-spec-item {{ request()->routeIs('hospital_healthcare.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> Hospital & Healthcare Management</a></li>
+                                <li><a href="{{ route('operations_strategy.programme') }}" class="mobile-spec-item {{ request()->routeIs('operations_strategy.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Operations Strategy & Project Management</a></li>
+                                <li><a href="{{ route('banking_fintech_ai.programme') }}" class="mobile-spec-item {{ request()->routeIs('banking_fintech_ai.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Banking, Fintech & AI</a></li>
                             </ul>
                         </li>
 
