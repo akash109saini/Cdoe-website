@@ -702,8 +702,17 @@
 
                     <li class="nav-divider"></li>
 
-                    {{-- BBA direct link --}}
-                    <li><a href="{{ route('bba.programme') }}" class="{{ request()->routeIs('bba.programme') ? 'active' : '' }}">BBA Programme</a></li>
+                    {{-- BBA with theme flyout specializations --}}
+                    <li class="dropdown">
+                        <span class="submenu-label">
+                            <span>BBA Specialisations</span>
+                            <i class="bi bi-chevron-right" style="font-size: 11px; color: #ff6600;"></i>
+                        </span>
+                        <ul class="submenu">
+                            <li><a href="{{ route('bba.programme') }}" class="{{ request()->routeIs('bba.programme') ? 'active' : '' }}">BBA</a></li>
+                            <li><a href="{{ route('bba_digital_marketing.programme') }}" class="{{ request()->routeIs('bba_digital_marketing.programme') ? 'active' : '' }}">BBA Digital Marketing</a></li>
+                        </ul>
+                    </li>
 
                     {{-- BCA direct link --}}
                     <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA Programme</a></li>
@@ -830,8 +839,19 @@
                             </ul>
                         </li>
 
-                        <li class="mt-2"><a href="{{ route('bba.programme') }}" class="mobile-degree-item {{ request()->routeIs('bba.programme') ? 'active' : '' }}"><span>BBA
-                                    Programme</span> <span class="mobile-degree-badge">UG</span></a></li>
+                        {{-- BBA group with distinct specialization styling --}}
+                        <li class="flourish-nav-item-has-submenu mt-2">
+                            <button type="button" class="flourish-submenu-toggle mobile-programme-head">
+                                <span><strong>BBA Specialisations</strong></span>
+                                <span class="submenu-arrow">▸</span>
+                            </button>
+                            <ul class="flourish-submenu mobile-spec-list">
+                                <li><a href="{{ route('bba.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BBA</a></li>
+                                <li><a href="{{ route('bba_digital_marketing.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_digital_marketing.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BBA Digital Marketing</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item {{ request()->routeIs('bca.programme') ? 'active' : '' }}"><span>BCA Programme</span>
                                 <span class="mobile-degree-badge">UG</span></a></li>
 

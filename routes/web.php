@@ -17,6 +17,7 @@ Route::get('/online-mba-finance', [CDOEController::class, 'finance_programme'])-
 Route::get('/online-mba-international-business', [CDOEController::class, 'ib_programme'])->name('ib.programme');
 Route::get('/online-mba-marketing', [CDOEController::class, 'marketing_programme'])->name('marketing.programme');
 Route::get('/online-bba', [CDOEController::class, 'bba_programme'])->name('bba.programme');
+Route::get('/online-bba-in-digital-marketing', [CDOEController::class, 'bba_digital_marketing_programme'])->name('bba_digital_marketing.programme');
 Route::get('/online-bca', [CDOEController::class, 'bca_programme'])->name('bca.programme');
 Route::get('/online-mba-digital-marketing', [CDOEController::class, 'digital_marketing_programme'])->name('digital_marketing.programme');
 Route::get('/online-mba-logistics-and-supply-chain-management', [CDOEController::class, 'lscm_programme'])->name('lscm.programme');

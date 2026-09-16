@@ -289,6 +289,11 @@ class CDOEController extends Controller
         return view('all_pages.programme.bba_programme');
     }
 
+    public function bba_digital_marketing_programme()
+    {
+        return view('all_pages.programme.bba_digital_marketing');
+    }
+
     public function bca_programme()
     {
         return view('all_pages.programme.bca_programme');
@@ -359,6 +364,7 @@ class CDOEController extends Controller
             'MBA Operations Strategy & Project Management',
             'MBA in Banking, Fintech & AI',
             'Online BBA',
+            'Online BBA in Digital Marketing',
             'Online BCA',
         ];
 

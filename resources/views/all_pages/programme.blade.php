@@ -497,13 +497,13 @@
                 <!-- Filter Tabs Only -->
                 <div class="filter-tabs-group">
                     <button class="tab-btn active" data-filter="all">
-                        All <span class="tab-count">13</span>
+                        All <span class="tab-count">14</span>
                     </button>
                     <button class="tab-btn" data-filter="pg">
                         Postgraduate <span class="tab-count">11</span>
                     </button>
                     <button class="tab-btn" data-filter="ug">
-                        Undergraduate <span class="tab-count">2</span>
+                        Undergraduate <span class="tab-count">3</span>
                     </button>
                 </div>
             </div>
@@ -512,7 +512,7 @@
         <!-- Meta Results Header -->
         <div class="programmes-meta-header">
             <h2 class="meta-title">
-                Showing <span id="activeCountDisplay">13</span> <span id="activeLabelDisplay">Online</span> Programmes
+                Showing <span id="activeCountDisplay">14</span> <span id="activeLabelDisplay">Online</span> Programmes
             </h2>
         </div>
 
@@ -843,7 +843,34 @@
                 </div>
             </div>
 
-            <!-- 13. Online BCA -->
+            <!-- 13. Online BBA in Digital Marketing -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bba_dm.webp') }}" alt="Online BBA in Digital Marketing" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-book"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BBA in Digital Marketing</h3>
+                            <p class="tmu-card-desc">SEO, social media marketing, web analytics, content marketing, e-commerce, and brand strategy.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bba_digital_marketing.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. Online BCA -->
             <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
                 <div class="tmu-prog-card">
                     <div class="tmu-card-media">

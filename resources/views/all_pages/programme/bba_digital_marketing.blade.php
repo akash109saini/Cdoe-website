@@ -1,99 +1,77 @@
 @extends('layouts.app')
 
-@section('CDOE', 'Online BBA Admission 2026: Fees, Eligibility, Syllabus and Career | TMU')
+@section('CDOE', 'Online BBA in Digital Marketing - Admissions Open | TMU')
 
 @section('content')
 
     <link rel="stylesheet" href="{{ asset('/assets/css/programme.css') }}">
     <div class="programme-banner">
-        {{-- Separate img tags commented out for LCP performance
-        <img src="{{ asset('assets/img/programmes/Online-BBA.jpg') }}" alt="Programme Banner" class="d-none d-lg-block">
-        <img src="{{ asset('assets/img/programmes/online-bba-mobile.jpeg') }}" alt="Programme Banner" class="d-block d-md-none">
-        <img src="{{ asset('assets/img/programmes/online-bba-tablet.jpeg') }}" alt="Programme Banner" class="d-none d-md-block d-lg-none">
-        --}}
         <picture>
-            <source media="(max-width: 767px)" srcset="{{ asset('assets/img/programmes/online-bba-mobile.jpeg') }}">
-            <source media="(max-width: 991px)" srcset="{{ asset('assets/img/programmes/online-bba-tablet.jpeg') }}">
-            <img src="{{ asset('assets/img/programmes/Online-BBA.jpg') }}" alt="Online BBA Programme Banner" fetchpriority="high" decoding="async" class="w-100">
+            <source media="(max-width: 767px)" srcset="{{ asset('assets/img/programmes/online_bba_dm_mobile.webp') }}">
+            <source media="(max-width: 991px)" srcset="{{ asset('assets/img/programmes/online_bba_dm_tablet.webp') }}">
+            <img src="{{ asset('assets/img/programmes/online_bba_dm_desktop.webp') }}" alt="Online BBA in Digital Marketing" fetchpriority="high" decoding="async" class="w-100">
         </picture>
-        <div class="banner-title">
-            <p>Online BBA <br> <span>Bachelor of Business Administration</span></p>
-            <p class="d-none d-lg-block">Shape your future in business with TMU’s Online BBA programme. Develop managerial, analytical, and entrepreneurial skills through industry-relevant coursework and flexible online learning.</p>
+        <div class="banner-title d-none d-md-block">
+            <p>Online BBA in <br> <span>Digital Marketing</span></p>
+            <p class="d-none d-lg-block">Learn how businesses grow in the digital world with an online BBA in Digital Marketing. Develop skills in SEO, content marketing, social media and online advertising through flexible learning.</p>
         </div>
     </div>
+
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BBA <span class="highlight" style="color:#ff7900">Programme Details</span></h1>
+            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">Digital Marketing</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="course-course-detaila-inner">
 
-                    {{-- Section 1: Description --}}
+                    {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <p>The <b>Online BBA Programme at <a href="https://www.tmu.ac.in/"> TMU</a></b> is designed for students who want to build a strong foundation in business administration while enjoying the flexibility of online learning. The programme focuses on developing core management, leadership, and analytical skills required in today’s competitive business environment. <br><br> The Bachelor of Business Administration (BBA) online programme offers a comprehensive understanding of business concepts such as marketing, finance, human resource management, economics, and entrepreneurship. It is structured to help learners gain both theoretical knowledge and practical insights into real-world business operations.</p>
-                           <h3>Why Choose an Online BBA </h3>
-                            <div class="row pt-4">
-                                <div class="col-sm-6">
-                                    <ul class="single-list-wrap">
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Flexible learning anytime, anywhere
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Study with job or other commitments
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Affordable degree option
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Industry-focused curriculum
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Builds business fundamentals
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 mt-3 mt-sm-0">
-                                    <ul class="single-list-wrap">
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Improves communication skills
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Digital learning resources
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Better career opportunities
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Pathway to MBA
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Self-paced learning
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
+                                Online BBA in Digital Marketing <span style="color:#ff7900;">Programme Details</span>
+                            </h2>
+                            <p>A <b>BBA in Digital Marketing programme at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a></b> is an undergraduate degree that combines core management subjects with modern digital marketing skills. The programme is designed to equip students with a strong foundation in digital marketing strategies to attract clients, promote products, build brands and increase sales. It is suitable for students who want to build careers in digital marketing, social media, SEO, content marketing, brand management, e-commerce, advertising, and online business.</p>
+                            <p>The programme combines subjects such as business management, marketing management, financial management, human resource management, business communication, and entrepreneurship with digital-focused areas such as Search Engine Optimisation (SEO), Content Marketing, Email Marketing, Affiliate Marketing, E-commerce, Web Analytics, Online Advertising, and Digital Branding.</p>
+                            <p>It also helps students develop practical skills in using digital marketing tools, understanding consumer behaviour, analysing campaign performance, creating online marketing strategies, and measuring return on investment (ROI).</p>
 
-                            <h3 class="mt-5">Specialisations Offered</h3>
-                            <div class="row pt-4">
+                            <h2 class="mt-5 mb-3" style="font-size: 1.85rem; font-weight: 700; color: #001d4a;">Why Choose an Online BBA in Digital Marketing</h2>
+                            <div class="row pt-2">
                                 <div class="col-sm-6">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> BBA International Business & Entrepreneurship
+                                            <i class="fa fa-check"></i> Flexible Online Learning
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bba_digital_marketing.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BBA Digital Marketing <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Business & Marketing Knowledge
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Industry-Relevant Digital Skills
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Practical SEO & Social Media Skills
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Wide Career Opportunities
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 mt-3 mt-sm-0">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> BBA Healthcare Services & Administration
+                                            <i class="fa fa-check"></i> Strong E-commerce Exposure
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> BBA Banking, Fintech & AI
+                                            <i class="fa fa-check"></i> Entrepreneurship Opportunities
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Higher Education Opportunities
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Future-Ready Career Skills
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Applicable Across Industries
                                         </li>
                                     </ul>
                                 </div>
@@ -101,6 +79,7 @@
                         </div>
                     </div>
 
+                    <!-- ========== Fee Structure & Scholarship Section Start ========== -->
                     <section class="compact-fee-section px-1 px-lg-5 mt-5">
                         <div class="container-fluid compact-fee-container px-3 px-lg-5">
                             
@@ -113,7 +92,7 @@
                                 <div class="col-lg-6 mb-4 mb-lg-0">
                                     <div class="card h-100 compact-card">
                                         <div class="compact-card-header text-white text-center py-3" style="background-color: #001D4A; border-bottom: none;">
-                                            <h3 class="mb-0 text-white">BBA Fee Details</h3>
+                                            <h3 class="mb-0 text-white">Online BBA Fee Details</h3>
                                         </div>
                                         <div class="compact-card-body d-flex flex-column justify-content-between h-100">
                                             <div>
@@ -142,7 +121,6 @@
                                                     </table>
                                                 </div>
                                             </div>
-                
                                         </div>
                                     </div>
                                 </div>
@@ -158,8 +136,6 @@
                                                 <div class="text-center mb-2 p-2" style="background-color: rgba(255,102,0,0.05); border-radius: 8px; border: 1px solid rgba(255,102,0,0.1);">
                                                     <p class="text-muted mb-0" style="font-size: 11px;">25% scholarship on tuition fees per semester is available for:</p>
                                                 </div>
-                                                
-                                                <h6 style="color: #001D4A; font-weight: 600; margin-bottom: 8px; font-size: 13px;"></h6>
                                                 
                                                 <div class="d-flex flex-column gap-2">
                                                     <div class="d-flex align-items-center scholarship-item-compact">
@@ -197,7 +173,7 @@
                                                 <p class="text-muted mb-0" style="font-size: 11px; line-height: 1.4; text-align: center;"><i class="fas fa-info-circle me-1" style="color: #001D4A;"></i> Candidates must provide valid TMU ID or alumni proof to avail of the scholarship at the time of admission.</p>
                                             </div>
                                             <div class="text-center mb-2 p-2" style="background-color: rgba(255,102,0,0.05); border-radius: 8px; border: 1px solid rgba(255,102,0,0.1);">
-                                                    <p class="text-muted mb-0" style="font-size: 11px;"><i class="fa-solid fa-star"></i> The fees may change over time. Kindly confirm from the admission cell before taking admission.</p>
+                                                <p class="text-muted mb-0" style="font-size: 11px;"><i class="fa-solid fa-star"></i> The fees may change over time. Kindly confirm from the admission cell before taking admission.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -210,21 +186,21 @@
                     {{-- Admissions Open Section --}}
                     <div class="course-section container pd-top-30 pd-bottom-30 text-center" id="admissions-open-section">
                         <div class="section-header mt-5 mb-0">
-                            <h2>Online BBA <span class="highlight">Admissions Open 2026</span></h2>
+                            <h2>Online BBA in Digital Marketing <span class="highlight">Admissions Open 2026</span></h2>
                         </div>
                         <div class="course-details-content">
-                            <p>Admissions open for the 2026 batch of the TMU Online BBA—a comprehensive program designed to prepare students for corporate careers and entrepreneurial ventures. TMU Online offers a flexible, 100% online learning experience that combines academic excellence with practical management training. Take the first step towards a successful career in business management today.</p>
+                            <p>Admissions are now open for the 2026 batch of the TMU Online BBA in Digital Marketing—a specialized, career-focused degree designed to equip you with cutting-edge digital expertise and leadership prowess. Enjoy flexible learning, interactive coursework, live doubt-clearing sessions, and career mentoring from leading industry practitioners.</p>
                         </div>
                     </div>
 
+                    {{-- Degree Highlight Section --}}
                     <section class="degree-highlight-section">
                         <div class="container-fluid px-4 px-md-5">
                             <div class="degree-content-wrapper">
 
                                 <div class="degree-benefits-col">
                                     <h2 class="degree-main-title">
-                                        Get a UGC Entitled Online BBA Degree from a <span class="highlight-underline">NAAC
-                                            A University</span>
+                                        Get a UGC Entitled Online BBA Degree from a <span class="highlight-underline">NAAC A University</span>
                                     </h2>
 
                                     <div class="benefits-list">
@@ -234,8 +210,7 @@
                                             </div>
                                             <div class="benefit-text">
                                                 <h4>Degree from Top Ranked University</h4>
-                                                <p>Get high-stature degree on completion of your Online BBA course from
-                                                    India's top most University recognised for excellence.</p>
+                                                <p>Get a prestigious degree on completion of your Online BBA course from India's top-ranked University recognized for excellence.</p>
                                             </div>
                                         </div>
 
@@ -245,7 +220,7 @@
                                             </div>
                                             <div class="benefit-text">
                                                 <h4>Universally Accepted & Recognized</h4>
-                                                <p>The Degree is duly Entitled by UGC - Distance Education Bureau.</p>
+                                                <p>The Degree is duly Entitled by UGC - Distance Education Bureau (DEB) and recognized across government, private, and global organizations.</p>
                                             </div>
                                         </div>
 
@@ -255,8 +230,7 @@
                                             </div>
                                             <div class="benefit-text">
                                                 <h4>No Difference From Campus Program Degree</h4>
-                                                <p>The degree is recognized by regulatory bodies and treated at par with
-                                                    regular campus-based program degrees.</p>
+                                                <p>The online degree holds equal academic weight and validity, treated at par with regular on-campus undergraduate degrees.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -267,27 +241,23 @@
                                         alt="Sample Online BBA Degree Certificate (Landscape)" class="sample-degree-image">
                                 </div>
 
-                             </div>
+                            </div>
                         </div>
                     </section>
 
+                    {{-- Recruiters Section --}}
                     <section class="recruiters-section">
                         <div class="container">
 
                             <div class="recruiter-title-container">
                                 <div class="section-header">
-                                    <h2>Teerthanker Mahaveer University Online, <br><span class="highlight">Open Doors.
-                                            World Wide.</span></h2>
-                                    <p>Our top-class recruiters list gives you the assurance that you'll get placed in
-                                        leading MNCs and work with renowned brands.</p>
+                                    <h2>Teerthanker Mahaveer University Online, <br><span class="highlight">Open Doors. World Wide.</span></h2>
+                                    <p>Our top-class recruiters list gives you the assurance that you'll get placed in leading MNCs and work with renowned digital and tech brands.</p>
                                     <span class="title-underline"></span>
                                 </div>
-
                             </div>
 
                             <div class="recruiter-logo-grid">
-
-                                {{-- Loop from 1 to 32 assuming images 1.jpg to 32.jpg exist --}}
                                 @php
                                     $altTexts = [
                                         1 => 'Wipro Logo', 2 => 'Vistara Logo', 3 => 'Videocon Logo', 4 => 'VFS Global Logo',
@@ -310,36 +280,38 @@
                                             onerror="this.style.display='none'; this.parentElement.style.display='none';">
                                     </div>
                                 @endfor
+                            </div>
+                        </div>
+                    </section>
 
-                            </div> </div> </section>
-
+                    {{-- Career Paths Section --}}
                     <section class="career-paths-section px-1 px-lg-5">
                         <div class="container-fluid">
 
                             <div class="career-paths-header">
-                                <h2>Career Paths After Online BBA <span>Programme</span></h2>
-                                <p>An Online BBA opens up diverse career opportunities across marketing, sales, human resources, operations, and financial services. Here are some of the most popular career paths and job roles you can pursue after graduation:</p>
+                                <h2>Career Paths After Online BBA in Digital Marketing</h2>
+                                <p>An Online BBA in Digital Marketing can prepare graduates for a wide range of careers across marketing, advertising, e-commerce, technology, and business management. Some popular career paths after completing an Online BBA in Digital Marketing include:</p>
                             </div>
 
                             <div class="career-paths-content">
 
                                 <div class="career-paths-image-col">
                                     <img src="{{ asset('assets/img/programmes/prog-img-4.jpg') }}"
-                                        alt="Professionals discussing BBA career paths" class="career-image">
+                                        alt="Professionals discussing Digital Marketing career paths" class="career-image">
                                 </div>
 
                                 <div class="career-paths-list-col">
                                     <ul class="career-path-list pl-3">
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Sales Executive / Manager</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Assistant Manager</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Business Development Executive</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Marketing Executive</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Human Resource Executive</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Customer Relationship Manager</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Entrepreneur / Start-up Founder</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Retail Store Manager</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Operations Executive</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Finance Executive (Entry-Level)</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Digital Marketing Executive</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> SEO Specialist</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Social Media Manager</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Content Marketing Executive</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> PPC/SEM Specialist</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Digital Marketing Analyst</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> E-commerce Marketing Executive</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Email Marketing Specialist</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Brand Marketing Executive</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Digital Marketing Consultant</li>
                                     </ul>
                                 </div>
 
@@ -347,6 +319,7 @@
                         </div>
                     </section>
 
+                    {{-- Eligibility Section --}}
                     <section class="career-paths-section px-1 px-lg-5">
                         <div class="container-fluid px-3 px-lg-5">
                             <div class="eligibility-card">
@@ -358,19 +331,23 @@
                                         <ul class="eligibility-list">
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Passed 10+2 (or equivalent examination) in any stream from a recognised Board.</span>
+                                                <span>Passed 10+2 or an equivalent examination from a recognised board.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>A minimum aggregate of 45% marks or an equivalent letter/numerical grade is required.</span>
+                                                <span>Students from Commerce, Science, or Arts backgrounds can generally apply.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>A relaxation of 5% marks may be provided to SC/ST candidates as per applicable norms.</span>
+                                                <span>Must meet the minimum percentage or marks specified by the university (minimum 45% aggregate marks; relaxation of 5% for reserved category candidates as per norms).</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Candidates appearing for the Class 12 final examination are also eligible to apply, subject to meeting the eligibility requirements at the time of admission.</span>
+                                                <span>Admission may be based on merit or university-specific admission criteria.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Candidates appearing for Class 12 final examinations are also eligible to apply, subject to fulfilling minimum eligibility at the time of admission.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -385,44 +362,43 @@
                         </div>
                     </section>
 
-                    
-
-                    {{-- Section 3: FAQ --}}
+                    {{-- Section: FAQ --}}
                     <div class="course-section mt-5 container" id="faq-section">
                         <h2 class="section-title text-center">FAQ</h2>
                         <div class="course-details-content mt-3">
                             <div id="faq-accordion" class="accordion-area mt-4">
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-one">
                                         <h5 class="mb-0">
                                             <button class="btn-link" data-toggle="collapse" data-target="#f-one"
                                                 aria-expanded="true" aria-controls="f-one">
-                                                01. What is the Online BBA programme?
+                                                01. What is an Online BBA in Digital Marketing?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
                                     </div>
-
                                     <div id="f-one" class="collapse show" aria-labelledby="ff-one"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            The Online BBA programme is a bachelor’s degree in business administration delivered through online learning, covering key areas like marketing, finance, HR, and management.
+                                            An Online BBA in Digital Marketing is an undergraduate programme combining business management with digital marketing skills such as SEO, social media, content marketing, and online advertising.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-two">
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-two"
                                                 aria-expanded="false" aria-controls="f-two">
-                                                02. Who can apply for Online BBA?
+                                                02. Can I do a BBA in Distance Mode?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
                                     </div>
                                     <div id="f-two" class="collapse" aria-labelledby="ff-two" data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Students who have completed 10+2 from a recognised board are eligible to apply for the Online BBA programme.
+                                            Yes. Students can pursue a BBA through distance or online mode from an eligible university, subject to its admission requirements.
                                         </div>
                                     </div>
                                 </div>
@@ -432,7 +408,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-three"
                                                 aria-expanded="false" aria-controls="f-three">
-                                                03. Is an online BBA valid for jobs and higher studies?
+                                                03. Can I pursue an MBA after an Online BBA?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -440,16 +416,17 @@
                                     <div id="f-three" class="collapse" aria-labelledby="ff-three"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Yes, an Online BBA degree from a recognised university is valid for jobs in the corporate sector and for pursuing higher studies like an MBA.
+                                            Yes. Graduates can pursue an MBA in Digital Marketing, Marketing, Business Analytics, or other specialisations.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-four">
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-four"
                                                 aria-expanded="false" aria-controls="f-four">
-                                                04. What are the benefits of studying an online BBA?
+                                                04. Can I do an Online BBA after 12th?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -457,16 +434,17 @@
                                     <div id="f-four" class="collapse" aria-labelledby="ff-four"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            It offers flexible learning, affordable fees, an industry-relevant curriculum, and the ability to study while managing other commitments.
+                                            Yes. Students who meet the university’s eligibility criteria can pursue an Online BBA after completing 12th.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-five">
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-five"
                                                 aria-expanded="false" aria-controls="f-five">
-                                                05. What career options are available after an Online BBA?
+                                                05. What is the syllabus of an Online BBA in Digital Marketing?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -474,14 +452,70 @@
                                     <div id="f-five" class="collapse" aria-labelledby="ff-five"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Graduates can work as marketing executives, HR assistants, business development executives, financial analysts (entry-level), or pursue entrepreneurship.
+                                            The syllabus generally includes Digital Marketing, SEO, Social Media Marketing, Content Marketing, E-commerce, Business Management, Marketing Management, and Digital Analytics.
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="card single-faq-inner style-header-bg">
+                                    <div class="card-header" id="ff-six">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-six"
+                                                aria-expanded="false" aria-controls="f-six">
+                                                06. Is Maths compulsory for an Online BBA in Digital Marketing?
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="f-six" class="collapse" aria-labelledby="ff-six"
+                                        data-parent="#faq-accordion">
+                                        <div class="card-body">
+                                            Usually, no. However, eligibility requirements vary by university, so students should check the specific admission criteria.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card single-faq-inner style-header-bg">
+                                    <div class="card-header" id="ff-seven">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-seven"
+                                                aria-expanded="false" aria-controls="f-seven">
+                                                07. What is the admission process for an Online BBA in Digital Marketing?
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="f-seven" class="collapse" aria-labelledby="ff-seven"
+                                        data-parent="#faq-accordion">
+                                        <div class="card-body">
+                                            The admission process generally includes checking eligibility, filling out the online application form, submitting documents, and completing the fee payment.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card single-faq-inner style-header-bg">
+                                    <div class="card-header" id="ff-eight">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-eight"
+                                                aria-expanded="false" aria-controls="f-eight">
+                                                08. What documents are required for admission?
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="f-eight" class="collapse" aria-labelledby="ff-eight"
+                                        data-parent="#faq-accordion">
+                                        <div class="card-body">
+                                            Common documents include 10th and 12th marksheets, identity proof, passport-size photographs, and other documents specified by the university.
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     {{-- End Sequential Content --}}
+
                 </div>
             </div>
         </div>
