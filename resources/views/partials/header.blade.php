@@ -713,6 +713,9 @@
                         <ul class="submenu">
                             <li><a href="{{ route('bba.programme') }}" class="{{ request()->routeIs('bba.programme') ? 'active' : '' }}">BBA</a></li>
                             <li><a href="{{ route('bba_digital_marketing.programme') }}" class="{{ request()->routeIs('bba_digital_marketing.programme') ? 'active' : '' }}">BBA Digital Marketing</a></li>
+                            <li><a href="{{ route('bba_banking_fintech_ai.programme') }}" class="{{ request()->routeIs('bba_banking_fintech_ai.programme') ? 'active' : '' }}">Banking, Fintech & AI</a></li>
+                            <li><a href="{{ route('bba_healthcare_administration.programme') }}" class="{{ request()->routeIs('bba_healthcare_administration.programme') ? 'active' : '' }}">Healthcare Services & Administration</a></li>
+                            <li><a href="{{ route('bba_ib_entrepreneurship.programme') }}" class="{{ request()->routeIs('bba_ib_entrepreneurship.programme') ? 'active' : '' }}">International Business & Entrepreneurship</a></li>
                         </ul>
                     </li>
 
@@ -856,6 +859,12 @@
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BBA</a></li>
                                 <li><a href="{{ route('bba_digital_marketing.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_digital_marketing.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BBA Digital Marketing</a></li>
+                                <li><a href="{{ route('bba_banking_fintech_ai.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_banking_fintech_ai.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Banking, Fintech & AI</a></li>
+                                <li><a href="{{ route('bba_healthcare_administration.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_healthcare_administration.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> Healthcare Services & Administration</a></li>
+                                <li><a href="{{ route('bba_ib_entrepreneurship.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_ib_entrepreneurship.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> International Business & Entrepreneurship</a></li>
                             </ul>
                         </li>
                         <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item {{ request()->routeIs('bca.programme') ? 'active' : '' }}"><span>BCA Programme</span>

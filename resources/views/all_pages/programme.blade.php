@@ -497,13 +497,13 @@
                 <!-- Filter Tabs Only -->
                 <div class="filter-tabs-group">
                     <button class="tab-btn active" data-filter="all">
-                        All <span class="tab-count">14</span>
+                        All <span class="tab-count">17</span>
                     </button>
                     <button class="tab-btn" data-filter="pg">
                         Postgraduate <span class="tab-count">11</span>
                     </button>
                     <button class="tab-btn" data-filter="ug">
-                        Undergraduate <span class="tab-count">3</span>
+                        Undergraduate <span class="tab-count">6</span>
                     </button>
                 </div>
             </div>
@@ -512,7 +512,7 @@
         <!-- Meta Results Header -->
         <div class="programmes-meta-header">
             <h2 class="meta-title">
-                Showing <span id="activeCountDisplay">14</span> <span id="activeLabelDisplay">Online</span> Programmes
+                Showing <span id="activeCountDisplay">17</span> <span id="activeLabelDisplay">Online</span> Programmes
             </h2>
         </div>
 
@@ -870,7 +870,88 @@
                 </div>
             </div>
 
-            <!-- 14. Online BCA -->
+            <!-- 14. Online BBA in Banking, Fintech & AI -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bba_fintech.webp') }}" alt="Online BBA in Banking, Fintech & AI" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-book"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BBA in Banking, Fintech & AI</h3>
+                            <p class="tmu-card-desc">Digital banking platforms, fintech innovations, AI algorithms in finance, and financial data analytics.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bba_banking_fintech_ai.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. Online BBA in Healthcare Services & Administration -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bba_healthcare.webp') }}" alt="Online BBA in Healthcare Services & Administration" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-book"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BBA in Healthcare Services & Administration</h3>
+                            <p class="tmu-card-desc">Hospital operations, healthcare administration, patient care management, and health records systems.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bba_healthcare_administration.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16. Online BBA in International Business & Entrepreneurship -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bba_ib.webp') }}" alt="Online BBA in International Business & Entrepreneurship" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-book"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BBA in International Business & Entrepreneurship</h3>
+                            <p class="tmu-card-desc">Cross-border commerce, global market strategies, venture creation, and startup enterprise management.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bba_ib_entrepreneurship.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17. Online BCA -->
             <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
                 <div class="tmu-prog-card">
                     <div class="tmu-card-media">
