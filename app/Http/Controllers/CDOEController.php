@@ -294,6 +294,21 @@ class CDOEController extends Controller
         return view('all_pages.programme.bba_digital_marketing');
     }
 
+    public function bba_banking_fintech_ai_programme()
+    {
+        return view('all_pages.programme.bba_banking_fintech_ai');
+    }
+
+    public function bba_healthcare_administration_programme()
+    {
+        return view('all_pages.programme.bba_healthcare_administration');
+    }
+
+    public function bba_ib_entrepreneurship_programme()
+    {
+        return view('all_pages.programme.bba_ib_entrepreneurship');
+    }
+
     public function bca_programme()
     {
         return view('all_pages.programme.bca_programme');
@@ -365,6 +380,9 @@ class CDOEController extends Controller
             'MBA in Banking, Fintech & AI',
             'Online BBA',
             'Online BBA in Digital Marketing',
+            'Online BBA in Banking, Fintech & AI',
+            'Online BBA in Healthcare Services & Administration',
+            'Online BBA in International Business & Entrepreneurship',
             'Online BCA',
         ];
 
