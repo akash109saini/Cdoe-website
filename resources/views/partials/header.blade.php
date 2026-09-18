@@ -731,6 +731,10 @@
                             <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA</a></li>
                             <li><a href="{{ route('bca_cloud_devops.programme') }}" class="{{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}">BCA Cloud Computing & DevOps</a></li>
                             <li><a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="{{ request()->routeIs('bca_healthcare_bioinformatics.programme') ? 'active' : '' }}">BCA Healthcare IT & Bioinformatics</a></li>
+                            <li><a href="{{ route('bca_ai_data_science.programme') }}" class="{{ request()->routeIs('bca_ai_data_science.programme') ? 'active' : '' }}">BCA AI & Data Science</a></li>
+                            <li><a href="{{ route('bca_cyber_security_ethical_hacking.programme') }}" class="{{ request()->routeIs('bca_cyber_security_ethical_hacking.programme') ? 'active' : '' }}">BCA Cyber Security & Ethical Hacking</a></li>
+                            <li><a href="{{ route('bca_game_design_ar_vr.programme') }}" class="{{ request()->routeIs('bca_game_design_ar_vr.programme') ? 'active' : '' }}">BCA Game Design & AR/VR</a></li>
+                            <li><a href="{{ route('bca_fintech_blockchain.programme') }}" class="{{ request()->routeIs('bca_fintech_blockchain.programme') ? 'active' : '' }}">BCA FinTech & Blockchain</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -891,6 +895,14 @@
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BCA Cloud Computing & DevOps</a></li>
                                 <li><a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_healthcare_bioinformatics.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BCA Healthcare IT & Bioinformatics</a></li>
+                                <li><a href="{{ route('bca_ai_data_science.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_ai_data_science.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA AI & Data Science</a></li>
+                                <li><a href="{{ route('bca_cyber_security_ethical_hacking.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_cyber_security_ethical_hacking.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA Cyber Security & Ethical Hacking</a></li>
+                                <li><a href="{{ route('bca_game_design_ar_vr.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_game_design_ar_vr.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA Game Design & AR/VR</a></li>
+                                <li><a href="{{ route('bca_fintech_blockchain.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_fintech_blockchain.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA FinTech & Blockchain</a></li>
                             </ul>
                         </li>
 
