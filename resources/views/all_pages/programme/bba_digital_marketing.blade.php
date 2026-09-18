@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">Digital Marketing</span></h1>
+            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">Digital Marketing <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BBA in Digital Marketing <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>A <b>BBA in Digital Marketing programme at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a></b> is an undergraduate degree that combines core management subjects with modern digital marketing skills. The programme is designed to equip students with a strong foundation in digital marketing strategies to attract clients, promote products, build brands and increase sales. It is suitable for students who want to build careers in digital marketing, social media, SEO, content marketing, brand management, e-commerce, advertising, and online business.</p>
                             <p>The programme combines subjects such as business management, marketing management, financial management, human resource management, business communication, and entrepreneurship with digital-focused areas such as Search Engine Optimisation (SEO), Content Marketing, Email Marketing, Affiliate Marketing, E-commerce, Web Analytics, Online Advertising, and Digital Branding.</p>
                             <p>It also helps students develop practical skills in using digital marketing tools, understanding consumer behaviour, analysing campaign performance, creating online marketing strategies, and measuring return on investment (ROI).</p>

@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Healthcare IT & Bioinformatics</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Healthcare IT & Bioinformatics <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in Healthcare IT & Bioinformatics <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>The <b>Online BCA in Healthcare IT & Bioinformatics</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an interdisciplinary undergraduate programme designed for students interested in the intersection of computer applications, healthcare technology, data, and biological sciences. The programme combines core IT concepts with emerging applications in healthcare information systems and bioinformatics.</p>
                             <p>With the growing use of digital health records, healthcare data platforms, laboratory information systems, medical databases, and computational approaches to biological data, technology professionals are playing an increasingly important role in modern healthcare.</p>
                             <p>The programme enables students to develop a foundation in computer applications while gaining specialised knowledge relevant to healthcare technology and bioinformatics. The flexible online learning format allows students to pursue their degree while developing industry-oriented technical and analytical skills.</p>

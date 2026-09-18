@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Game Design & AR/VR</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Game Design & AR/VR <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in Game Design & AR/VR <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>The <b>Online BCA in Game Design & AR/VR</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an exciting undergraduate degree that bridges software development with interactive entertainment, 3D computer graphics, and extended reality (XR) technologies. With gaming, virtual simulation, and spatial computing experiencing astronomical growth worldwide, there is huge demand for creative technologists capable of programming interactive digital worlds.</p>
                             <p>Students learn the fundamentals of game engines such as Unity and Unreal Engine, C# and C++ scripting, 3D character design, real-time rendering, spatial audio, and head-mounted device (HMD) integration. They also explore practical applications of AR/VR beyond gaming, including healthcare simulations, architectural walkthroughs, industrial training, and ed-tech virtual labs.</p>
                             <p>Delivered via TMU Online’s flexible digital learning system, the program equips creative thinkers and coders with high-level technical expertise to thrive in gaming studios, metaverse ventures, and interactive media agencies while securing an accredited, UGC-entitled degree.</p>
