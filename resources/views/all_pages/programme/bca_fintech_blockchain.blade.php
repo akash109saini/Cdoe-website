@@ -1,109 +1,78 @@
 @extends('layouts.app')
 
-@section('CDOE', 'Online BCA Admission 2026: Fees, Eligibility, Syllabus and Career | TMU')
+@section('CDOE', 'Online BCA in FinTech & Blockchain | Specialisation & Scope')
 
 @section('content')
 
     <link rel="stylesheet" href="{{ asset('/assets/css/programme.css') }}">
     <div class="programme-banner">
-        {{-- Separate img tags commented out for LCP performance
-        <img src="{{ asset('assets/img/programmes/bca_desktop.jpeg') }}" alt="Programme Banner" class="d-none d-lg-block">
-        <img src="{{ asset('assets/img/programmes/bca_mobile.jpeg') }}" alt="Programme Banner" class="d-block d-md-none">
-        <img src="{{ asset('assets/img/programmes/bca_tablet.jpeg') }}" alt="Programme Banner" class="d-none d-md-block d-lg-none">
-        --}}
         <picture>
-            <source media="(max-width: 767px)" srcset="{{ asset('assets/img/programmes/bca_mobile.jpeg') }}">
-            <source media="(max-width: 991px)" srcset="{{ asset('assets/img/programmes/bca_tablet.jpeg') }}">
-            <img src="{{ asset('assets/img/programmes/bca_desktop.jpeg') }}" alt="Online BCA Programme Banner" fetchpriority="high" decoding="async" class="w-100">
+            <source media="(max-width: 767px)" srcset="{{ asset('assets/img/programmes/online_bca_fintech_blockchain_mobile.webp') }}">
+            <source media="(max-width: 991px)" srcset="{{ asset('assets/img/programmes/online_bca_fintech_blockchain_tablet.webp') }}">
+            <img src="{{ asset('assets/img/programmes/online_bca_fintech_blockchain_desktop.webp') }}" alt="Online BCA in FinTech & Blockchain" fetchpriority="high" decoding="async" class="w-100">
         </picture>
-        <div class="banner-title">
-            <p>Online BCA <br> <span>Bachelor of Computer Applications</span></p>
-            <p class="d-none d-lg-block">Build a strong foundation in technology and prepare for a successful career in the digital world with TMU’s Online BCA programme. Gain industry-relevant knowledge in computer applications, software development, and emerging technologies through a flexible and interactive online learning experience.</p>
+        <div class="banner-title d-none d-md-block">
+            <p>Online BCA in <br> <span>FinTech & Blockchain</span></p>
+            <p class="d-none d-lg-block">Pioneer the future of finance and decentralized technology. Master smart contracts, blockchain architecture, algorithmic trading, and financial cybersecurity with an Online BCA.</p>
         </div>
     </div>
+
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA <span class="highlight" style="color:#ff7900">Programme Details </span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">FinTech & Blockchain</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="course-course-detaila-inner">
 
-                    {{-- Start Sequential Content --}}
-
-                    {{-- Section 1: Description --}}
+                    {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <p>The Online BCA Programme at TMU is designed for students who want to develop technical knowledge and practical understanding of computer applications while enjoying the flexibility of online education. The programme helps learners build analytical, problem-solving, and digital skills required in today’s technology-driven environment.<br><br>
-                            The Bachelor of Computer Applications (BCA) online programme provides comprehensive exposure to computer fundamentals, programming concepts, databases, software development, networking, and web technologies. The curriculum is structured to combine theoretical learning with practical application to prepare students for modern IT careers.
-                            </p>
-                            <h3>Why Choose an Online BCA </h3>
-                            <div class="row pt-4">
-                                <div class="col-sm-6">
-                                    <ul class="single-list-wrap">
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Flexible learning from anywhere
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Study while managing work or other commitments
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Industry-oriented curriculum
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Strong foundation in computer applications
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Builds programming and analytical skills
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 mt-3 mt-sm-0">
-                                    <ul class="single-list-wrap">
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Interactive digital learning environment
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Access to online learning resources
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Enhances career opportunities in IT
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Prepares students for higher studies such as MCA or MBA
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Self-paced learning experience
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
+                                Online BCA in FinTech & Blockchain <span style="color:#ff7900;">Programme Details</span>
+                            </h2>
+                            <p>The <b>Online BCA in FinTech & Blockchain</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is a cutting-edge undergraduate program crafted for the next generation of financial technologists and distributed systems engineers. The convergence of cloud computing, decentralized ledgers, artificial intelligence, and automated transactions is revolutionizing global banking, capital markets, and corporate commerce.</p>
+                            <p>This interdisciplinary curriculum blends software engineering and database systems with blockchain protocols (Ethereum, Hyperledger), smart contract development (Solidity), decentralized finance (DeFi), tokenomics, and regulatory compliance. Students gain practical experience building secure decentralized applications (DApps), payment gateway integrations, and financial data models.</p>
+                            <p>Delivered entirely online through TMU Online’s high-performance digital campus, learners acquire dual-spectrum fluency in computing and finance, qualifying for high-impact roles in fintech enterprises, crypto startups, neo-banks, and global investment institutions.</p>
 
-                            <h3 style="padding-top: 30px;">Specialisations Offered</h3>
-                            <div class="row pt-4">
+                            <h2 class="mt-5 mb-3" style="font-size: 1.85rem; font-weight: 700; color: #001d4a;">Why Choose an Online BCA in FinTech & Blockchain?</h2>
+                            <p class="mb-4">As digital payments, decentralized protocols, and automation redefine financial ecosystems globally, specialized knowledge of fintech and blockchain provides immense career advantages:</p>
+                            <div class="row pt-2">
                                 <div class="col-sm-6">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bca_ai_data_science.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA AI & Data Science <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Fundamentals of computer applications and data structures
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bca_cyber_security_ethical_hacking.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA Cyber Security & Ethical Hacking <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Blockchain architecture, consensus algorithms, & cryptography
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bca_cloud_devops.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA Cloud Computing & DevOps <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Smart contract programming with Solidity and Ethereum
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Decentralized Applications (DApps) and Web3 development
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Financial markets, digital banking, and payment systems
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 mt-3 mt-sm-0">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bca_healthcare_bioinformatics.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA Healthcare IT & Bioinformatics <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Decentralized Finance (DeFi) ecosystems & protocols
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bca_game_design_ar_vr.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA Game Design & AR/VR <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Cybersecurity for financial systems & fraud prevention
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> <a href="{{ route('bca_fintech_blockchain.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA FinTech & Blockchain <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
+                                            <i class="fa fa-check"></i> Cloud computing for financial services and microservices
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Regulatory technology (RegTech), AML/KYC frameworks
+                                        </li>
+                                        <li class="single-list-inner style-check-box">
+                                            <i class="fa fa-check"></i> Financial data analytics and algorithmic models
                                         </li>
                                     </ul>
                                 </div>
@@ -124,7 +93,7 @@
                                 <div class="col-lg-6 mb-4 mb-lg-0">
                                     <div class="card h-100 compact-card">
                                         <div class="compact-card-header text-white text-center py-3" style="background-color: #001D4A; border-bottom: none;">
-                                            <h3 class="mb-0 text-white">BBA Fee Details</h3>
+                                            <h3 class="mb-0 text-white">Online BCA Fee Details</h3>
                                         </div>
                                         <div class="compact-card-body d-flex flex-column justify-content-between h-100">
                                             <div>
@@ -153,7 +122,6 @@
                                                     </table>
                                                 </div>
                                             </div>
-                
                                         </div>
                                     </div>
                                 </div>
@@ -169,8 +137,6 @@
                                                 <div class="text-center mb-2 p-2" style="background-color: rgba(255,102,0,0.05); border-radius: 8px; border: 1px solid rgba(255,102,0,0.1);">
                                                     <p class="text-muted mb-0" style="font-size: 11px;">25% scholarship on tuition fees per semester is available for:</p>
                                                 </div>
-                                                
-                                                <h6 style="color: #001D4A; font-weight: 600; margin-bottom: 8px; font-size: 13px;"></h6>
                                                 
                                                 <div class="d-flex flex-column gap-2">
                                                     <div class="d-flex align-items-center scholarship-item-compact">
@@ -208,7 +174,7 @@
                                                 <p class="text-muted mb-0" style="font-size: 11px; line-height: 1.4; text-align: center;"><i class="fas fa-info-circle me-1" style="color: #001D4A;"></i> Candidates must provide valid TMU ID or alumni proof to avail of the scholarship at the time of admission.</p>
                                             </div>
                                             <div class="text-center mb-2 p-2" style="background-color: rgba(255,102,0,0.05); border-radius: 8px; border: 1px solid rgba(255,102,0,0.1);">
-                                                    <p class="text-muted mb-0" style="font-size: 11px;"><i class="fa-solid fa-star"></i> The fees may change over time. Kindly confirm from the admission cell before taking admission.</p>
+                                                <p class="text-muted mb-0" style="font-size: 11px;"><i class="fa-solid fa-star"></i> The fees may change over time. Kindly confirm from the admission cell before taking admission.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -221,21 +187,21 @@
                     {{-- Admissions Open Section --}}
                     <div class="course-section container pd-top-30 pd-bottom-30 text-center" id="admissions-open-section">
                         <div class="section-header mt-5 mb-0">
-                            <h2>Online BCA <span class="highlight">Admissions Open 2026</span></h2>
+                            <h2>Online BCA in FinTech & Blockchain <span class="highlight">Admissions Open 2026</span></h2>
                         </div>
                         <div class="course-details-content">
-                            <p>Admissions open for the 2026 batch of the TMU Online BCA—a robust program designed to prepare technical leaders for global IT industries. TMU Online offers a flexible, 100% online learning experience that combines rigorous academic standards with practical computing expertise. Take the first step towards a successful career in technology today.</p>
+                            <p>Admissions open for the 2026 batch of the TMU Online BCA in FinTech & Blockchain—an industry-responsive degree preparing graduates for lucrative careers at the nexus of finance and software engineering. Learn through interactive virtual classrooms, hands-on blockchain labs, and expert mentor support.</p>
                         </div>
                     </div>
 
+                    {{-- Degree Highlight Section --}}
                     <section class="degree-highlight-section">
                         <div class="container-fluid px-4 px-md-5">
                             <div class="degree-content-wrapper">
 
                                 <div class="degree-benefits-col">
                                     <h2 class="degree-main-title">
-                                        Get a UGC Entitled Online BCA Degree from a <span class="highlight-underline">NAAC
-                                            A University</span>
+                                        Get a UGC Entitled Online BCA Degree from a <span class="highlight-underline">NAAC A University</span>
                                     </h2>
 
                                     <div class="benefits-list">
@@ -245,8 +211,7 @@
                                             </div>
                                             <div class="benefit-text">
                                                 <h4>Degree from Top Ranked University</h4>
-                                                <p>Get high-stature degree on completion of your Online BCA course from
-                                                    India's top most University recognised for excellence.</p>
+                                                <p>Get high-stature degree on completion of your Online BCA course from India's top most University recognised for excellence.</p>
                                             </div>
                                         </div>
 
@@ -266,8 +231,7 @@
                                             </div>
                                             <div class="benefit-text">
                                                 <h4>No Difference From Campus Program Degree</h4>
-                                                <p>The degree is recognized by regulatory bodies and treated at par with
-                                                    regular campus-based program degrees.</p>
+                                                <p>The degree is recognized by regulatory bodies and treated at par with regular campus-based program degrees.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -275,30 +239,25 @@
 
                                 <div class="degree-image-col">
                                     <img src="{{ asset('assets/img/degree.webp') }}"
-                                        alt="Sample Online BCA Degree Certificate (Landscape)" class="sample-degree-image">
-                                </div>
-
-                             </div>
-                        </div>
-                    </section>
-
-                    <section class="recruiters-section">
-                        <div class="container">
-
-                            <div class="recruiter-title-container">
-                                <div class="section-header">
-                                    <h2>Teerthanker Mahaveer University Online, <br><span class="highlight">Open Doors.
-                                            World Wide.</span></h2>
-                                    <p>Our top-class recruiters list gives you the assurance that you'll get placed in
-                                        leading MNCs and work with renowned brands.</p>
-                                    <span class="title-underline"></span>
+                                        alt="Sample Online BCA Degree Certificate" class="sample-degree-image">
                                 </div>
 
                             </div>
+                        </div>
+                    </section>
+
+                    {{-- Recruiters Section --}}
+                    <section class="recruiters-section">
+                        <div class="container">
+                            <div class="recruiter-title-container">
+                                <div class="section-header">
+                                    <h2>Teerthanker Mahaveer University Online, <br><span class="highlight">Open Doors. World Wide.</span></h2>
+                                    <p>Our top-class recruiters list gives you the assurance that you'll get placed in leading banks, financial firms, and tech conglomerates.</p>
+                                    <span class="title-underline"></span>
+                                </div>
+                            </div>
 
                             <div class="recruiter-logo-grid">
-
-                                {{-- Loop from 1 to 32 assuming images 1.jpg to 32.jpg exist --}}
                                 @php
                                     $altTexts = [
                                         1 => 'Wipro Logo', 2 => 'Vistara Logo', 3 => 'Videocon Logo', 4 => 'VFS Global Logo',
@@ -321,69 +280,70 @@
                                             onerror="this.style.display='none'; this.parentElement.style.display='none';">
                                     </div>
                                 @endfor
-
-                            </div> </div> </section>
-
-                    <section class="career-paths-section px-1 px-lg-5">
-                        <div class="container-fluid">
-
-                            <div class="career-paths-header">
-                                <h2>Career Paths After Online BCA <span>Programme</span></h2>
-                                <p>An Online BCA degree equips you with fundamental IT skills, opening doors to diverse technical roles. Here are some popular career paths you can pursue after completing your BCA:</p>
-                            </div>
-
-                            <div class="career-paths-content">
-
-                                <div class="career-paths-image-col">
-                                    <img src="{{ asset('assets/img/programmes/prog-img-4.jpg') }}"
-                                        alt="Professionals discussing BCA career paths" class="career-image">
-                                </div>
-
-                                <div class="career-paths-list-col">
-                                    <ul class="career-path-list pl-3">
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Software Developer</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Web Developer</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Technical Support Executive</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Database Administrator (Entry-Level)</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> System Administrator</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> IT Support Specialist</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Application Support Executive</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> UI/UX Support Professional</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Business Analyst (Entry-Level)</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Digital Technology Associate</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Data Analyst (Entry-Level)</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Entrepreneurship & Freelancing</li>
-                                    </ul>
-                                </div>
-
                             </div>
                         </div>
                     </section>
 
+                    {{-- Career Paths Section --}}
+                    <section class="career-paths-section px-1 px-lg-5">
+                        <div class="container-fluid">
+                            <div class="career-paths-header">
+                                <h2>Career Paths After BCA <span>FinTech & Blockchain</span></h2>
+                                <p>Financial institutions, payment processors, crypto companies, and tech conglomerates are actively hiring fintech and blockchain specialists:</p>
+                            </div>
+
+                            <div class="career-paths-content">
+                                <div class="career-paths-image-col">
+                                    <img src="{{ asset('assets/img/programmes/prog-img-4.jpg') }}"
+                                        alt="Career Paths in FinTech and Blockchain" class="career-image">
+                                </div>
+
+                                <div class="career-paths-list-col">
+                                    <ul class="career-path-list pl-3">
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Blockchain Developer / Smart Contract Engineer</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> FinTech Software Developer</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Decentralized Application (DApp) Engineer</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Financial Data Analyst</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Blockchain Solutions Architect</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Crypto Compliance & Risk Analyst</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Digital Payment Systems Specialist</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> FinTech Product Associate</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> DeFi Protocol Engineer</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Information Security Analyst (FinTech)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {{-- Eligibility Criteria Section --}}
                     <section class="career-paths-section px-1 px-lg-5">
                         <div class="container-fluid px-3 px-lg-5">
                             <div class="eligibility-card">
                                 <div class="eligibility-content">
-
                                     <div class="eligibility-text">
                                         <h2 class="eligibility-title">Who Can Apply</h2>
                                         <p class="eligibility-subtitle">Eligibility Criteria</p>
                                         <ul class="eligibility-list">
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Passed 10+2 (or equivalent examination) in any stream from a recognised Board.</span>
+                                                <span>Passed 10+2 or equivalent examination from a recognised educational board.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>A minimum aggregate of 45% marks or an equivalent letter/numerical grade is required.</span>
+                                                <span>Candidates should have completed Class 12 with English as a compulsory subject.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>A relaxation of 5% marks may be provided to SC/ST candidates as per applicable norms.</span>
+                                                <span>Students from Commerce, Science, or Arts streams with an interest in finance and computing are eligible.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Candidates appearing for the Class 12 final examination are also eligible to apply, subject to meeting the eligibility requirements at the time of admission.</span>
+                                                <span>Basic mathematical and analytical inclination is beneficial for financial programming.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Candidates appearing for final Class 12 exams may apply on a provisional basis.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -392,13 +352,12 @@
                                         <img src="{{ asset('assets/img/programmes/who-can-apply.png') }}" alt="Eligibility requirements illustration"
                                             style="margin-top:-3rem;">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    {{-- Section 3: FAQ --}}
+                    {{-- Section: FAQ --}}
                     <div class="course-section mt-5 container" id="faq-section">
                         <h2 class="section-title text-center">FAQ</h2>
                         <div class="course-details-content mt-3">
@@ -408,7 +367,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link" data-toggle="collapse" data-target="#f-one"
                                                 aria-expanded="true" aria-controls="f-one">
-                                                01. What is the Online BCA programme?
+                                                01. What is BCA in FinTech & Blockchain?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -417,23 +376,24 @@
                                     <div id="f-one" class="collapse show" aria-labelledby="ff-one"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            The Online BCA programme is an undergraduate degree focused on computer applications and information technology, delivered through an online learning format that offers flexibility and accessibility.
+                                            It is a specialized 3-year undergraduate degree combining core computer applications with blockchain technology, smart contract development, financial systems, digital banking, and cryptocurrency concepts.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-two">
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-two"
                                                 aria-expanded="false" aria-controls="f-two">
-                                                02. Who can apply for Online BCA?
+                                                02. Is FinTech & Blockchain a growing sector for career growth?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
                                     </div>
                                     <div id="f-two" class="collapse" aria-labelledby="ff-two" data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Students who have completed 10+2 from a recognised board are eligible to apply for the Online BCA programme.
+                                            Yes, fintech is one of the fastest-growing tech sectors worldwide, with immense funding, rapid adoption of digital payments, and skyrocketing demand for blockchain engineers.
                                         </div>
                                     </div>
                                 </div>
@@ -443,7 +403,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-three"
                                                 aria-expanded="false" aria-controls="f-three">
-                                                03. Is an Online BCA degree valid for jobs and higher studies?
+                                                03. What are the key skills taught in this programme?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -451,16 +411,17 @@
                                     <div id="f-three" class="collapse" aria-labelledby="ff-three"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Yes, an Online BCA degree from a recognised university is valid for employment opportunities and for pursuing higher studies such as MCA, MBA, and other postgraduate programmes.
+                                            Smart contract development, Solidity, Ethereum, Hyperledger, Web3.js, financial analytics, cybersecurity, cryptographic hashing, and digital banking APIs.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-four">
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-four"
                                                 aria-expanded="false" aria-controls="f-four">
-                                                04. What are the benefits of studying an Online BCA?
+                                                04. What job opportunities are available after graduation?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -468,16 +429,17 @@
                                     <div id="f-four" class="collapse" aria-labelledby="ff-four"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Online BCA offers flexible learning, affordable education, an industry-oriented curriculum, digital resources, and opportunities to develop technical and problem-solving skills.
+                                            Roles include Blockchain Developer, FinTech Software Associate, Smart Contract Auditor, Financial Systems Analyst, and Web3 Developer.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card single-faq-inner style-header-bg">
                                     <div class="card-header" id="ff-five">
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-five"
                                                 aria-expanded="false" aria-controls="f-five">
-                                                05. What career options are available after an Online BCA?
+                                                05. Can students from a Commerce background apply?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -485,17 +447,114 @@
                                     <div id="f-five" class="collapse" aria-labelledby="ff-five"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Graduates can pursue careers as software developers, web developers, IT support professionals, database administrators, system administrators, or continue with advanced studies.
+                                            Yes, students from Commerce, Science, and Arts backgrounds meeting 10+2 criteria are eligible. A commerce or mathematics background is very well-suited to the curriculum.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card single-faq-inner style-header-bg">
+                                    <div class="card-header" id="ff-six">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-six"
+                                                aria-expanded="false" aria-controls="f-six">
+                                                06. Does TMU Online offer career placement assistance?
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="f-six" class="collapse" aria-labelledby="ff-six"
+                                        data-parent="#faq-accordion">
+                                        <div class="card-body">
+                                            Yes, TMU Online provides dedicated career services, resume preparation, industry networking, and interview assistance with top tech and financial employers.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{-- End Sequential Content --}}
+
                 </div>
             </div>
         </div>
     </div>
+
+    {{-- SEO Schema Markup --}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Course",
+          "name": "Online BCA in FinTech & Blockchain",
+          "description": "Study Online BCA in FinTech & Blockchain at TMU. Gain expertise in smart contracts, blockchain architecture, DeFi, digital banking, and financial analytics.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Teerthanker Mahaveer University Centre for Distance and Online Education",
+            "url": "https://tmuonline.ac.in"
+          },
+          "educationalCredentialAwarded": "Bachelor of Computer Applications (BCA)",
+          "occupationalCredentialAwarded": "Undergraduate Degree",
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "duration": "P3Y"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is BCA in FinTech & Blockchain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is a specialized 3-year undergraduate degree combining core computer applications with blockchain technology, smart contract development, financial systems, digital banking, and cryptocurrency concepts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is FinTech & Blockchain a growing sector for career growth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, fintech is one of the fastest-growing tech sectors worldwide, with immense funding, rapid adoption of digital payments, and skyrocketing demand for blockchain engineers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the key skills taught in this programme?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Smart contract development, Solidity, Ethereum, Hyperledger, Web3.js, financial analytics, cybersecurity, cryptographic hashing, and digital banking APIs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What job opportunities are available after graduation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Roles include Blockchain Developer, FinTech Software Associate, Smart Contract Auditor, Financial Systems Analyst, and Web3 Developer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can students from a Commerce background apply?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, students from Commerce, Science, and Arts backgrounds meeting 10+2 criteria are eligible. A commerce or mathematics background is very well-suited to the curriculum."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does TMU Online offer career placement assistance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, TMU Online provides dedicated career services, resume preparation, industry networking, and interview assistance with top tech and financial employers."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
 @endsection
