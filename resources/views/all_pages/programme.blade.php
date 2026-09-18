@@ -497,13 +497,13 @@
                 <!-- Filter Tabs Only -->
                 <div class="filter-tabs-group">
                     <button class="tab-btn active" data-filter="all">
-                        All <span class="tab-count">19</span>
+                        All <span class="tab-count">23</span>
                     </button>
                     <button class="tab-btn" data-filter="pg">
                         Postgraduate <span class="tab-count">11</span>
                     </button>
                     <button class="tab-btn" data-filter="ug">
-                        Undergraduate <span class="tab-count">8</span>
+                        Undergraduate <span class="tab-count">12</span>
                     </button>
                 </div>
             </div>
@@ -512,7 +512,7 @@
         <!-- Meta Results Header -->
         <div class="programmes-meta-header">
             <h2 class="meta-title">
-                Showing <span id="activeCountDisplay">19</span> <span id="activeLabelDisplay">Online</span> Programmes
+                Showing <span id="activeCountDisplay">23</span> <span id="activeLabelDisplay">Online</span> Programmes
             </h2>
         </div>
 
@@ -1024,6 +1024,114 @@
                         </div>
                         <div class="tmu-card-footer">
                             <a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20. Online BCA in AI & Data Science -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bca_ai_data_science.webp') }}" alt="Online BCA in AI & Data Science" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BCA in AI & Data Science</h3>
+                            <p class="tmu-card-desc">Artificial intelligence, machine learning, big data analytics, Python programming, and predictive algorithms.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bca_ai_data_science.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 21. Online BCA in Cyber Security & Ethical Hacking -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bca_cyber_security_ethical_hacking.webp') }}" alt="Online BCA in Cyber Security & Ethical Hacking" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BCA in Cyber Security & Ethical Hacking</h3>
+                            <p class="tmu-card-desc">Network defense, ethical hacking techniques, penetration testing, cryptography, and digital forensics.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bca_cyber_security_ethical_hacking.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 22. Online BCA in Game Design & AR/VR -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bca_game_design_ar_vr.webp') }}" alt="Online BCA in Game Design & AR/VR" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BCA in Game Design & AR/VR</h3>
+                            <p class="tmu-card-desc">Game programming with Unity and Unreal, 3D asset modeling, augmented reality, and virtual reality development.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bca_game_design_ar_vr.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 23. Online BCA in FinTech & Blockchain -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bca_fintech_blockchain.webp') }}" alt="Online BCA in FinTech & Blockchain" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BCA in FinTech & Blockchain</h3>
+                            <p class="tmu-card-desc">Smart contracts with Solidity, blockchain protocols, decentralized finance (DeFi), and financial technology systems.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bca_fintech_blockchain.programme') }}" class="tmu-btn-explore">
                                 <span>Explore Programme</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>

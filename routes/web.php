@@ -24,6 +24,10 @@ Route::get('/online-bba-in-international-business-and-entrepreneurship', [CDOECo
 Route::get('/online-bca', [CDOEController::class, 'bca_programme'])->name('bca.programme');
 Route::get('/online-bca-cloud-computing-devops', [CDOEController::class, 'bca_cloud_devops_programme'])->name('bca_cloud_devops.programme');
 Route::get('/online-bca-healthcare-it-bioinformatics', [CDOEController::class, 'bca_healthcare_bioinformatics_programme'])->name('bca_healthcare_bioinformatics.programme');
+Route::get('/online-bca-ai-data-science', [CDOEController::class, 'bca_ai_data_science_programme'])->name('bca_ai_data_science.programme');
+Route::get('/online-bca-cyber-security-ethical-hacking', [CDOEController::class, 'bca_cyber_security_ethical_hacking_programme'])->name('bca_cyber_security_ethical_hacking.programme');
+Route::get('/online-bca-game-design-ar-vr', [CDOEController::class, 'bca_game_design_ar_vr_programme'])->name('bca_game_design_ar_vr.programme');
+Route::get('/online-bca-fintech-blockchain', [CDOEController::class, 'bca_fintech_blockchain_programme'])->name('bca_fintech_blockchain.programme');
 Route::get('/online-mba-digital-marketing', [CDOEController::class, 'digital_marketing_programme'])->name('digital_marketing.programme');
 Route::get('/online-mba-logistics-and-supply-chain-management', [CDOEController::class, 'lscm_programme'])->name('lscm.programme');
 Route::get('/online-mba-in-agri-business', [CDOEController::class, 'agri_business_programme'])->name('agri_business.programme');

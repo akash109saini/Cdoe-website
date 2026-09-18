@@ -324,6 +324,26 @@ class CDOEController extends Controller
         return view('all_pages.programme.bca_healthcare_bioinformatics');
     }
 
+    public function bca_ai_data_science_programme()
+    {
+        return view('all_pages.programme.bca_ai_data_science');
+    }
+
+    public function bca_cyber_security_ethical_hacking_programme()
+    {
+        return view('all_pages.programme.bca_cyber_security_ethical_hacking');
+    }
+
+    public function bca_game_design_ar_vr_programme()
+    {
+        return view('all_pages.programme.bca_game_design_ar_vr');
+    }
+
+    public function bca_fintech_blockchain_programme()
+    {
+        return view('all_pages.programme.bca_fintech_blockchain');
+    }
+
     public function digital_marketing_programme()
     {
         return view('all_pages.programme.digital_marketing_progrmme');
@@ -396,6 +416,10 @@ class CDOEController extends Controller
             'Online BCA',
             'Online BCA in Cloud Computing & DevOps',
             'Online BCA in Healthcare IT & Bioinformatics',
+            'Online BCA in AI & Data Science',
+            'Online BCA in Cyber Security & Ethical Hacking',
+            'Online BCA in Game Design & AR/VR',
+            'Online BCA in FinTech & Blockchain',
         ];
 
         try {
