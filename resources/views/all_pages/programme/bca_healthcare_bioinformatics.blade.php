@@ -1,25 +1,25 @@
 @extends('layouts.app')
 
-@section('CDOE', 'Online BCA in Cloud Computing & DevOps | Careers')
+@section('CDOE', 'Online BCA in Healthcare IT & Bioinformatics | Careers')
 
 @section('content')
 
     <link rel="stylesheet" href="{{ asset('/assets/css/programme.css') }}">
     <div class="programme-banner">
         <picture>
-            <source media="(max-width: 767px)" srcset="{{ asset('assets/img/programmes/online_bca_cloud_devops_mobile.webp') }}">
-            <source media="(max-width: 991px)" srcset="{{ asset('assets/img/programmes/online_bca_cloud_devops_tablet.webp') }}">
-            <img src="{{ asset('assets/img/programmes/online_bca_cloud_devops_desktop.webp') }}" alt="Online BCA in Cloud Computing & DevOps" fetchpriority="high" decoding="async" class="w-100">
+            <source media="(max-width: 767px)" srcset="{{ asset('assets/img/programmes/online_bca_healthcare_bioinformatics_mobile.webp') }}">
+            <source media="(max-width: 991px)" srcset="{{ asset('assets/img/programmes/online_bca_healthcare_bioinformatics_tablet.webp') }}">
+            <img src="{{ asset('assets/img/programmes/online_bca_healthcare_bioinformatics_desktop.webp') }}" alt="Online BCA in Healthcare IT & Bioinformatics" fetchpriority="high" decoding="async" class="w-100">
         </picture>
         <div class="banner-title d-none d-md-block">
-            <p>Online BCA in <br> <span>Cloud Computing & DevOps</span></p>
-            <p class="d-none d-lg-block">Build a future-ready IT career with an Online BCA in Cloud Computing & DevOps. Learn cloud technologies, DevOps practices, automation, and modern software tools to develop practical skills for today’s fast-growing digital technology industry.</p>
+            <p>Online BCA in <br> <span>Healthcare IT & Bioinformatics</span></p>
+            <p class="d-none d-lg-block">Transform your interest in technology into a career in healthcare. An Online BCA in Healthcare IT & Bioinformatics combines IT, health data, and bioinformatics to prepare you for the rapidly evolving world of digital healthcare.</p>
         </div>
     </div>
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Cloud Computing & DevOps</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Healthcare IT & Bioinformatics</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -29,53 +29,50 @@
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
                             <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in Cloud Computing & DevOps <span style="color:#ff7900;">Programme Details</span>
+                                Online BCA in Healthcare IT & Bioinformatics <span style="color:#ff7900;">Programme Details</span>
                             </h2>
-                            <p>The <b>Online BCA in Cloud Computing & DevOps</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an industry-oriented undergraduate programme designed for students who want to build a strong foundation in computer applications while developing specialised knowledge of cloud computing, DevOps, software development, automation, virtualisation, and modern IT infrastructure.</p>
-                            <p>As organisations increasingly adopt cloud-based platforms and automated software delivery, professionals with knowledge of cloud technologies and DevOps practices are becoming an important part of modern technology teams. This specialisation enables students to understand how applications are developed, deployed, managed, monitored, and scaled in cloud environments.</p>
-                            <p>Through a flexible online learning format, students can develop programming, problem-solving, infrastructure, automation, and technology management skills while pursuing their undergraduate degree.</p>
+                            <p>The <b>Online BCA in Healthcare IT & Bioinformatics</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an interdisciplinary undergraduate programme designed for students interested in the intersection of computer applications, healthcare technology, data, and biological sciences. The programme combines core IT concepts with emerging applications in healthcare information systems and bioinformatics.</p>
+                            <p>With the growing use of digital health records, healthcare data platforms, laboratory information systems, medical databases, and computational approaches to biological data, technology professionals are playing an increasingly important role in modern healthcare.</p>
+                            <p>The programme enables students to develop a foundation in computer applications while gaining specialised knowledge relevant to healthcare technology and bioinformatics. The flexible online learning format allows students to pursue their degree while developing industry-oriented technical and analytical skills.</p>
 
-                            <h2 class="mt-5 mb-3" style="font-size: 1.85rem; font-weight: 700; color: #001d4a;">Why Choose an Online BCA in Cloud Computing & DevOps?</h2>
-                            <p class="mb-4">The Online BCA in Cloud Computing & DevOps focuses on the technologies and practices used to support modern software and IT environments. Students can develop knowledge in areas such as:</p>
+                            <h2 class="mt-5 mb-3" style="font-size: 1.85rem; font-weight: 700; color: #001d4a;">Why Choose an Online BCA in Healthcare IT & Bioinformatics?</h2>
+                            <p class="mb-4">Healthcare is becoming increasingly technology-driven, creating a need for professionals who understand computing as well as healthcare data and information systems. The Online BCA in Healthcare IT & Bioinformatics focuses on the application of technology to healthcare and biological data. Students can develop skills in areas such as:</p>
                             <div class="row pt-2">
                                 <div class="col-sm-6">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Computer applications and programming
+                                            <i class="fa fa-check"></i> Computer programming and applications
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Cloud computing fundamentals
+                                            <i class="fa fa-check"></i> Healthcare Information Technology
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Cloud infrastructure and services
+                                            <i class="fa fa-check"></i> Health information systems
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> DevOps principles and practices
+                                            <i class="fa fa-check"></i> Healthcare databases
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Software development and deployment
-                                        </li>
-                                        <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Virtualisation and containers
+                                            <i class="fa fa-check"></i> Bioinformatics fundamentals
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 mt-3 mt-sm-0">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Continuous Integration and Continuous Delivery (CI/CD)
+                                            <i class="fa fa-check"></i> Biological data analysis
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Automation and infrastructure management
+                                            <i class="fa fa-check"></i> Data management and analytics
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Database and network technologies
+                                            <i class="fa fa-check"></i> Digital healthcare technologies
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Cloud security and monitoring
+                                            <i class="fa fa-check"></i> Information security and data privacy
                                         </li>
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> Emerging cloud technologies
+                                            <i class="fa fa-check"></i> Emerging healthcare technologies
                                         </li>
                                     </ul>
                                 </div>
@@ -190,10 +187,10 @@
                     {{-- Admissions Open Section --}}
                     <div class="course-section container pd-top-30 pd-bottom-30 text-center" id="admissions-open-section">
                         <div class="section-header mt-5 mb-0">
-                            <h2>Online BCA in Cloud Computing & DevOps <span class="highlight">Admissions Open 2026</span></h2>
+                            <h2>Online BCA in Healthcare IT & Bioinformatics <span class="highlight">Admissions Open 2026</span></h2>
                         </div>
                         <div class="course-details-content">
-                            <p>Admissions open for the 2026 batch of the TMU Online BCA in Cloud Computing & DevOps—an advanced programme designed to prepare technology leaders for cloud-first enterprises, automated infrastructure, and modern software engineering. TMU Online provides a flexible, 100% online learning experience that blends rigorous university curriculum with industry-relevant cloud practices.</p>
+                            <p>Admissions open for the 2026 batch of the TMU Online BCA in Healthcare IT & Bioinformatics—an interdisciplinary programme bridging computer applications, health informatics, and computational biology. TMU Online provides a flexible, 100% online learning environment with high academic standards and practical healthcare IT application.</p>
                         </div>
                     </div>
 
@@ -255,7 +252,7 @@
                             <div class="recruiter-title-container">
                                 <div class="section-header">
                                     <h2>Teerthanker Mahaveer University Online, <br><span class="highlight">Open Doors. World Wide.</span></h2>
-                                    <p>Our top-class recruiters list gives you the assurance that you'll get placed in leading MNCs and work with renowned tech brands.</p>
+                                    <p>Our top-class recruiters list gives you the assurance that you'll get placed in leading MNCs, hospital chains, and health-tech brands.</p>
                                     <span class="title-underline"></span>
                                 </div>
                             </div>
@@ -291,28 +288,28 @@
                     <section class="career-paths-section px-1 px-lg-5">
                         <div class="container-fluid">
                             <div class="career-paths-header">
-                                <h2>Career Paths After BCA <span>Cloud Computing & DevOps</span></h2>
-                                <p>The programme can provide a foundation for technology careers across cloud computing, software development, IT operations, automation, and infrastructure management. Potential career roles include:</p>
+                                <h2>Career Paths After BCA <span>Healthcare IT & Bioinformatics</span></h2>
+                                <p>The interdisciplinary nature of the programme can help graduates explore opportunities across healthcare technology, IT, data management, and related sectors. Potential career roles include:</p>
                             </div>
 
                             <div class="career-paths-content">
                                 <div class="career-paths-image-col">
                                     <img src="{{ asset('assets/img/programmes/prog-img-4.jpg') }}"
-                                        alt="Career Paths in Cloud Computing and DevOps" class="career-image">
+                                        alt="Career Paths in Healthcare IT and Bioinformatics" class="career-image">
                                 </div>
 
                                 <div class="career-paths-list-col">
                                     <ul class="career-path-list pl-3">
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Cloud Support Associate</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Cloud Operations Associate</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Junior Cloud Engineer</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> DevOps Associate</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Junior DevOps Engineer</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Software Developer</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Cloud Application Support Analyst</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> System Administrator</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> IT Infrastructure Associate</li>
-                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Automation Engineer</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Healthcare IT Executive</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Healthcare Data Analyst</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Health Information Management Associate</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Healthcare Technology Support Executive</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Bioinformatics Associate</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Junior Bioinformatics Analyst</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Database Administrator</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Data Management Associate</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Healthcare Software Support Associate</li>
+                                        <li class="career-path-item"><i class="fas fa-check-circle"></i> Clinical Data Associate</li>
                                     </ul>
                                 </div>
                             </div>
@@ -334,15 +331,19 @@
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Students from any stream can apply, subject to university requirements.</span>
+                                                <span>Candidates should have completed Class 12 with English as a subject.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Basic knowledge of computers and information technology is helpful.</span>
+                                                <span>Students from Science, Commerce, or other eligible streams may apply, subject to university requirements.</span>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check-circle"></i>
-                                                <span>Candidates appearing for their Class 12 final examination may also apply, as per university admission rules.</span>
+                                                <span>Basic knowledge of computers and biology/healthcare can be helpful.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Candidates appearing for their Class 12 final examination may apply as per university admission rules.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -366,7 +367,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link" data-toggle="collapse" data-target="#f-one"
                                                 aria-expanded="true" aria-controls="f-one">
-                                                01. What is BCA in Cloud Computing & DevOps?
+                                                01. What is BCA in Healthcare IT & Bioinformatics?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -375,7 +376,7 @@
                                     <div id="f-one" class="collapse show" aria-labelledby="ff-one"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            It is a computer applications programme focused on cloud technologies, DevOps practices, automation, software development, and IT infrastructure management.
+                                            It is a computer applications programme that combines IT, healthcare technologies, databases, and bioinformatics to support healthcare and biological data management.
                                         </div>
                                     </div>
                                 </div>
@@ -385,14 +386,14 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-two"
                                                 aria-expanded="false" aria-controls="f-two">
-                                                02. Is BCA in Cloud Computing & DevOps a good career option?
+                                                02. Is BCA in Healthcare IT & Bioinformatics a good career option?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
                                     </div>
                                     <div id="f-two" class="collapse" aria-labelledby="ff-two" data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Yes, it can prepare students for careers in cloud computing, DevOps, software development, automation, and IT infrastructure.
+                                            It can provide career opportunities in healthcare IT, health data management, bioinformatics, medical software, and healthcare technology.
                                         </div>
                                     </div>
                                 </div>
@@ -402,7 +403,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-three"
                                                 aria-expanded="false" aria-controls="f-three">
-                                                03. What are the career options after BCA in Cloud Computing & DevOps?
+                                                03. What are the career options after BCA in Healthcare IT & Bioinformatics?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -410,7 +411,7 @@
                                     <div id="f-three" class="collapse" aria-labelledby="ff-three"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            Graduates can work as Cloud Engineer, DevOps Engineer, Cloud Support Associate, System Administrator, Software Developer, or Cloud Operations Engineer.
+                                            Graduates can work as Healthcare IT Analyst, Bioinformatics Analyst, Health Data Analyst, Clinical Data Coordinator, Healthcare Software Developer, or Database Administrator.
                                         </div>
                                     </div>
                                 </div>
@@ -420,7 +421,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-four"
                                                 aria-expanded="false" aria-controls="f-four">
-                                                04. What subjects are covered in BCA Cloud Computing & DevOps?
+                                                04. What subjects are covered in this BCA programme?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -428,7 +429,7 @@
                                     <div id="f-four" class="collapse" aria-labelledby="ff-four"
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
-                                            The programme may include programming, cloud computing, Linux, networking, databases, DevOps tools, automation, cybersecurity, and software development.
+                                            The programme may cover programming, databases, healthcare information systems, bioinformatics, data analysis, biotechnology concepts, and health data management.
                                         </div>
                                     </div>
                                 </div>
@@ -438,7 +439,7 @@
                                         <h5 class="mb-0">
                                             <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-five"
                                                 aria-expanded="false" aria-controls="f-five">
-                                                05. Can I pursue BCA in Cloud Computing & DevOps after Class 12?
+                                                05. Can I pursue BCA in Healthcare IT & Bioinformatics after Class 12?
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </h5>
@@ -447,6 +448,24 @@
                                         data-parent="#faq-accordion">
                                         <div class="card-body">
                                             Yes, students who meet the university's eligibility requirements can apply after completing Class 12.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card single-faq-inner style-header-bg">
+                                    <div class="card-header" id="ff-six">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#f-six"
+                                                aria-expanded="false" aria-controls="f-six">
+                                                06. Do I need a Biology background for this BCA programme?
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="f-six" class="collapse" aria-labelledby="ff-six"
+                                        data-parent="#faq-accordion">
+                                        <div class="card-body">
+                                            A Biology background may be helpful for understanding bioinformatics and healthcare concepts, but eligibility depends on the university's admission requirements.
                                         </div>
                                     </div>
                                 </div>
@@ -466,8 +485,8 @@
       "@graph": [
         {
           "@type": "Course",
-          "name": "Online BCA in Cloud Computing & DevOps",
-          "description": "Explore Online BCA in Cloud Computing & DevOps, covering cloud technologies, automation, CI/CD, eligibility, career opportunities and future scope.",
+          "name": "Online BCA in Healthcare IT & Bioinformatics",
+          "description": "Explore Online BCA in Healthcare IT & Bioinformatics, covering healthcare technology, bioinformatics, eligibility, skills, careers and future scope.",
           "provider": {
             "@type": "EducationalOrganization",
             "name": "Teerthanker Mahaveer University Centre for Distance and Online Education",
@@ -486,42 +505,50 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What is BCA in Cloud Computing & DevOps?",
+              "name": "What is BCA in Healthcare IT & Bioinformatics?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It is a computer applications programme focused on cloud technologies, DevOps practices, automation, software development, and IT infrastructure management."
+                "text": "It is a computer applications programme that combines IT, healthcare technologies, databases, and bioinformatics to support healthcare and biological data management."
               }
             },
             {
               "@type": "Question",
-              "name": "Is BCA in Cloud Computing & DevOps a good career option?",
+              "name": "Is BCA in Healthcare IT & Bioinformatics a good career option?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, it can prepare students for careers in cloud computing, DevOps, software development, automation, and IT infrastructure."
+                "text": "It can provide career opportunities in healthcare IT, health data management, bioinformatics, medical software, and healthcare technology."
               }
             },
             {
               "@type": "Question",
-              "name": "What are the career options after BCA in Cloud Computing & DevOps?",
+              "name": "What are the career options after BCA in Healthcare IT & Bioinformatics?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Graduates can work as Cloud Engineer, DevOps Engineer, Cloud Support Associate, System Administrator, Software Developer, or Cloud Operations Engineer."
+                "text": "Graduates can work as Healthcare IT Analyst, Bioinformatics Analyst, Health Data Analyst, Clinical Data Coordinator, Healthcare Software Developer, or Database Administrator."
               }
             },
             {
               "@type": "Question",
-              "name": "What subjects are covered in BCA Cloud Computing & DevOps?",
+              "name": "What subjects are covered in this BCA programme?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The programme may include programming, cloud computing, Linux, networking, databases, DevOps tools, automation, cybersecurity, and software development."
+                "text": "The programme may cover programming, databases, healthcare information systems, bioinformatics, data analysis, biotechnology concepts, and health data management."
               }
             },
             {
               "@type": "Question",
-              "name": "Can I pursue BCA in Cloud Computing & DevOps after Class 12?",
+              "name": "Can I pursue BCA in Healthcare IT & Bioinformatics after Class 12?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Yes, students who meet the university's eligibility requirements can apply after completing Class 12."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a Biology background for this BCA programme?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Biology background may be helpful for understanding bioinformatics and healthcare concepts, but eligibility depends on the university's admission requirements."
               }
             }
           ]

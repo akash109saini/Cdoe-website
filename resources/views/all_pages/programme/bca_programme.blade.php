@@ -97,7 +97,7 @@
                                 <div class="col-sm-6 mt-3 mt-sm-0">
                                     <ul class="single-list-wrap">
                                         <li class="single-list-inner style-check-box">
-                                            <i class="fa fa-check"></i> BCA Healthcare IT & Bioinformatics
+                                            <i class="fa fa-check"></i> <a href="{{ route('bca_healthcare_bioinformatics.programme') }}" style="color: inherit; text-decoration: none; font-weight: 500;">BCA Healthcare IT & Bioinformatics <i class="fa fa-arrow-right ms-1" style="font-size: 11px; color: #ff7900;"></i></a>
                                         </li>
                                         <li class="single-list-inner style-check-box">
                                             <i class="fa fa-check"></i> BCA Game Design & AR/VR

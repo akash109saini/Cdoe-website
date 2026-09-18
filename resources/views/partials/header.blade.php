@@ -730,6 +730,7 @@
                         <ul class="submenu">
                             <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA</a></li>
                             <li><a href="{{ route('bca_cloud_devops.programme') }}" class="{{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}">BCA Cloud Computing & DevOps</a></li>
+                            <li><a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="{{ request()->routeIs('bca_healthcare_bioinformatics.programme') ? 'active' : '' }}">BCA Healthcare IT & Bioinformatics</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -888,6 +889,8 @@
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BCA</a></li>
                                 <li><a href="{{ route('bca_cloud_devops.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BCA Cloud Computing & DevOps</a></li>
+                                <li><a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_healthcare_bioinformatics.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA Healthcare IT & Bioinformatics</a></li>
                             </ul>
                         </li>
 

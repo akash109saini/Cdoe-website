@@ -497,13 +497,13 @@
                 <!-- Filter Tabs Only -->
                 <div class="filter-tabs-group">
                     <button class="tab-btn active" data-filter="all">
-                        All <span class="tab-count">18</span>
+                        All <span class="tab-count">19</span>
                     </button>
                     <button class="tab-btn" data-filter="pg">
                         Postgraduate <span class="tab-count">11</span>
                     </button>
                     <button class="tab-btn" data-filter="ug">
-                        Undergraduate <span class="tab-count">7</span>
+                        Undergraduate <span class="tab-count">8</span>
                     </button>
                 </div>
             </div>
@@ -512,7 +512,7 @@
         <!-- Meta Results Header -->
         <div class="programmes-meta-header">
             <h2 class="meta-title">
-                Showing <span id="activeCountDisplay">18</span> <span id="activeLabelDisplay">Online</span> Programmes
+                Showing <span id="activeCountDisplay">19</span> <span id="activeLabelDisplay">Online</span> Programmes
             </h2>
         </div>
 
@@ -997,6 +997,33 @@
                         </div>
                         <div class="tmu-card-footer">
                             <a href="{{ route('bca_cloud_devops.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19. Online BCA in Healthcare IT & Bioinformatics -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bca_healthcare_bioinformatics.webp') }}" alt="Online BCA in Healthcare IT & Bioinformatics" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BCA in Healthcare IT & Bioinformatics</h3>
+                            <p class="tmu-card-desc">Healthcare data systems, bioinformatics analysis, digital health records, and biological computing.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="tmu-btn-explore">
                                 <span>Explore Programme</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
