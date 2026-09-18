@@ -497,13 +497,13 @@
                 <!-- Filter Tabs Only -->
                 <div class="filter-tabs-group">
                     <button class="tab-btn active" data-filter="all">
-                        All <span class="tab-count">17</span>
+                        All <span class="tab-count">18</span>
                     </button>
                     <button class="tab-btn" data-filter="pg">
                         Postgraduate <span class="tab-count">11</span>
                     </button>
                     <button class="tab-btn" data-filter="ug">
-                        Undergraduate <span class="tab-count">6</span>
+                        Undergraduate <span class="tab-count">7</span>
                     </button>
                 </div>
             </div>
@@ -512,7 +512,7 @@
         <!-- Meta Results Header -->
         <div class="programmes-meta-header">
             <h2 class="meta-title">
-                Showing <span id="activeCountDisplay">17</span> <span id="activeLabelDisplay">Online</span> Programmes
+                Showing <span id="activeCountDisplay">18</span> <span id="activeLabelDisplay">Online</span> Programmes
             </h2>
         </div>
 
@@ -970,6 +970,33 @@
                         </div>
                         <div class="tmu-card-footer">
                             <a href="{{ route('bca.programme') }}" class="tmu-btn-explore">
+                                <span>Explore Programme</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18. Online BCA in Cloud Computing & DevOps -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
+                <div class="tmu-prog-card">
+                    <div class="tmu-card-media">
+                        <span class="tmu-badge ug">Undergraduate</span>
+                        <img src="{{ asset('assets/img/programmes/online_bca_cloud_devops.webp') }}" alt="Online BCA in Cloud Computing & DevOps" loading="lazy">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="tmu-card-body">
+                        <div>
+                            <div class="tmu-card-meta">
+                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
+                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
+                            </div>
+                            <h3 class="tmu-card-title">Online BCA in Cloud Computing & DevOps</h3>
+                            <p class="tmu-card-desc">Cloud infrastructure, DevOps automation, CI/CD pipelines, containerisation, and modern IT operations.</p>
+                        </div>
+                        <div class="tmu-card-footer">
+                            <a href="{{ route('bca_cloud_devops.programme') }}" class="tmu-btn-explore">
                                 <span>Explore Programme</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>

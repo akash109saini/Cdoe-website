@@ -719,8 +719,19 @@
                         </ul>
                     </li>
 
-                    {{-- BCA direct link --}}
-                    <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA Programme</a></li>
+                    <li class="nav-divider"></li>
+
+                    {{-- BCA with theme flyout specializations --}}
+                    <li class="dropdown">
+                        <span class="submenu-label">
+                            <span>BCA Specialisations</span>
+                            <i class="bi bi-chevron-right" style="font-size: 11px; color: #ff6600;"></i>
+                        </span>
+                        <ul class="submenu">
+                            <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA</a></li>
+                            <li><a href="{{ route('bca_cloud_devops.programme') }}" class="{{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}">BCA Cloud Computing & DevOps</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
@@ -867,8 +878,18 @@
                                             class="bi bi-chevron-right mobile-spec-icon"></i> International Business & Entrepreneurship</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('bca.programme') }}" class="mobile-degree-item {{ request()->routeIs('bca.programme') ? 'active' : '' }}"><span>BCA Programme</span>
-                                <span class="mobile-degree-badge">UG</span></a></li>
+                        <li class="flourish-submenu-has-nested">
+                            <button type="button" class="flourish-nested-toggle {{ request()->routeIs('bca*') ? 'active' : '' }}">
+                                <span class="mobile-degree-title">BCA Specialisations</span>
+                                <span class="submenu-arrow">▸</span>
+                            </button>
+                            <ul class="flourish-submenu mobile-spec-list">
+                                <li><a href="{{ route('bca.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA</a></li>
+                                <li><a href="{{ route('bca_cloud_devops.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}"><i
+                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA Cloud Computing & DevOps</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </li>

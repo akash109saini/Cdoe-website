@@ -314,6 +314,11 @@ class CDOEController extends Controller
         return view('all_pages.programme.bca_programme');
     }
 
+    public function bca_cloud_devops_programme()
+    {
+        return view('all_pages.programme.bca_cloud_devops');
+    }
+
     public function digital_marketing_programme()
     {
         return view('all_pages.programme.digital_marketing_progrmme');
@@ -384,6 +389,7 @@ class CDOEController extends Controller
             'Online BBA in Healthcare Services & Administration',
             'Online BBA in International Business & Entrepreneurship',
             'Online BCA',
+            'Online BCA in Cloud Computing & DevOps',
         ];
 
         try {
