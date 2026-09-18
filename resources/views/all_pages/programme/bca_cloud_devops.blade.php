@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Cloud Computing & DevOps</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Cloud Computing & DevOps <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in Cloud Computing & DevOps <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>The <b>Online BCA in Cloud Computing & DevOps</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an industry-oriented undergraduate programme designed for students who want to build a strong foundation in computer applications while developing specialised knowledge of cloud computing, DevOps, software development, automation, virtualisation, and modern IT infrastructure.</p>
                             <p>As organisations increasingly adopt cloud-based platforms and automated software delivery, professionals with knowledge of cloud technologies and DevOps practices are becoming an important part of modern technology teams. This specialisation enables students to understand how applications are developed, deployed, managed, monitored, and scaled in cloud environments.</p>
                             <p>Through a flexible online learning format, students can develop programming, problem-solving, infrastructure, automation, and technology management skills while pursuing their undergraduate degree.</p>

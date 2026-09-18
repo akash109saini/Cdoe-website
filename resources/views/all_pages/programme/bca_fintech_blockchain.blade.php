@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">FinTech & Blockchain</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">FinTech & Blockchain <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in FinTech & Blockchain <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>The <b>Online BCA in FinTech & Blockchain</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is a cutting-edge undergraduate program crafted for the next generation of financial technologists and distributed systems engineers. The convergence of cloud computing, decentralized ledgers, artificial intelligence, and automated transactions is revolutionizing global banking, capital markets, and corporate commerce.</p>
                             <p>This interdisciplinary curriculum blends software engineering and database systems with blockchain protocols (Ethereum, Hyperledger), smart contract development (Solidity), decentralized finance (DeFi), tokenomics, and regulatory compliance. Students gain practical experience building secure decentralized applications (DApps), payment gateway integrations, and financial data models.</p>
                             <p>Delivered entirely online through TMU Online’s high-performance digital campus, learners acquire dual-spectrum fluency in computing and finance, qualifying for high-impact roles in fintech enterprises, crypto startups, neo-banks, and global investment institutions.</p>

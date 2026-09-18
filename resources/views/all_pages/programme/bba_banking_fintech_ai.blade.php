@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">Banking, Fintech & AI</span></h1>
+            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">Banking, Fintech & AI <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BBA in Banking, Fintech & AI <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>An <b>Online BBA in Banking, Fintech & AI at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a></b> is an undergraduate business management programme that combines core concepts of banking, finance, financial technology (FinTech) and AI. The programme helps students understand how traditional banking and financial services are evolving through technologies such as digital payments, blockchain, data analytics, ML and AI-based financial solutions.</p>
                             <p>The online mode allows students to study through digital classes and learning resources while developing business and technology-related skills. Depending on the university and curriculum, students may also work on practical projects, case studies, and industry-oriented assignments. Common career roles may include fintech analyst, banking operations executive, financial data analyst, digital banking associate, risk analyst, and business development executive.</p>
 

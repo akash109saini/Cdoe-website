@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">AI & Data Science</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">AI & Data Science <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in AI & Data Science <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>The <b>Online BCA in AI & Data Science</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an innovative undergraduate degree program tailored for aspiring computer scientists aiming to specialize in Artificial Intelligence and Big Data Analytics. The curriculum blends core computer science foundations—software engineering, database architecture, and algorithms—with cutting-edge advancements in machine learning, neural networks, and business intelligence.</p>
                             <p>Students gain real-world proficiency with languages such as Python, R, and SQL, working on projects that involve automated decision-making, natural language processing, computer vision, and statistical modeling. With data powering every major global industry, skilled AI and data specialists are at the forefront of digital transformation.</p>
                             <p>Delivered through TMU Online’s state-of-the-art virtual learning environment, this program offers students and working professionals the flexibility to build high-demand technological expertise while gaining a recognized, UGC-entitled degree.</p>

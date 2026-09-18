@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Cyber Security & Ethical Hacking</span></h1>
+            <h1 style="font-size:2.5rem;">Online BCA in <span class="highlight" style="color:#ff7900">Cyber Security & Ethical Hacking <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BCA in Cyber Security & Ethical Hacking <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p>The <b>Online BCA in Cyber Security & Ethical Hacking</b> at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a> is an industry-aligned undergraduate program designed for students aiming to defend critical IT infrastructures against emerging digital threats. As cyberspace expands, governments, corporations, banks, and healthcare organizations face sophisticated cyber warfare, ransomware, and data breaches.</p>
                             <p>This specialized curriculum teaches ethical penetration testing, vulnerability assessment, cryptography, and network defense methodologies. Students learn how hackers think and act, enabling them to construct robust defense barriers, identify security flaws before adversaries exploit them, and comply with international cybersecurity frameworks.</p>
                             <p>Delivered entirely online through interactive modules, hands-on virtual security labs, and mentor-led sessions, this program empowers learners to build vital offensive and defensive cybersecurity expertise while obtaining a UGC-entitled degree.</p>

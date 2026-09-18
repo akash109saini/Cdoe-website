@@ -19,7 +19,7 @@
 
     <div class="course-single-area pd-top-60 pd-bottom-90">
         <div class="section-header">
-            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">International Business & Entrepreneurship</span></h1>
+            <h1 style="font-size:2.5rem;">Online BBA in <span class="highlight" style="color:#ff7900">International Business & Entrepreneurship <br> Programme Details</span></h1>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +28,6 @@
                     {{-- Section 1: Description & Programme Details --}}
                     <div class="course-section container" id="description-section">
                         <div class="course-details-content">
-                            <h2 style="font-size: 1.85rem; font-weight: 700; color: #001d4a; margin-bottom: 1.2rem;">
-                                Online BBA in International Business & Entrepreneurship <span style="color:#ff7900;">Programme Details</span>
-                            </h2>
                             <p><b>Online BBA in International Business & Entrepreneurship at <a href="https://www.tmu.ac.in/" target="_blank" rel="noopener">TMU</a></b> is an undergraduate management degree that combines global business knowledge with entrepreneurship and startup skills. It prepares students to understand how businesses operate across countries and how to create, manage and grow their own business ventures. The programme combines core business management concepts with international business practices, innovation, entrepreneurship, and strategic decision-making.</p>
                             <p>A key advantage of BBA International Business & Entrepreneurship is its dual career focus. Students can pursue employment opportunities in multinational companies, export-import firms, consulting organisations, banks, and other business sectors. At the same time, the entrepreneurship component encourages students to develop their own business ideas, understand startup ecosystems, prepare business plans, manage resources, and explore opportunities in emerging markets.</p>
 
