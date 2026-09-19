@@ -16,12 +16,12 @@ Route::get('/online-mba-hr', [CDOEController::class, 'hr_programme'])->name('hr.
 Route::get('/online-mba-finance', [CDOEController::class, 'finance_programme'])->name('finance.programme');
 Route::get('/online-mba-international-business', [CDOEController::class, 'ib_programme'])->name('ib.programme');
 Route::get('/online-mba-marketing', [CDOEController::class, 'marketing_programme'])->name('marketing.programme');
-Route::get('/online-bba', [CDOEController::class, 'bba_programme'])->name('bba.programme');
+Route::permanentRedirect('/online-bba', '/programme');
 Route::get('/online-bba-in-digital-marketing', [CDOEController::class, 'bba_digital_marketing_programme'])->name('bba_digital_marketing.programme');
 Route::get('/online-bba-in-banking-fintech-ai', [CDOEController::class, 'bba_banking_fintech_ai_programme'])->name('bba_banking_fintech_ai.programme');
 Route::get('/online-bba-in-healthcare-services-and-administration', [CDOEController::class, 'bba_healthcare_administration_programme'])->name('bba_healthcare_administration.programme');
 Route::get('/online-bba-in-international-business-and-entrepreneurship', [CDOEController::class, 'bba_ib_entrepreneurship_programme'])->name('bba_ib_entrepreneurship.programme');
-Route::get('/online-bca', [CDOEController::class, 'bca_programme'])->name('bca.programme');
+Route::permanentRedirect('/online-bca', '/programme');
 Route::get('/online-bca-cloud-computing-devops', [CDOEController::class, 'bca_cloud_devops_programme'])->name('bca_cloud_devops.programme');
 Route::get('/online-bca-healthcare-it-bioinformatics', [CDOEController::class, 'bca_healthcare_bioinformatics_programme'])->name('bca_healthcare_bioinformatics.programme');
 Route::get('/online-bca-ai-data-science', [CDOEController::class, 'bca_ai_data_science_programme'])->name('bca_ai_data_science.programme');

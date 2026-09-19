@@ -816,32 +816,7 @@
                 </div>
             </div>
 
-            <!-- 12. Online BBA -->
-            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
-                <div class="tmu-prog-card">
-                    <div class="tmu-card-media">
-                        <span class="tmu-badge ug">Undergraduate</span>
-                        <img src="{{ asset('assets/img/programmes/online_bba.png') }}" alt="Online BBA" loading="lazy">
-                        <div class="media-overlay"></div>
-                    </div>
-                    <div class="tmu-card-body">
-                        <div>
-                            <div class="tmu-card-meta">
-                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
-                                <span class="meta-item"><i class="bi bi-book"></i> Bachelor's Degree</span>
-                            </div>
-                            <h3 class="tmu-card-title">Online BBA</h3>
-                            <p class="tmu-card-desc">Core business administration, leadership fundamentals, accounting, and management.</p>
-                        </div>
-                        <div class="tmu-card-footer">
-                            <a href="{{ route('bba.programme') }}" class="tmu-btn-explore">
-                                <span>Explore Programme</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- 13. Online BBA in Digital Marketing -->
             <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
@@ -951,32 +926,7 @@
                 </div>
             </div>
 
-            <!-- 17. Online BCA -->
-            <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">
-                <div class="tmu-prog-card">
-                    <div class="tmu-card-media">
-                        <span class="tmu-badge ug">Undergraduate</span>
-                        <img src="{{ asset('assets/img/programmes/online_bca.png') }}" alt="Online BCA" loading="lazy">
-                        <div class="media-overlay"></div>
-                    </div>
-                    <div class="tmu-card-body">
-                        <div>
-                            <div class="tmu-card-meta">
-                                <span class="meta-item"><i class="bi bi-clock"></i> 3 Years</span>
-                                <span class="meta-item"><i class="bi bi-code-slash"></i> Bachelor's Degree</span>
-                            </div>
-                            <h3 class="tmu-card-title">Online BCA</h3>
-                            <p class="tmu-card-desc">Software engineering, web application development, cloud concepts, and database systems.</p>
-                        </div>
-                        <div class="tmu-card-footer">
-                            <a href="{{ route('bca.programme') }}" class="tmu-btn-explore">
-                                <span>Explore Programme</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- 18. Online BCA in Cloud Computing & DevOps -->
             <div class="col-lg-4 col-md-6 col-sm-12 card-column" data-level="ug">

@@ -284,10 +284,7 @@ class CDOEController extends Controller
         return view('all_pages.programme.marketing_programme');
     }
 
-    public function bba_programme()
-    {
-        return view('all_pages.programme.bba_programme');
-    }
+
 
     public function bba_digital_marketing_programme()
     {
@@ -309,10 +306,7 @@ class CDOEController extends Controller
         return view('all_pages.programme.bba_ib_entrepreneurship');
     }
 
-    public function bca_programme()
-    {
-        return view('all_pages.programme.bca_programme');
-    }
+
 
     public function bca_cloud_devops_programme()
     {
@@ -408,12 +402,12 @@ class CDOEController extends Controller
             'MBA Hospital & Healthcare Management',
             'MBA Operations Strategy & Project Management',
             'MBA in Banking, Fintech & AI',
-            'Online BBA',
+            // 'Online BBA',
             'Online BBA in Digital Marketing',
             'Online BBA in Banking, Fintech & AI',
             'Online BBA in Healthcare Services & Administration',
             'Online BBA in International Business & Entrepreneurship',
-            'Online BCA',
+            // 'Online BCA',
             'Online BCA in Cloud Computing & DevOps',
             'Online BCA in Healthcare IT & Bioinformatics',
             'Online BCA in AI & Data Science',
