@@ -711,7 +711,6 @@
                             <i class="bi bi-chevron-right" style="font-size: 11px; color: #ff6600;"></i>
                         </span>
                         <ul class="submenu">
-                            <li><a href="{{ route('bba.programme') }}" class="{{ request()->routeIs('bba.programme') ? 'active' : '' }}">BBA</a></li>
                             <li><a href="{{ route('bba_digital_marketing.programme') }}" class="{{ request()->routeIs('bba_digital_marketing.programme') ? 'active' : '' }}">BBA Digital Marketing</a></li>
                             <li><a href="{{ route('bba_banking_fintech_ai.programme') }}" class="{{ request()->routeIs('bba_banking_fintech_ai.programme') ? 'active' : '' }}">Banking, Fintech & AI</a></li>
                             <li><a href="{{ route('bba_healthcare_administration.programme') }}" class="{{ request()->routeIs('bba_healthcare_administration.programme') ? 'active' : '' }}">Healthcare Services & Administration</a></li>
@@ -728,7 +727,6 @@
                             <i class="bi bi-chevron-right" style="font-size: 11px; color: #ff6600;"></i>
                         </span>
                         <ul class="submenu">
-                            <li><a href="{{ route('bca.programme') }}" class="{{ request()->routeIs('bca.programme') ? 'active' : '' }}">BCA</a></li>
                             <li><a href="{{ route('bca_cloud_devops.programme') }}" class="{{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}">BCA Cloud Computing & DevOps</a></li>
                             <li><a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="{{ request()->routeIs('bca_healthcare_bioinformatics.programme') ? 'active' : '' }}">BCA Healthcare IT & Bioinformatics</a></li>
                             <li><a href="{{ route('bca_ai_data_science.programme') }}" class="{{ request()->routeIs('bca_ai_data_science.programme') ? 'active' : '' }}">BCA AI & Data Science</a></li>
@@ -871,8 +869,6 @@
                                 <span class="submenu-arrow">▸</span>
                             </button>
                             <ul class="flourish-submenu mobile-spec-list">
-                                <li><a href="{{ route('bba.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba.programme') ? 'active' : '' }}"><i
-                                            class="bi bi-chevron-right mobile-spec-icon"></i> BBA</a></li>
                                 <li><a href="{{ route('bba_digital_marketing.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_digital_marketing.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BBA Digital Marketing</a></li>
                                 <li><a href="{{ route('bba_banking_fintech_ai.programme') }}" class="mobile-spec-item {{ request()->routeIs('bba_banking_fintech_ai.programme') ? 'active' : '' }}"><i
@@ -889,8 +885,6 @@
                                 <span class="submenu-arrow">▸</span>
                             </button>
                             <ul class="flourish-submenu mobile-spec-list">
-                                <li><a href="{{ route('bca.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca.programme') ? 'active' : '' }}"><i
-                                            class="bi bi-chevron-right mobile-spec-icon"></i> BCA</a></li>
                                 <li><a href="{{ route('bca_cloud_devops.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_cloud_devops.programme') ? 'active' : '' }}"><i
                                             class="bi bi-chevron-right mobile-spec-icon"></i> BCA Cloud Computing & DevOps</a></li>
                                 <li><a href="{{ route('bca_healthcare_bioinformatics.programme') }}" class="mobile-spec-item {{ request()->routeIs('bca_healthcare_bioinformatics.programme') ? 'active' : '' }}"><i
