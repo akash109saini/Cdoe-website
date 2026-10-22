@@ -791,7 +791,7 @@
 
             <a href="{{ route('blog') }}" class="{{ request()->routeIs('blog*') ? 'active' : '' }}">Blogs</a>
             <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'active' : '' }}">Contact Us</a>
-            <a href="https://admissions.tmuonline.ac.in/" class="apply-btn">Apply Now</a>
+            <a href="https://apply.tmuonline.ac.in/" class="apply-btn">Apply Now</a>
         </div>
     </nav>
 
@@ -805,7 +805,7 @@
             </a>
 
             <!-- Add Mobile Apply Button Here -->
-            <a href="https://admissions.tmuonline.ac.in/" class="apply-btn mobile-apply-btn">Apply Now</a>
+            <a href="https://apply.tmuonline.ac.in/" class="apply-btn mobile-apply-btn">Apply Now</a>
 
             <!-- Toggle Button -->
             <button class="flourish-navbar-toggle-btn" id="flourishNavbarToggle" aria-label="Toggle Menu"
