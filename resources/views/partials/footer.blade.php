@@ -121,8 +121,7 @@
                             <li><i class="fa fa-map-marker"></i> Delhi Road, NH9, Moradabad, Uttar Pradesh 244001
                             </li>
                             <li><i class="fa fa-envelope"></i>support@tmuonline.ac.in</li>
-                            <li><i class="fa fa-phone"></i>+91 8679007289</li>
-                            <!-- <li><i class="fa fa-phone"></i> +91 9520942111</li> -->
+                            <li><i class="fa fa-phone"></i><a href="tel:+918679007289" style="color: inherit; text-decoration: none;">+91 8679007289</a>, <br><a href="tel:+918037236882" style="color: inherit; text-decoration: none;">+91 8037236882</a></li>
                         </ul>
 
                         <!-- Modern Ultra-Clean Social Vector Cards -->
