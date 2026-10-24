@@ -129,8 +129,10 @@
                 <div class="bg-light-pink p-4 rounded-lg mb-6">
                     <p class="text-gray-700">
                         In case of any inconvenience in the Admission Process, please contact the Director
-                        (Admissions) in his office at Admission Cell, Administrative Block, Moradabad (Mob: <span
-                            class="font-bold text-orange-500">+91 8679007289</span>).
+                        (Admissions) in his office at Admission Cell, Administrative Block, Moradabad (Mob: <a
+                            href="tel:+918679007289" class="font-bold text-orange-500 text-decoration-none"
+                            style="color: #F5A623;">+91 8679007289</a>, <a href="tel:+918037236882"
+                            class="font-bold text-orange-500 text-decoration-none" style="color: #F5A623;">+91 8037236882</a>).
                     </p>
                 </div>
                 <div class="text-center">

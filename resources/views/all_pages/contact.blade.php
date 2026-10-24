@@ -567,7 +567,7 @@
                         <i class="bi bi-telephone-fill"></i>
                     </div>
                     <h4>Admission Helplines</h4>
-                    <p class="mb-1">Direct Call: <a href="tel:+918679007289">+91 8679007289</a></p>
+                    <p class="mb-0">Direct Call: <a href="tel:+918679007289" class="text-nowrap">+91 8679007289</a>,<br><a href="tel:+918037236882" class="text-nowrap">+91 8037236882</a></p>
                 </div>
             </div>
 
