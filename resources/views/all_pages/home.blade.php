@@ -1665,18 +1665,6 @@
                 <div class="col-lg-4 col-6 col-md-6">
                     <div class="single-intro-inner style-icon-bg text-center">
                         <div class="thumb">
-                            <img src="{{ asset('/assets/img/icon/i-3.svg') }}" loading="lazy" class="why-icon" alt="img">
-                        </div>
-                        <div class="details">
-                            <h5>Flexible Examination Options</h5>
-                            <p>Appear for exams at your convenience with flexible scheduling and remote assessment
-                                options.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6 col-md-6">
-                    <div class="single-intro-inner style-icon-bg text-center">
-                        <div class="thumb">
                             <img src="{{ asset('/assets/img/icon/i-4.svg') }}" loading="lazy" class="why-icon" alt="img">
                         </div>
                         <div class="details">
